@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 SELF-NOTES.md
+.env
+*.env

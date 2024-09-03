@@ -1,0 +1,36 @@
+{
+    "Access to the API":[
+        {
+        "All requests to the API begin with": "https://api.harvardartmuseums.org",
+        "The API uses keys to authenticate requests": "Every request must be accompanied by the apikey parameter and an API key"
+    }
+],
+
+    "endpoints": [
+      {
+        "name": "Objects",
+        "description": "Retrieve data about individual artworks, including images and details.",
+        "url": "https://api.harvardartmuseums.org/object?apikey=YOUR_API_KEY"
+      },
+      {
+        "name": "Exhibitions",
+        "description": "Get information on museum exhibitions.",
+        "url": "https://api.harvardartmuseums.org/exhibition?apikey=YOUR_API_KEY"
+      },
+      {
+        "name": "Galleries",
+        "description": "Access data about gallery spaces and the artworks in them.",
+        "url": "https://api.harvardartmuseums.org/gallery?apikey=YOUR_API_KEY"
+      },
+      {
+        "name": "Publications",
+        "description": "Fetch details on publications by the museum.",
+        "url": "https://api.harvardartmuseums.org/publication?apikey=YOUR_API_KEY"
+      },
+      {
+        "name": "People",
+        "description": "Retrieve data about artists, donors, and related individuals.",
+        "url": "https://api.harvardartmuseums.org/person?apikey=YOUR_API_KEY"
+      }
+    ]
+  }

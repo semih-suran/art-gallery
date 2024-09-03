@@ -1,0 +1,2508 @@
+{
+    "pagination": {
+    "total": 126065,
+    "limit": 12,
+    "offset": 0,
+    "total_pages": 10506,
+    "current_page": 1,
+    "next_url": "https://api.artic.edu/api/v1/artworks?page=2"
+    },
+    "data": [
+    {
+    "id": 13527,
+    "api_model": "artworks",
+    "api_link": "https://api.artic.edu/api/v1/artworks/13527",
+    "is_boosted": false,
+    "title": "The Bath",
+    "alt_titles": null,
+    "thumbnail": {
+    "lqip": "data:image/gif;base64,R0lGODlhBAAFAPQAAKCgc3yPl4yanb6yhqysmL+1qcy6h8e8j8e6lcq/oMm/stLBi9DGstPJuNLIutTKudXLutbMvNfPv9rQwQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURYFMoUIQMjQAYSUAsRzQxUAgAOw==",
+    "width": 8537,
+    "height": 11179,
+    "alt_text": "A work made of color drypoint, aquatint and softground etching from two plates, printed à la poupée, on ivory laid paper."
+    },
+    "main_reference_number": "1932.1287",
+    "has_not_been_viewed_much": false,
+    "boost_rank": null,
+    "date_start": 1890,
+    "date_end": 1891,
+    "date_display": "1890–91",
+    "date_qualifier_title": "",
+    "date_qualifier_id": null,
+    "artist_display": "Mary Cassatt (American, 1844-1926)\nprinted with Leroy (French, active 1876-1900)",
+    "place_of_origin": "United States",
+    "description": null,
+    "short_description": null,
+    "dimensions": "Image/plate: 32.1 × 24.7 cm (12 11/16 × 9 3/4 in.); Sheet: 43.6 × 30 cm (17 3/16 × 11 13/16 in.)",
+    "dimensions_detail": [
+    {
+    "depth": null,
+    "width": 24,
+    "height": 32,
+    "diameter": null,
+    "clarification": "Image/plate"
+    },
+    {
+    "depth": null,
+    "width": 30,
+    "height": 43,
+    "diameter": null,
+    "clarification": "Sheet"
+    }
+    ],
+    "medium_display": "Color drypoint, aquatint and softground etching from two plates, printed à la poupée, on ivory laid paper",
+    "inscriptions": null,
+    "credit_line": "Mr. and Mrs. Martin A. Ryerson Collection",
+    "catalogue_display": "<p>Mathews & Shapiro 5 17/17</p><p>Breeskin 143 11/11</p>",
+    "publication_history": null,
+    "exhibition_history": null,
+    "provenance_text": null,
+    "edition": null,
+    "publishing_verification_level": "Web Basic",
+    "internal_department_id": 3,
+    "fiscal_year": 1933,
+    "fiscal_year_deaccession": null,
+    "is_public_domain": true,
+    "is_zoomable": true,
+    "max_zoom_window_size": -1,
+    "copyright_notice": null,
+    "has_multimedia_resources": false,
+    "has_educational_resources": false,
+    "has_advanced_imaging": false,
+    "colorfulness": 0,
+    "color": {
+    "h": 50,
+    "l": 61,
+    "s": 47,
+    "percentage": 0.0010551670793152329,
+    "population": 1007
+    },
+    "latitude": null,
+    "longitude": null,
+    "latlon": null,
+    "is_on_view": false,
+    "on_loan_display": "<p>On loan to Philadelphia Museum of Art in Philadelphia for <i>Mary Cassatt at Work</i></p>",
+    "gallery_title": null,
+    "gallery_id": null,
+    "nomisma_id": null,
+    "artwork_type_title": "Print",
+    "artwork_type_id": 18,
+    "department_title": "Prints and Drawings",
+    "department_id": "PC-13",
+    "artist_id": 33890,
+    "artist_title": "Mary Cassatt",
+    "alt_artist_ids": [],
+    "artist_ids": [
+    33890
+    ],
+    "artist_titles": [
+    "Mary Cassatt"
+    ],
+    "category_ids": [
+    "PC-13",
+    "PC-825"
+    ],
+    "category_titles": [
+    "Prints and Drawings",
+    "Women artists"
+    ],
+    "term_titles": [
+    "drypoint",
+    "mothers",
+    "paper (fiber product)",
+    "print",
+    "prints and drawing",
+    "children"
+    ],
+    "style_id": null,
+    "style_title": null,
+    "alt_style_ids": [],
+    "style_ids": [],
+    "style_titles": [],
+    "classification_id": "TM-154",
+    "classification_title": "drypoint",
+    "alt_classification_ids": [
+    "TM-17",
+    "TM-4"
+    ],
+    "classification_ids": [
+    "TM-154",
+    "TM-17",
+    "TM-4"
+    ],
+    "classification_titles": [
+    "drypoint",
+    "print",
+    "prints and drawing"
+    ],
+    "subject_id": "TM-12350",
+    "alt_subject_ids": [
+    "TM-10118"
+    ],
+    "subject_ids": [
+    "TM-12350",
+    "TM-10118"
+    ],
+    "subject_titles": [
+    "mothers",
+    "children"
+    ],
+    "material_id": "TM-2982",
+    "alt_material_ids": [],
+    "material_ids": [
+    "TM-2982"
+    ],
+    "material_titles": [
+    "paper (fiber product)"
+    ],
+    "technique_id": null,
+    "alt_technique_ids": [],
+    "technique_ids": [],
+    "technique_titles": [],
+    "theme_titles": [
+    "Women artists"
+    ],
+    "image_id": "907a7782-97d6-9cde-a8cb-1b9bea785ea1",
+    "alt_image_ids": [],
+    "document_ids": [],
+    "sound_ids": [],
+    "video_ids": [],
+    "text_ids": [],
+    "section_ids": [],
+    "section_titles": [],
+    "site_ids": [],
+    "suggest_autocomplete_all": [
+    {
+    "input": [
+    "1932.1287"
+    ],
+    "contexts": {
+    "groupings": [
+    "accession"
+    ]
+    }
+    },
+    {
+    "input": [
+    "The Bath"
+    ],
+    "weight": 1365,
+    "contexts": {
+    "groupings": [
+    "title"
+    ]
+    }
+    }
+    ],
+    "source_updated_at": "2024-08-18T00:30:13-05:00",
+    "updated_at": "2024-08-18T00:30:51-05:00",
+    "timestamp": "2024-08-18T13:58:34-05:00"
+    },
+    {
+    "id": 13841,
+    "api_model": "artworks",
+    "api_link": "https://api.artic.edu/api/v1/artworks/13841",
+    "is_boosted": false,
+    "title": "Head of War (Study for Meade Memorial)",
+    "alt_titles": [],
+    "thumbnail": {
+    "lqip": "data:image/gif;base64,R0lGODlhAwAFAPMAADo4Nj49PWBLRpOQkaOfoKupqK6srbGvr7KurrKwr8jFxNHIxtHNzOTk4+vp6QAAACH5BAAAAAAALAAAAAADAAUAAAQLkAxTwFEhMYHcahEAOw==",
+    "width": 3764,
+    "height": 5166,
+    "alt_text": "A work made of bronze."
+    },
+    "main_reference_number": "1924.957",
+    "has_not_been_viewed_much": true,
+    "boost_rank": null,
+    "date_start": 1921,
+    "date_end": 1921,
+    "date_display": "1921",
+    "date_qualifier_title": "",
+    "date_qualifier_id": null,
+    "artist_display": "Charles Grafly (American, 1862–1929)\nCast by Roman Bronze Works (American, founded 1897)",
+    "place_of_origin": "United States",
+    "description": null,
+    "short_description": null,
+    "dimensions": "55.6 × 23.5 × 24.4 cm (21 15/16 × 9 5/16 × 9 5/8 in.)",
+    "dimensions_detail": [
+    {
+    "depth": 24,
+    "width": 23,
+    "height": 55,
+    "diameter": null,
+    "clarification": null
+    }
+    ],
+    "medium_display": "Bronze",
+    "inscriptions": "Signed and inscribed verso, bottom-middle, incised in cast: \"Grafly / 1921 / XXI\"; stamped verso, bottom-edge: \"ROMAN BRONZE WORKS\".",
+    "credit_line": "Mrs. Keith Spaulding Purchase Prize",
+    "catalogue_display": null,
+    "publication_history": "Pennsylvania Academy of the Fine Arts, <em>Catalogue of the 119th Annual Exhibition of Painting and Sculpture</em>, exh. cat. (Philadelphia: Pennsylvania Academy of the Fine Arts, 1924).\n\n“Annual Exhibition of American Painting and Sculpture,” <em>Bulletin of the Art Institute of Chicago</em> 18, no. 8 (Nov. 1924): 104-105 (ill.).\n\n<em>Catalogue of the Thirty-Seventh Annual Exhibition of American Paintings and\nSculpture</em>, exh. cat. (Chicago: Art Institute of Chicago, 1924), n.p., cat. 256 (ill.).\n\nNational Academy of Design, <em>Centennial Exhibition, National Academy of Design, 1825–1925</em>, exh. cat. (Washington, DC: National Academy of Design, 1925), 25, 64, 152, cat. 378 (ill.), as <em>Study for Figure of War. Meade Memorial</em>.\n\nSesqui-centennial Exhibition Association, <em>The Sesquicentennial International Exposition, Philadelphia, June First to December First, 1926</em>, exh. cat. (Philadelphia: Sesqui-centennial Exhibition Association, 1926), 83, cat. 1138 (ill.). \n\n<em>Catalogue of A Century of Progress Exhibition of Paintings and Sculpture Lent from American Collections</em>, exh. cat. (Chicago: Art Institute of Chicago, 1933), 108, cat. 1137.\n\nPamela Simpson, <em>The Sculptor's Clay: Charles Grafly, 1862-1929</em>, exh. cat. (Wichita, KS: Edwin A. Ulrich Museum of Art, Wichita State University, 1995).",
+    "exhibition_history": "Philadelphia, Pennsylvania Academy of the Fine Arts, <em>119th Annual Exhibition of the Pennsylvania Academy of the Fine Arts</em>, Feb. 3–Mar. 23, 1924, cat.\n\nArt Institute of Chicago, <em>Thirty–Seventh Annual Exhibition of American Paintings and Sculpture</em>, Oct. 30–Dec, 14, 1924, cat.\n\nPhiladelphia, Sesqui–centennial Exhibition Association, <em>Sesquicenennial International Exposition</em>, May 31–Nov. 30, 1926, cat.\n\nArt Institute of Chicago, <em>Century of Progress Exhibition of Paintings and Sculpture Lent from American Collections</em>, June 1–Nov. 1, 1933, cat.\n\nKS, Ulrich Museum of Art, Wichita State University, <em>The Human Figure in American Art</em>, Jan. 21, 1995–Mar. 17, 1996, cat.",
+    "provenance_text": "The artist; sold to the Art Institute of Chicago, 1924.",
+    "edition": null,
+    "publishing_verification_level": "Web Everything",
+    "internal_department_id": 21,
+    "fiscal_year": 1925,
+    "fiscal_year_deaccession": null,
+    "is_public_domain": false,
+    "is_zoomable": false,
+    "max_zoom_window_size": 843,
+    "copyright_notice": null,
+    "has_multimedia_resources": false,
+    "has_educational_resources": false,
+    "has_advanced_imaging": false,
+    "colorfulness": 11.0821,
+    "color": {
+    "h": 5,
+    "l": 55,
+    "s": 38,
+    "percentage": 0.0002599502455230069,
+    "population": 3
+    },
+    "latitude": null,
+    "longitude": null,
+    "latlon": null,
+    "is_on_view": false,
+    "on_loan_display": null,
+    "gallery_title": null,
+    "gallery_id": null,
+    "nomisma_id": null,
+    "artwork_type_title": "Sculpture",
+    "artwork_type_id": 3,
+    "department_title": "Arts of the Americas",
+    "department_id": "PC-3",
+    "artist_id": 10139,
+    "artist_title": "Charles Grafly",
+    "alt_artist_ids": [
+    36426
+    ],
+    "artist_ids": [
+    10139,
+    36426
+    ],
+    "artist_titles": [
+    "Charles Grafly",
+    "Roman Bronze Works Inc."
+    ],
+    "category_ids": [
+    "PC-3"
+    ],
+    "category_titles": [
+    "Arts of the Americas"
+    ],
+    "term_titles": [
+    "bronze",
+    "bronze",
+    "bust/head",
+    "metal",
+    "sculpture",
+    "modern and contemporary art"
+    ],
+    "style_id": null,
+    "style_title": null,
+    "alt_style_ids": [],
+    "style_ids": [],
+    "style_titles": [],
+    "classification_id": "TM-28",
+    "classification_title": "bronze",
+    "alt_classification_ids": [
+    "TM-347",
+    "TM-33",
+    "TM-13",
+    "TM-155"
+    ],
+    "classification_ids": [
+    "TM-28",
+    "TM-347",
+    "TM-33",
+    "TM-13",
+    "TM-155"
+    ],
+    "classification_titles": [
+    "bronze",
+    "bust/head",
+    "metal",
+    "sculpture",
+    "modern and contemporary art"
+    ],
+    "subject_id": null,
+    "alt_subject_ids": [],
+    "subject_ids": [],
+    "subject_titles": [],
+    "material_id": "TM-2430",
+    "alt_material_ids": [],
+    "material_ids": [
+    "TM-2430"
+    ],
+    "material_titles": [
+    "bronze"
+    ],
+    "technique_id": null,
+    "alt_technique_ids": [],
+    "technique_ids": [],
+    "technique_titles": [],
+    "theme_titles": [],
+    "image_id": "3d767f68-83e6-9c14-64e7-0493ed7c98c2",
+    "alt_image_ids": [],
+    "document_ids": [],
+    "sound_ids": [],
+    "video_ids": [],
+    "text_ids": [],
+    "section_ids": [],
+    "section_titles": [],
+    "site_ids": [],
+    "suggest_autocomplete_all": [
+    {
+    "input": [
+    "1924.957"
+    ],
+    "contexts": {
+    "groupings": [
+    "accession"
+    ]
+    }
+    },
+    {
+    "input": [
+    "Head of War (Study for Meade Memorial)"
+    ],
+    "weight": 1,
+    "contexts": {
+    "groupings": [
+    "title"
+    ]
+    }
+    }
+    ],
+    "source_updated_at": "2024-08-18T00:30:13-05:00",
+    "updated_at": "2024-08-18T00:30:50-05:00",
+    "timestamp": "2024-08-18T13:58:34-05:00"
+    },
+    {
+    "id": 23700,
+    "api_model": "artworks",
+    "api_link": "https://api.artic.edu/api/v1/artworks/23700",
+    "is_boosted": true,
+    "title": "The Praying Jew",
+    "alt_titles": null,
+    "thumbnail": {
+    "lqip": "data:image/gif;base64,R0lGODlhBAAFAPQAACIjIi4vLTQxKjc2Mj87NDw7NkZCO1NPRlhWUWFgV2NhXGplW2xpXGxsZm9vaIJ6a4mKgZWRg5SRh6ennQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURoDMQQCMtATJBjHI8USEYSQgAOw==",
+    "width": 5731,
+    "height": 7565,
+    "alt_text": "Painting of man who is seated with his hands over his lap. He is dressed in prayer clothes, with a white shawl draped over his head and shoulders. His facial features and hands are slightly distorted, and the background is an abstract pattern of black and white."
+    },
+    "main_reference_number": "1937.188",
+    "has_not_been_viewed_much": false,
+    "boost_rank": null,
+    "date_start": 1923,
+    "date_end": 1923,
+    "date_display": "1923 (one of two versions after a 1914 composition)",
+    "date_qualifier_title": "",
+    "date_qualifier_id": null,
+    "artist_display": "Marc Chagall\nBorn Vitebsk (formerly Russian Empire, now Belarus), 1887; died Saint-Paul, France, 1985",
+    "place_of_origin": "France",
+    "description": "<p>Marc Chagall had a prolific career that spanned more than eight decades of the twentieth century. While his work often exhibits influences of the contemporary movements he encountered in France and Germany, his subjects and decorative lyricism reveal his love of Russian folk art and his roots in Hasidic Judaism.</p>\n<p>In his 1931 autobiography, <em>My Life</em>, Chagall related how, while visiting Vitebsk (present-day Belarus), the city in which he was born, he realized that the traditions in which he had grown up were fast disappearing and that he needed to document them. He paid a man to pose in his father’s prayer clothes and then painted him, limiting his palette primarily to black and white, as befit the solemnity of the subject. This portrait is noteworthy for the simplicity of its execution; nonetheless, its striking patterns, abstract background, and the slightly distorted features of the model demonstrate Chagall’s absorption of modern trends, especially Cubism.</p>\n<p>Chagall often painted variants or replicas of works he particularly loved. The Art Institute’s <em>Praying Jew</em> is one of three versions of this composition. He painted the original canvas in 1914, and when he traveled back to Paris in 1923, he took this painting with him. He learned upon his return that much of the work he had left in France had been lost during World War I. This prompted him to make two versions of <em>The Praying Jew</em> before it left his studio: they are the present work and another in the Ca’ Pesaro, Venice; the original is now in the Kunstmuseum, Basel. The later compositions differ from the original only in small details.</p>\n",
+    "short_description": null,
+    "dimensions": "116.8 × 89.4 cm (46 × 35 3/16 in.)",
+    "dimensions_detail": [
+    {
+    "depth": null,
+    "width": 89,
+    "height": 116,
+    "diameter": null,
+    "clarification": null
+    }
+    ],
+    "medium_display": "Oil on canvas",
+    "inscriptions": "Signed, l.r.: \"MArc / ChAgAll\"",
+    "credit_line": "Joseph Winterbotham Collection",
+    "catalogue_display": null,
+    "publication_history": "Bulletin de l’Effort Moderne 2 (February 1924), n.p. (ill.), as Le vieux rabbin, 1923.\n\nGeorge, Waldemar, Marc Chagall (Les Peintres Français Nouveaux, 31) (Paris: Gallimard, 1928), p. 43 (ill.), as Rabbin, 1914. \n\nCarl Einstein, Die Kunst des 20. Jahrhunderts, (Propyläen Verlag: Berlin, 1928) pp. 485 (ill.), 567.\n\nArt Digest VII:16 (May 15, 1933), p. 25 (ill.), as Rabbi, n.d.\n\nArt Institute of Chicago, A Century of Progress Exhibition of Paintings and Sculpture, exh. cat. (Chicago: Art Institute of Chicago, 1933), p. 80, cat. 725, pl. LXXIV, as Portrait of a Rabbi, n.d.\n\nDallas Museum of Fine Arts, The Centennial Exposition, exh. cat. (Dallas: Dallas Museum of Fine Arts, 1936), p. 42, cat. 21, as Portrait of a Rabbi, n.d.\n\nToledo Museum of Art, Contemporary Movements in European Painting, exh. cat. (Toledo, Ohio: Toledo Museum of Art, 1938), p. 16, cat. 13 (ill.), as Rabbi, 1914.\n\nThe Jewish Layman XVI:5 (January 1942), p. 8 (ill.), as Rabbi, n.d.\n\n“The Rabbi—Marc Chagall,” Daily News (July 11, 1942), p. 21 (ill.), as The Rabbi, n.d.\n\nMuseum of Modern Art, 20th Century Portraits, exh. cat. (New York: Museum of Modern Art, 1942), pp. 22, 64, and 135, as The Rabbi of Vitebsk, 1914.\n\nArts Club, Marc Chagall, exh. cat. (Chicago: Arts Club, 1945), n.p., cat. 28, as The Rabbi, n.d.\n\n“Marc Chagall,” Emporium CIV:623–624 (November–December 1946), p. 208 (ill.), as Rabbino, 1914.\n\nVenturi, Lionello, Marc Chagall (1945), cat. 10.    \n\nFrankfurter, Alfred M., “The Daring Chagall,” Art News XLV:3 (May 1946), p. 25 (ill.), as The Praying Jew (Rabbi of Vitebsk), 1914.\n\nSweeney, James Johnson, Marc Chagall, exh. cat. (New York: Museum of Modern Art, 1946), pp. 31, 34–35, 53, and 87, cat. 18 (ill.), as The Praying Jew (The Rabbi of Vitebsk), 1914.\n\nArt Institute of Chicago, The Winterbotham Collection, exh. cat.  (Chicago: Art Institute of Chicago, 1947), pp. 5 and 9–10 (ill.), as The Rabbi of Vitebsk, 1914.\n\nMusée National d'Art Moderne, Marc Chagall: Peintures 1908–1947, exh. cat. (Paris: Musée National d'Art Moderne, 1947), n.p., cat. 19, as Le Rabbin en Priere, n.d.\n\nMaritain, Raïssa, Chagall ou l’orage Enchanté (Geneva: Éditions des trios Collines, 1948), pp. 40 and 70 (ill.), as Le rabbin en prière, 1914–1923.\n\nArts Council of Great Britain, Marc Chagall, exh. cat. (London: Arts Council of Great Britain, 1948), p. 7, cat. 18, pl. VIII, as The Praying Jew, 1914.\n\nAyrton, Michael, Chagall (London, 1948), pp. 3–4, pl. 4.\n\n___, “The Art of Marc Chagall,” The Listener XXXIX:994 (February 12, 1948), p. 254 (cover ill.), as The Rabbi of Vitebsk, n.d.\n\nCincinnati Art Museum, Cincinnati Biennial Festival of the Arts, Paintings: 1900–1925, exh. cat. (Cincinnati, Ohio: Cincinnati Art Museum, 1951), n.p., cat. 7, as The Rabbi, 1914. \n\nMasterpieces in The Art Institute of Chicago (Chicago, The Art Institute of Chicago: 1952), n.p. (ill.), as The Praying Jew (The Rabbi of Vitebsk), n.d.\n\nBaltimore Museum of Art, Man and His Years, exh. cat. (Baltimore, Md.: Baltimore Museum of Art, 1954), pp. 31–32, cat. 69 (ill.), as The Rabbi of Vitebsk, 1914.\n\nArt Institute of Chicago, Paintings in the Art Institute of Chicago: A Catalogue of the Picture Collection (Chicago: Art Institute of Chicago, 1961), pp. 74 and 469 (ill.), as The Praying Jew (The Rabbi of Vitebsk), 1914.\n\nBrion, Marcel, Chagall (New York: Harry N. Abrams, 1961), pp. 34–35 and 83 (ill.), as The Jew at Prayer, 1914.\n\nBarry, Edward, “A Legacy that Grows—Winterbotham Collection,” The Chicago Tribune (August 25, 1963), p. F4.\n\nSpeyer, A. James, “Twentieth-Century European Paintings and Sculpture,” Apollo 84:55 (September 1966), p. 222, as Rabbi of Vitebsk, 1914.\n\nEl Mundo de los Museos, The Art Institute of Chicago (Madrid: Editorial Codex, S. A., 1967), pp. 13, 70 and 72, fig. 54.\n\nArnason, H. H.,  History of Modern Art (New York: Harry N. Abrams, 1968), p. 284, fig. 453, as The Praying Jew, 1914.\n\nMaxon, John, The Art Institute of Chicago (New York: Harry N. Abrams, 1970), p. 271 (ill), as The Praying Jew, 1914.\n\nKunstmuseum Bern, Sammlung im Obersteg, exh. cat. (Bern: Kunstmuseum Bern, 1975), n.p.\n\nDavies, Horton and Hugh Davies, Sacred Art in a Secular Society (Collegeville, Minn.: The Liturgical Press, 1978), pp. 21, pl. 6, 45, and 10, as The Praying Jew (The Rabbi of Vitebsk), 1914.\n\nArt Institute of Chicago, 100 Masterpieces (Chicago: Art Institute of Chicago, 1978), pp. 130–131 (ill.), as The Praying Jew (The Rabbi of Vitebsk), 1914.\n\nSpeyer, A. James and Courtney Graham Donnell, Twentieth Century European Painting (Chicago: University of Chicago Press, 1980), p. 36, no. 1D1.\n\nCompton, Susan, Chagall, exh. cat. (London: Royal Academy of Arts, 1985), p. 186.\n\nWood, James N. and Katharine C. Lee, Master Paintings in The Art Institute of Chicago (Chicago: The Art Institute of Chicago, 1988), p. 130 (ill.), as The Praying Jew (Rabbi of Vitebsk), 1923.\n\nBarbican Art Gallery, Chagall to Kitaj: Jewish Experience in 20th Century Art, exh. cat. (London: Barbican Art Gallery, 1990), pp. 25, fig. 17, and p. 26, as The Praying Jew, 1923.\n\nNiigata Prefectural Museum of Modern Art, Masterworks of Modern Art from The Art Institute of Chicago, exh. cat. (Nagaoka, Japan: Niigata Prefectural Museum of Modern Art, 1994), pp. 110–111, cat. 31 (ill.), as The Praying Jew, 1923 copy of a 1914 work.\n\nBaal-Teshuva, Jacob (editor), Chagall: A Retrospective (New York: Hugh Lauter Levin, 1995), pp. 134 (ill.), as The Praying Jew, 1923.\n\nDampérat, Marie-Hêlène, Sylvie Forestier, and Eric de Chassey, L’ABCdaire de Chagall (Paris: Flammarion, 1995), pp. 70–71 (ill.), as Le Rabbin de Vitebsk, 1923.\n\nBaal-Teshuva, Jacob, Marc Chagall 1887–1985 (Kologne: Taschen, 1998), pp. 113–114 (ill.), as Praying Jew, 1923.\n\nMarc Chagall: Ursprung und Wege, exh. cat. (Munich: Prestel, 1998), p. 214, as Der Jude in Schwarz-Weiß.\n\nVoyages & rencontres de Marc Chagall, 1923–1939, exh. cat. (Nice, France: Musée National Message Biblique Marc Chagall, 1998), pp. 42 and 74 (ill.), as Le Juif en noir et blanc.\n\nWood, James N. and Debra N. Mancoff, Treasures from The Art Institute of Chicago (Chicago: The Art Institute of Chicago, 2000), p. 247 (ill.), as The Praying Jew, 1923 copy of 1914 work.\n\nHarshav, Benjamin, Marc Chagall and the Lost Jewish World: The Nature of Chagall’s Art and Iconography (New York: Rizzoli, 2006), pp. 137 and 141, no. 81, as The Praying Jew, 1923.",
+    "exhibition_history": "New York, Museum of Modern Art, Summer Exhibition: Paintings and Sculpture, June 7–October 30, 1932.\n\nChicago, Art Institute, A Century of Progress Exhibition of Paintings and Sculpture, June 1–November 1, 1933, p. 80, cat. 725, pl. LXXIV, as Portrait of a Rabbi, n.d.\n\nDallas Museum of Fine Arts, The Centennial Exposition, June 6–November 29, 1936, p. 42, cat. 21, as Portrait of a Rabbi, n.d.\n\nToledo Museum of Art, Contemporary Movements in European Painting, November 6–December 11, 1938, p. 16, cat. 13 (ill.), as Rabbi, 1914.\n\nNew York, Museum of Modern Art, 20th Century Portraits, December 9, 1942–January 24, 1943, pp. 22, 64, and 135, as The Rabbi of Vitebsk, 1914; traveled to the Baltimore Museum of Art, February 12–March 7, 1943, and the Worcester Art Museum, March 24–April 18, 1943. \n\nChicago, Arts Club, Marc Chagall, January 2–31, 1945, n.p., cat. 28, as The Rabbi, n.d.\n\nNew York, Museum of Modern Art, Marc Chagall, April 4–June 23, 1946, pp. 31, 34–35, 53, and 87, cat. 18 (ill.), as The Praying Jew (The Rabbi of Vitebsk), 1914; traveled to Chicago,  Art Institute, November 14, 1936–January 12, 1947.\n\nChicago, Art Institute, The Winterbotham Collection, May 23–June 22, 1947, pp. 5 and 9–10 (ill.), as the Rabbi of Vitebsk, 1914.\n\nParis, Musée National d'Art Moderne, Marc Chagall: Peintures 1908–1947, October 17–December 22, 1947, n.p., cat. 19, as Le Rabbin en Priere, n.d.; traveled to Amsterdam, Stedelijk Museum, December 8, 1947–January 12, 1948, p. 13, cat. 17, as De rabbijn in gebed, 1914. \n\nLondon, Arts Council of Great Britain, organiser, Marc Chagall, p. 7, cat. 18, pl. VIII, as The Praying Jew, 1914; traveled to London, Tate Gallery, February 4–29, 1948.\n\nDallas Museum of Fine Arts, The Winterbotham Collection of 20th Century European Paintings from the Art Institute of Chicago, October 8–November 5, 1949, no cat.\n\nCincinnati Art Museum, Cincinnati Biennial Festival of the Arts, Paintings: 1900–1925, February 2–March 4, 1951, n.p., cat. 7, as The Rabbi, 1914. \n\nBaltimore Museum of Art, Man and His Years, October 19–November 21, 1954, pp. 31–32, cat. 69 (ill.), as The Rabbi of Vitebsk, 1914.\n\nChicago, First National Bank, Chagall Window, September 12, 1972.\n\nLondon, Royal Academy of Arts, Chagall, 1985, hors. cat.; traveled to Philadelphia Museum of Art May 12–July 7, 1985 (Philadelphia only).\n\nNagaoka, Japan, Niigata Prefectural Museum of Modern Art, Masterworks of Modern Art from The Art Institute of Chicago, April 20–May 29, 1994, pp. 110–111, cat. 31 (ill.), as The Praying Jew, 1923 copy of a 1914 work; traveled to Nagoya, Aichi Prefectural Museum of Art, June 10–July 24, 1994; and Yokohama Museum of Art, August 6–September 25, 1994.\n\nNew York, The Jewish Museum, Russian Jewish Artists in a Century of Change, 1890-1990, September 21, 1995–January 28, 1996, pp. 158 and 248, fig. 17, as The Praying Jew (The Rabbi of Vitebsk), 1923.\n\nBerne, Museum of Fine Arts, Marc Chagall 1907–1917, 1995, hors. cat.; traveled to Los Angeles County Museum of Art, September 19, 1996–January 5, 1997 (Los Angeles only).\n\nFort Worth, Kimbell Art Museum, The Age of Picasso and Matisse: Modern Masters from the Art Institute of Chicago, Oct. 6, 2013–Feb. 16, 2014, no cat. no. ",
+    "provenance_text": "Sold through Pierre Loeb (1897–1964), Paris, to Patrick M. Sweeney, New York, 1924 [letter from James Sweeney, Sept. 1, 1975, in curatorial file]; sold to the Art Institute of Chicago, 1937.",
+    "edition": null,
+    "publishing_verification_level": "Web Cataloged",
+    "internal_department_id": 246,
+    "fiscal_year": 1940,
+    "fiscal_year_deaccession": null,
+    "is_public_domain": false,
+    "is_zoomable": true,
+    "max_zoom_window_size": 1280,
+    "copyright_notice": "© 2018 Artists Rights Society (ARS), New York / ADAGP, Paris",
+    "has_multimedia_resources": false,
+    "has_educational_resources": false,
+    "has_advanced_imaging": false,
+    "colorfulness": 15.493,
+    "color": {
+    "h": 51,
+    "l": 50,
+    "s": 7,
+    "percentage": 0.05441860815268184,
+    "population": 506
+    },
+    "latitude": null,
+    "longitude": null,
+    "latlon": null,
+    "is_on_view": false,
+    "on_loan_display": "<p>On loan to Musée National Marc Chagall for <i>Marc Chagall: The Cry of Freedom</i></p>",
+    "gallery_title": null,
+    "gallery_id": null,
+    "nomisma_id": null,
+    "artwork_type_title": "Painting",
+    "artwork_type_id": 1,
+    "department_title": "Modern Art",
+    "department_id": "PC-11",
+    "artist_id": 33909,
+    "artist_title": "Marc Chagall",
+    "alt_artist_ids": [],
+    "artist_ids": [
+    33909
+    ],
+    "artist_titles": [
+    "Marc Chagall"
+    ],
+    "category_ids": [
+    "PC-11"
+    ],
+    "category_titles": [
+    "Modern Art"
+    ],
+    "term_titles": [
+    "painting",
+    "Century of Progress",
+    "Modernism",
+    "prayer shawls",
+    "modern and contemporary art",
+    "world's fairs",
+    "Chicago World's Fairs",
+    "beards",
+    "praying",
+    "religious attire",
+    "religious figures",
+    "religion",
+    "Jewish people",
+    "Judaism",
+    "Joseph Winterbotham Collection"
+    ],
+    "style_id": "TM-5981",
+    "style_title": "Modernism",
+    "alt_style_ids": [],
+    "style_ids": [
+    "TM-5981"
+    ],
+    "style_titles": [
+    "Modernism"
+    ],
+    "classification_id": "TM-9",
+    "classification_title": "painting",
+    "alt_classification_ids": [
+    "TM-155"
+    ],
+    "classification_ids": [
+    "TM-9",
+    "TM-155"
+    ],
+    "classification_titles": [
+    "painting",
+    "modern and contemporary art"
+    ],
+    "subject_id": "TM-12169",
+    "alt_subject_ids": [
+    "TM-14273",
+    "TM-11299",
+    "TM-12176",
+    "TM-12347",
+    "TM-12734",
+    "TM-12732",
+    "TM-12554",
+    "TM-11421",
+    "TM-12731",
+    "TM-12592",
+    "TM-14413"
+    ],
+    "subject_ids": [
+    "TM-12169",
+    "TM-14273",
+    "TM-11299",
+    "TM-12176",
+    "TM-12347",
+    "TM-12734",
+    "TM-12732",
+    "TM-12554",
+    "TM-11421",
+    "TM-12731",
+    "TM-12592",
+    "TM-14413"
+    ],
+    "subject_titles": [
+    "Century of Progress",
+    "prayer shawls",
+    "world's fairs",
+    "Chicago World's Fairs",
+    "beards",
+    "praying",
+    "religious attire",
+    "religious figures",
+    "religion",
+    "Jewish people",
+    "Judaism",
+    "Joseph Winterbotham Collection"
+    ],
+    "material_id": null,
+    "alt_material_ids": [],
+    "material_ids": [],
+    "material_titles": [],
+    "technique_id": null,
+    "alt_technique_ids": [],
+    "technique_ids": [],
+    "technique_titles": [],
+    "theme_titles": [],
+    "image_id": "0b5057af-97c6-5eb8-7328-fa9cf46d8751",
+    "alt_image_ids": [],
+    "document_ids": [],
+    "sound_ids": [],
+    "video_ids": [],
+    "text_ids": [],
+    "section_ids": [],
+    "section_titles": [],
+    "site_ids": [],
+    "suggest_autocomplete_boosted": "The Praying Jew",
+    "suggest_autocomplete_all": [
+    {
+    "input": [
+    "1937.188"
+    ],
+    "contexts": {
+    "groupings": [
+    "accession"
+    ]
+    }
+    },
+    {
+    "input": [
+    "The Praying Jew"
+    ],
+    "weight": 20003,
+    "contexts": {
+    "groupings": [
+    "title"
+    ]
+    }
+    }
+    ],
+    "source_updated_at": "2024-08-18T00:30:13-05:00",
+    "updated_at": "2024-08-18T00:30:48-05:00",
+    "timestamp": "2024-08-18T13:58:34-05:00"
+    },
+    {
+    "id": 24306,
+    "api_model": "artworks",
+    "api_link": "https://api.artic.edu/api/v1/artworks/24306",
+    "is_boosted": true,
+    "title": "Blue and Green Music",
+    "alt_titles": null,
+    "thumbnail": {
+    "lqip": "data:image/gif;base64,R0lGODlhBAAFAPQAADdAPzpDPDxFPD9RPkFKTkRKT0RRSkdRV1trXkNddGR1YWVxcG+Fa3GFfW2EiH2MmICSkpqug4eloperpwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAUR4CE5ifBMzVBACxMgRKQARggAOw==",
+    "width": 6411,
+    "height": 7803,
+    "alt_text": "Abstract painting in predominant shades of blue, green, and black, featuring diagonal bands of color and undulating lines."
+    },
+    "main_reference_number": "1969.835",
+    "has_not_been_viewed_much": false,
+    "boost_rank": 60,
+    "date_start": 1919,
+    "date_end": 1921,
+    "date_display": "1919–21",
+    "date_qualifier_title": "c.",
+    "date_qualifier_id": 60,
+    "artist_display": "Georgia O'Keeffe (American, 1887–1986)",
+    "place_of_origin": "United States",
+    "description": "<p>Around 1920 Georgia O’Keeffe painted a number of oils exploring, as she later recalled, “the idea that music could be translated into something for the eye.” In <em>Blue and Green Music</em>, O’Keeffe’s colors and forms simultaneously suggest the natural world and evoke the experience of sound. She was drawn to the theories of the Russian Expressionist painter Vasily Kandinsky, who, in his 1912 text <em>Concerning the Spiritual in Art</em>, argued that visual artists should emulate music in order to achieve pure expression free of literary references.</p>\n",
+    "short_description": "Around 1920 O’Keeffe painted a number of oils exploring, as she later recalled, “the idea that music could be translated into something for the eye.” She was drawn to the theories of the Russian Expressionist painter Vasily Kandinsky, who, in his 1912 text <em>Concerning the Spiritual in Art</em>, argued that visual artists should emulate music in order to achieve pure expression free of literary references.",
+    "dimensions": "58.4 × 48.3 cm (23 × 19 in.)",
+    "dimensions_detail": [
+    {
+    "depth": null,
+    "width": 48,
+    "height": 58,
+    "diameter": null,
+    "clarification": null
+    }
+    ],
+    "medium_display": "Oil on canvas",
+    "inscriptions": null,
+    "credit_line": "Alfred Stieglitz Collection, gift of Georgia O'Keeffe",
+    "catalogue_display": "<p>Lynes 1999 344</p>",
+    "publication_history": "<em>Alfred Stieglitz Presents One Hundred Pictures: Oils, Water-colors, Pastels, Drawings by Georgia O'Keeffe, American</em>, exh. cat. (New York: The Anderson Galleries, 1923), no. 27.\n\nHerbert J. Seligmann, \"Why 'Modern' Art?\", <em>Vogue</em>, Oct. 15, 1923, 76–77 (ill.), as <em>Music</em>.\n\nFrank Jewett Mather et al., \"Georgia O'Keeffe\", in <em>The American Spirit in Art</em> vol. 12, <em>The Pageant of America</em>, ed. Ralph Henry Gabriel (New Haven, CT: Yale University Press, 1927), 155–78 (ill.), as <em>Music – Blue and Black and Green</em>.\n\nJames W. Lane and Leo Katz, <em>The Work of Georgia O'Keeffe: a Portfolio of Twelve Paintings</em>, (New York: Knight Publishers, 1937), pl. 6 (ill.), as <em>Music – Blue, Black and Green</em>. \n\nSheldon Cheney, <em>A Primer of Modern Art</em> (New York: Tudor Publishing Company, 1939), as <em>Music Black Blue and Green</em>. \n\nDaniel Catton Rich and Mitchell A. Wilder, <em>Georgia O’Keeffe</em>, exh. cat. (Chicago: Art Institute of Chicago, 1943), 11, cat. 5 (ill.).\n\nMilton W. Brown, <em>American Painting from the Armory Show to the Depression</em> (Princeton: Princton University Press, 1955), 126 (ill.). \n\nLloyd Goodrich and Doris Bry, <em>Georgia O’Keeffe</em> (New York: Praeger, 1970), 32, cat. 23 (ill.).\n\nTate Gallery, <em>Abstraction: Towards a New Art, Painting 1910–20</em>, exh. cat. (London: Tate Gallery Publications, 1980), cat. 438.\n\nCharles C. Eldredge, <em>Georgia O'Keeffe: American and Modern</em>, exh. cat. (New Haven, CT: Yale University Press, 1993), cat. 21.\n\nArt Institute of Chicago, <em>The Art Institute of Chicago: Twentieth–Century Painting and Sculpture, selected by James N. Wood and Teri J. Edelstein</em> (Chicago: Art Institute of Chicago, 1996), 46 (ill.).\n\nSharyn Rohlfsen Udall, <em>O'Keeffe and Texas</em>, exh. cat. (San Antonio, TX/New York: Marion Koogler McNay Art Museum/Harry N. Abrams), cat. 35.\n\nBarbara Buhler Lynes, <em>Georgia O'Keeffe: Catalogue Raisonné</em>, vol. 1 (Washington, DC: National Gallery of Art; Abiquiu, NM: Georgia O'Keeffe Foundation; New Haven: Yale University Press, 1999), no. 344.\n\nJudith A. Barter, et al., <em>American Modernism at the Art Institute of Chicago, From World War I to 1955</em> (Chicago: Art Institute of Chicago, 2009), 102–104, cat. 35 (ill.).\n\nTanya Barson, ed., <em>Georgia O'Keeffe</em>, exh. cat. (New York: Abrams, 2016), cat. 28.\n\nBarbara Schaefer and Anita Hachmann, eds., <em>Es war einmal in Amerika: 300 Jahre US-amerikanische Kunst [Once Upon a Time in America: Three Centuries of American Art]</em>, exh. cat. (Cologne: Wienand Verlag, 2019), cat. 105.\n\nMarta Ruiz del Árbol et al., <em>Georgia O'Keeffe</em> exh. cat. (Madrid: Museo Nacional Thyssen-Bornemisza, 2021), cat. 19 (ill.).",
+    "exhibition_history": "New York, The Anderson Galleries, <em>Alfred Stieglitz Presents One Hundred Pictures: Oils, Water–colors, Pastels, Drawings by Georgia O'Keeffe, American</em>, Mar. 3–16, 1923, no. 27.\n\nArt Institute of Chicago, <em>Georgia O’Keeffe</em>, Jan. 21–Feb. 22, 1943, cat. 5.\n\nNew York, Whitney Museum of American Art, <em>Georgia O’Keeffe</em>, Oct. 8–Nov. 29, 1970, cat. 23; the Art Institute of Chicago, Jan. 1–Feb. 7, 1971; San Francisco Museum of Art, Mar. 15–Apr. 30, 1971.\n\nLondon, Tate Gallery, <em>Abstraction: Towards a New Art, Painting 1910–20</em>, Feb. 5–Apr. 13, 1980, cat. 438.\n\nLondon, Hayward Gallery, <em>Georgia O'Keeffe: American and Modern</em>, Apr. 8–June 22, 1993; Mexico City, Palacio de Bellas Artes, July 15–Oct. 1, 1993, no. 21.\n\nSan Antonio, Texas, Marion Koogler McNay Art Museum, <em>O'Keeffe and Texas</em>, Jan. 27–Apr. 5, 1998, no. 35.\n\nWashington, DC, National Gallery of Art, <em>Alfred Stieglitz and Modern Art in America</em>, Jan. 28–Apr. 22, 2001.\n\nParis, Centre Georges Pompidou, <em>Sounds and Lights</em>, Sept. 22–Jan. 3, 2005. \n\nWashington, DC, Hirshhorn Museum and Sculpture Garden, <em>Visual Music, 1905–2005</em>; Museum of Contemporary Art, Los Angeles, Feb. 13–May 22, 2005, Hirshhorn Museum and Sculpture Garden, June 23–Sept. 11, 2005.\n\nWhitney Museum of American Art, <em>Georgia O'Keeffe: Abstraction</em>, Sept. 17, 2009–Jan. 17, 2010; Washington DC, Phillips Collection, Feb. 6–May 9, 2012; Santa Fe, NM, Georgia O'Keeffe Museum, May 28–Sept. 12, 2010 (New York only).\n\nLondon, Tate Modern, <em>Georgia O'Keeffe</em>, July 6–Oct. 30, 2016; Vienna, Bank Austria Kunstforum Wien, Dec. 7, 2016–Mar. 26, 2017; Toronto, Art Gallery of Ontario, Apr. 22–July 30, 2017 (London only) cat. 28.\n\nCologne, Germany, Wallraf–Richartz–Museum, <em>Es war einmal in Amerika – 300 Jahre US–amerikanische Kunst [Once Upon a Time in America: Three Centuries of American Art]</em>, Nov. 23, 2018–Mar. 24, 2019, cat. 105.\n\nMadrid, Museo Nacional Thyssen–Bornemisza, <em>Georgia O'Keeffe</em>, Apr. 20–Aug. 8, 2021, cat. 19 (ill.); Paris, Centre Georges Pompidou, Sept. 8–Dec. 6, 2021; Basel, Fondation Beyeler, Jan. 23–May 22, 2022.",
+    "provenance_text": "Georgia O’Keeffe (1887–1986), New York and New Mexico, 1919–21 [O’Keeffe moved permanently to New Mexico in 1949]; given through the Alfred Stieglitz Collection to the Art Institute of Chicago, 1969.",
+    "edition": null,
+    "publishing_verification_level": "Web Cataloged",
+    "internal_department_id": 21,
+    "fiscal_year": 1970,
+    "fiscal_year_deaccession": null,
+    "is_public_domain": false,
+    "is_zoomable": true,
+    "max_zoom_window_size": 1280,
+    "copyright_notice": "© The Art Institute of Chicago",
+    "has_multimedia_resources": false,
+    "has_educational_resources": true,
+    "has_advanced_imaging": false,
+    "colorfulness": 0,
+    "color": {
+    "h": 124,
+    "l": 48,
+    "s": 12,
+    "percentage": 0.0020309831679671255,
+    "population": 1016
+    },
+    "latitude": null,
+    "longitude": null,
+    "latlon": null,
+    "is_on_view": false,
+    "on_loan_display": "<p>On loan to Minneapolis Institute of Art in Minneapolis for <i>Permanent Collection</i></p>",
+    "gallery_title": null,
+    "gallery_id": null,
+    "nomisma_id": null,
+    "artwork_type_title": "Painting",
+    "artwork_type_id": 1,
+    "department_title": "Arts of the Americas",
+    "department_id": "PC-3",
+    "artist_id": 36062,
+    "artist_title": "Georgia O'Keeffe",
+    "alt_artist_ids": [],
+    "artist_ids": [
+    36062
+    ],
+    "artist_titles": [
+    "Georgia O'Keeffe"
+    ],
+    "category_ids": [
+    "PC-825",
+    "PC-154",
+    "PC-827",
+    "PC-3"
+    ],
+    "category_titles": [
+    "Women artists",
+    "Chicago Artists",
+    "SAIC Alumni and Faculty",
+    "Arts of the Americas"
+    ],
+    "term_titles": [
+    "oil on canvas",
+    "oil paint (paint)",
+    "Modernism",
+    "canvas",
+    "painting",
+    "modern and contemporary art"
+    ],
+    "style_id": "TM-5981",
+    "style_title": "Modernism",
+    "alt_style_ids": [],
+    "style_ids": [
+    "TM-5981"
+    ],
+    "style_titles": [
+    "Modernism"
+    ],
+    "classification_id": "TM-66",
+    "classification_title": "oil on canvas",
+    "alt_classification_ids": [
+    "TM-9",
+    "TM-155"
+    ],
+    "classification_ids": [
+    "TM-66",
+    "TM-9",
+    "TM-155"
+    ],
+    "classification_titles": [
+    "oil on canvas",
+    "painting",
+    "modern and contemporary art"
+    ],
+    "subject_id": null,
+    "alt_subject_ids": [],
+    "subject_ids": [],
+    "subject_titles": [],
+    "material_id": "TM-2451",
+    "alt_material_ids": [
+    "TM-3124"
+    ],
+    "material_ids": [
+    "TM-2451",
+    "TM-3124"
+    ],
+    "material_titles": [
+    "oil paint (paint)",
+    "canvas"
+    ],
+    "technique_id": null,
+    "alt_technique_ids": [],
+    "technique_ids": [],
+    "technique_titles": [],
+    "theme_titles": [
+    "Women artists",
+    "Chicago Artists",
+    "SAIC Alumni and Faculty"
+    ],
+    "image_id": "3ee54063-9d78-ee86-0103-b477d988a93f",
+    "alt_image_ids": [],
+    "document_ids": [
+    "92a80080-7a67-c6aa-5fd8-1a294240f49c"
+    ],
+    "sound_ids": [],
+    "video_ids": [],
+    "text_ids": [
+    "92a80080-7a67-c6aa-5fd8-1a294240f49c"
+    ],
+    "section_ids": [],
+    "section_titles": [],
+    "site_ids": [],
+    "suggest_autocomplete_boosted": "Blue and Green Music",
+    "suggest_autocomplete_all": [
+    {
+    "input": [
+    "1969.835"
+    ],
+    "contexts": {
+    "groupings": [
+    "accession"
+    ]
+    }
+    },
+    {
+    "input": [
+    "Blue and Green Music"
+    ],
+    "weight": 66140,
+    "contexts": {
+    "groupings": [
+    "title"
+    ]
+    }
+    }
+    ],
+    "source_updated_at": "2024-08-18T00:30:13-05:00",
+    "updated_at": "2024-08-18T00:30:47-05:00",
+    "timestamp": "2024-08-18T13:58:34-05:00"
+    },
+    {
+    "id": 26650,
+    "api_model": "artworks",
+    "api_link": "https://api.artic.edu/api/v1/artworks/26650",
+    "is_boosted": false,
+    "title": "On a Balcony",
+    "alt_titles": null,
+    "thumbnail": {
+    "lqip": "data:image/gif;base64,R0lGODlhBAAFAPQAAE1IO1FYTFRdUWJbTWNdTmRcUFxoYGJpYGdrZm53bHh7boF8a4V/cnuBgYuNg4KJioaPjJ2dkpialZmclwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURYEEMwMIohjMhwvFASdBIUQgAOw==",
+    "width": 9148,
+    "height": 11911,
+    "alt_text": "A work made of oil on canvas."
+    },
+    "main_reference_number": "1938.18",
+    "has_not_been_viewed_much": false,
+    "boost_rank": null,
+    "date_start": 1878,
+    "date_end": 1879,
+    "date_display": "1878–79",
+    "date_qualifier_title": "c.",
+    "date_qualifier_id": 60,
+    "artist_display": "Mary Cassatt (American, 1844–1926)",
+    "place_of_origin": "France",
+    "description": "<p>During her early Impressionist period, Mary Cassatt frequently captured the activities of middle- and upper-class women in society—at the theater or taking tea, for example. <em>On a Balcony</em>, which was shown in the 1880 Impressionist exhibition, appears to depict a woman in a public setting. However, the blue rail of the balcony, visible near the top of the painting, defines the enclosed space of a private garden, and the woman’s morning dress further indicates the intimacy of her location. Cassatt signaled the modernity of her subject through the woman’s choice of reading material: she peruses a newspaper rather than a novel, demonstrating that even at home, Cassatt’s subjects are connected to the contemporary world.</p>\n",
+    "short_description": null,
+    "dimensions": "89.9 × 65.2 cm (35 1/2 × 25 5/8 in.)",
+    "dimensions_detail": [
+    {
+    "depth": null,
+    "width": 65,
+    "height": 89,
+    "diameter": null,
+    "clarification": null
+    }
+    ],
+    "medium_display": "Oil on canvas",
+    "inscriptions": "Signed recto, bottom-left, on grass, in red pigment: \"Mary Cassatt.\".",
+    "credit_line": "Gift of Mrs. Albert J. Beveridge in memory of her aunt, Delia Spencer Field",
+    "catalogue_display": "<p>Breeskin 94</p>",
+    "publication_history": "“The Cover,” Bulletin of The Art Institute of Chicago 32, 4 (Apr./May 1938), 58, cover, ill.\n\n“Chicago: Two American Impressionist Works for the Art Institute,” Art News 36, 35 (May 28, 1938), 20 (ill.)\n\n“Carnegie Institute Presents Great Survey of American Painting,” Art Digest 15, 35 (May 28, 1938), 20 (ill.)\n\nForbes Watson, “The Land of the Free,” Magazine of Art 33, 11 (Nov. 1940), 622 (ill.).\n\nMargaret Breuning, Mary Cassatt, (New York, Hyperion Press, 1944) p. 20 (ill.).\n\nBulletin of The Art Institute of Chicago (Art Institute of Chicago, 1961), 69.\n\nFrederick A. Sweet, “Paintings and Pastels by Mary Cassatt in the Collections of the Art Institute and in Chicago Collections,” Museum Studies 2 (The Art Institute of Chicago, 1967), 33–49 (ill.).\n\nAdelyn D. Breeskin, Mary Cassatt, A Catalogue Raisonné, (Smithsonian Institution Press, 1970) cat. 94.\n\nJudith A. Barter, et al., American Arts at The Art Institute of Chicago: From Colonial Times to World War I (Art Institute of Chicago, 1998), 262–65, no. 127.\n\nJudith A. Barter, et al., <em>The Age of American Impressionism: Masterpieces from the Art Institute of Chicago</em> (Chicago: Art Institute of Chicago, 2011), cat. 21.",
+    "exhibition_history": "<em>Fifth Impressionist Exhibition</em>, 1880.\n\nNew York, Durand–Ruel Galleries, <em>Exhibition of Paintings and Pastels by Mary Cassatt</em>, Nov. 5–21, 1903, cat. 10, as <em>Femme Lisant dans un Jardin</em>.\n\nWashington, DC, Corcoran Gallery of Art, <em>Fifth Exhibition Oil Paintings by Contemporary American Artists</em>, Dec. 15, 1914–Jan. 24, 1915, cat. 73, as <em>Woman Reading in a Garden</em>.\n\nSan Francisco, Department of Fine Arts, <em>Panama–Pacific International Exposition</em>, June 2–Sept. 6, 1915, cat. 3006, as <em>Woman Reading in a Garden</em>.\n\nMA, Worcester Art Museum, <em>Exhibition of Paintings by Modern French Masters, lent by Durand–Ruel Galleries, New York, New York</em>, Dec. 2–30, 1917, cat. 1, as <em>Woman Reading in a Garden</em>.\n\nNew York, Durand–Ruel Galleries, <em>Exhibition of Paintings and Pastels by Mary Cassatt</em>, Nov. 15–Dec. 4, 1920, cat. 8.\n\nArt Gallery of Toronto, <em>Exhibition of Paintings by Contemporary American Artists</em>, Jan. 8–Feb. 6, 1921, cat. 17, as <em>Femme Lisant dans un Jardin</em>, 1880.\n\nPhiladelphia, Pennsylvania Museum of Art, <em>Memorial Exhibition of Works of Mary Cassatt</em>, Apr. 30–May 30, 1927, cat. 27, as <em>Portrait of the Artist’s Sister, Miss Lydia Cassatt in a Garden</em>, 1881.\n\nPittsburgh, Carnegie Institute, <em>A Memorial Exhibition of the Work of Mary Cassatt</em>, Mar. 15–Apr. 15, 1928, cat. 7 as <em>Girl Reading in a Garden</em>, or cat. 44, as <em>Woman Reading</em>.\n\nPittsburgh, Carnegie Institute, <em>Survey of American Painting</em>, Oct. 24–Dec. 15, 1940, cat. 199.\n\nDecatur Art Center, IL, <em>Masterpieces of European and American Art</em>, Mar. 4–25, 1945, cat. 2.\n\nSpringfield Art Association, IL, <em>Masterpieces of European and American Art</em>, Apr. 4–30, 1945, cat. 2.\n\nPasadena Art Institute, <em>Mary Cassatt and her Parisian Friends</em>, Oct. 16–Dec. 2, 1951, cat. 1. \n\nUtica, Munson–Williams–Proctor Institute, <em>Expatriates: Whistler, Cassatt, Sargent</em>, Jan. 4 –25, 1953, cat. 18.\n\nArt Institute of Chicago, <em>Sargent, Whistler and Mary Cassatt</em>, Jan. 14–Feb. 25, 1954, cat. 10, as <a href=\"https://www.artic.edu/exhibitions/3816/sargent-whistler-and-mary-cassatt\"><em>Woman Reading in a Garden</em></a>, 1880; New York City, Metropolitan Museum of Art, Mar. 24–May 23, 1954. \n\nGrand Rapids Art Gallery, MI, <em>Cassatt, Whistler, Sargent Exhibition</em>, Sept. 15–Oct. 15, 1955, cat. 5.\n\nPalm Beach, Society of the Four Arts, <em>John Singer Sargent and Mary Cassatt</em>, Mar. 7–Apr. 5, 1959, cat. 39.\n\nArt Gallery of Toronto, <em>American Painting, 1865–1905</em>, Jan. 6–Feb. 5, 1961, cat. 7; Winnipeg Art Gallery Association, Feb. 17–Mar. 12, 1961; Vancouver Art Gallery, Mar. 29–Apr. 23, 1961; New York, Whitney Museum of American Art, May 17–June 18, 1961.\n\nSouth Hadley, MA, Mount Holyoke College, <em>Women Artists in America Today</em>, Apr. 10–30, 1962, cat. 1.\n\nAlbi, France, Musée Toulouse–Lautrec, <em>Trésors Impressionnistes du Musée de Chicago</em>, June 27–Aug. 31, 1980, cat. 43.\n\nNew York, Coe Kerr Gallery, <em>Mary Cassatt, An American Observer</em>, Oct. 3–27, 1984.\n\nArt Institute of Chicago, <em>Mary Cassatt: Modern Woman</em>, Oct. 13, 1998–Jan. 10, 1999, Museum of Fine Arts, Boston, Feb. 14–May 9, 1999, Washington DC, National Gallery, June 6–Sept. 6, 1999, cat. 13.\n\nToronto, Art Gallery of Ontario, <em>Cassatt-McNicoll: Impressionists Between Worlds</em>, June 3–Sept. 4, 2023.",
+    "provenance_text": "The artist; with Durand-Ruel Galleries, New York, by 1903 [New York 1903, cat. 10; letter from Charles Durand-Ruel to Mary Carton, Dec. 14, 1978; copies in curatorial object file; inscription on stretcher: D.R. N.Y 2707]; sold to Mrs. Delia Spencer Field (1853–1937; also Mrs. Arthur John Caton, Mrs. Marshall Field), Washington, DC, 1922 [notation in Catherine Beveridge’s catalogue according to letter from Albert J. Beveridge, III, Jan. 30, 1979; Bulletin of the Art Institute of Chicago 1938, 58; handwritten note on incoming permanent receipt R6498, Jan. 14, 1938; copies in curatorial object file]; by descent to her niece, Catherine Eddy Beveridge (also Mrs. Albert J. Beveridge), Washington, DC [correspondence from Robert B. Harshe to Mrs. Beveridge, Dec. 10, 1937; copy in curatorial object file]; given to the Art Institute of Chicago, 1938.",
+    "edition": null,
+    "publishing_verification_level": "Web Cataloged",
+    "internal_department_id": 21,
+    "fiscal_year": null,
+    "fiscal_year_deaccession": null,
+    "is_public_domain": true,
+    "is_zoomable": true,
+    "max_zoom_window_size": -1,
+    "copyright_notice": null,
+    "has_multimedia_resources": false,
+    "has_educational_resources": false,
+    "has_advanced_imaging": false,
+    "colorfulness": 0,
+    "color": {
+    "h": 149,
+    "l": 44,
+    "s": 4,
+    "percentage": 0.0016730629739434989,
+    "population": 1823
+    },
+    "latitude": null,
+    "longitude": null,
+    "latlon": null,
+    "is_on_view": false,
+    "on_loan_display": "<p>On loan to Philadelphia Museum of Art in Philadelphia for <i>Mary Cassatt at Work</i></p>",
+    "gallery_title": null,
+    "gallery_id": null,
+    "nomisma_id": null,
+    "artwork_type_title": "Painting",
+    "artwork_type_id": 1,
+    "department_title": "Arts of the Americas",
+    "department_id": "PC-3",
+    "artist_id": 33890,
+    "artist_title": "Mary Cassatt",
+    "alt_artist_ids": [],
+    "artist_ids": [
+    33890
+    ],
+    "artist_titles": [
+    "Mary Cassatt"
+    ],
+    "category_ids": [
+    "PC-825",
+    "PC-3"
+    ],
+    "category_titles": [
+    "Women artists",
+    "Arts of the Americas"
+    ],
+    "term_titles": [
+    "painting",
+    "portraits",
+    "oil paint (paint)",
+    "Impressionism",
+    "organic material",
+    "american arts",
+    "everyday life (genre)",
+    "leisure",
+    "women",
+    "Modernism"
+    ],
+    "style_id": "TM-7543",
+    "style_title": "Impressionism",
+    "alt_style_ids": [
+    "TM-5981"
+    ],
+    "style_ids": [
+    "TM-7543",
+    "TM-5981"
+    ],
+    "style_titles": [
+    "Impressionism",
+    "Modernism"
+    ],
+    "classification_id": "TM-9",
+    "classification_title": "painting",
+    "alt_classification_ids": [
+    "TM-2191"
+    ],
+    "classification_ids": [
+    "TM-9",
+    "TM-2191"
+    ],
+    "classification_titles": [
+    "painting",
+    "american arts"
+    ],
+    "subject_id": "TM-8658",
+    "alt_subject_ids": [
+    "TM-10096",
+    "TM-10094",
+    "TM-8735"
+    ],
+    "subject_ids": [
+    "TM-8658",
+    "TM-10096",
+    "TM-10094",
+    "TM-8735"
+    ],
+    "subject_titles": [
+    "portraits",
+    "everyday life (genre)",
+    "leisure",
+    "women"
+    ],
+    "material_id": "TM-2451",
+    "alt_material_ids": [
+    "TM-2601"
+    ],
+    "material_ids": [
+    "TM-2451",
+    "TM-2601"
+    ],
+    "material_titles": [
+    "oil paint (paint)",
+    "organic material"
+    ],
+    "technique_id": null,
+    "alt_technique_ids": [],
+    "technique_ids": [],
+    "technique_titles": [],
+    "theme_titles": [
+    "Women artists"
+    ],
+    "image_id": "f0150d21-33ab-f6ea-0d4d-32d459f091fe",
+    "alt_image_ids": [
+    "c90c82f5-401d-2005-0fc1-498e09d52fcd"
+    ],
+    "document_ids": [
+    "c071fb03-11c8-5cf8-b798-be57a21535f7"
+    ],
+    "sound_ids": [],
+    "video_ids": [],
+    "text_ids": [
+    "c071fb03-11c8-5cf8-b798-be57a21535f7"
+    ],
+    "section_ids": [],
+    "section_titles": [],
+    "site_ids": [],
+    "suggest_autocomplete_all": [
+    {
+    "input": [
+    "1938.18"
+    ],
+    "contexts": {
+    "groupings": [
+    "accession"
+    ]
+    }
+    },
+    {
+    "input": [
+    "On a Balcony"
+    ],
+    "weight": 12344,
+    "contexts": {
+    "groupings": [
+    "title"
+    ]
+    }
+    }
+    ],
+    "source_updated_at": "2024-08-18T00:30:13-05:00",
+    "updated_at": "2024-08-18T00:30:46-05:00",
+    "timestamp": "2024-08-18T13:58:34-05:00"
+    },
+    {
+    "id": 25312,
+    "api_model": "artworks",
+    "api_link": "https://api.artic.edu/api/v1/artworks/25312",
+    "is_boosted": false,
+    "title": "Vessel Depicting K'awiil (God K) and Itzamna Exchanging Gifts",
+    "alt_titles": null,
+    "thumbnail": {
+    "lqip": "data:image/gif;base64,R0lGODlhBAAFAPQAAC4jHTYqJFI4LFw/LmJBLGBDM35jUrVmJ75nK8d3O9B9PIlpVMNzQstxQK+Da6SJe7yMdbSUhbqtqMi5tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURICAUAdEww6IkRoQczwQ5UggAOw==",
+    "width": 1921,
+    "height": 2250,
+    "alt_text": "A work made of ceramic and pigment."
+    },
+    "main_reference_number": "1966.161",
+    "has_not_been_viewed_much": false,
+    "boost_rank": null,
+    "date_start": 700,
+    "date_end": 800,
+    "date_display": "700–800 CE",
+    "date_qualifier_title": "",
+    "date_qualifier_id": null,
+    "artist_display": "Ceramist unknown (Late Classic Maya)\nGuatemala",
+    "place_of_origin": "Guatemala",
+    "description": null,
+    "short_description": null,
+    "dimensions": "21.3 × 20.3 cm (8 3/8 × 8 in.)",
+    "dimensions_detail": [
+    {
+    "depth": null,
+    "width": 20,
+    "height": 21,
+    "diameter": null,
+    "clarification": null
+    }
+    ],
+    "medium_display": "Ceramic and pigment",
+    "inscriptions": null,
+    "credit_line": "Ada Turnbull Hertle Fund",
+    "catalogue_display": null,
+    "publication_history": "<em>The Art Institute of Chicago Annual Report 1965-1966</em> (Chicago: Art Institute of Chicago), 20 (ill.)\n\nAllen Wardwell, \"Two Painted Maya Ceramics,\" <em>Calendar of the Art Institute of Chicago</em> 61, no. 3 (May 1967): cover, 1–4, fig. 1, 4 (ill.).\n\nAllen Wardwell, \"Mayan Treasures at the Art Institute of Chicago,\" <em>Apollo: The International Magazine of Arts</em> 95 (June 1972): 486, 488, fig. 1, 2 (ill).\n\nJohn Maxon, <em>The Art Institute of Chicago</em> (London: Thames and Hudson, 1987), (ill.).",
+    "exhibition_history": null,
+    "provenance_text": "Everett Rassiga, Inc., New York, by Apr. 11, 1966 [incoming receipt RX5485, Apr. 11, 1966; copy in curatorial object file]; sold to the Art Institute of Chicago, 1966",
+    "edition": null,
+    "publishing_verification_level": "Web Cataloged",
+    "internal_department_id": 21,
+    "fiscal_year": 1966,
+    "fiscal_year_deaccession": null,
+    "is_public_domain": true,
+    "is_zoomable": true,
+    "max_zoom_window_size": -1,
+    "copyright_notice": null,
+    "has_multimedia_resources": false,
+    "has_educational_resources": false,
+    "has_advanced_imaging": false,
+    "colorfulness": 78.5631,
+    "color": null,
+    "latitude": null,
+    "longitude": null,
+    "latlon": null,
+    "is_on_view": false,
+    "on_loan_display": "<p>On loan</p>",
+    "gallery_title": null,
+    "gallery_id": null,
+    "nomisma_id": null,
+    "artwork_type_title": "Vessel",
+    "artwork_type_id": 23,
+    "department_title": "Arts of the Americas",
+    "department_id": "PC-3",
+    "artist_id": 44741,
+    "artist_title": "Maya",
+    "alt_artist_ids": [],
+    "artist_ids": [
+    44741
+    ],
+    "artist_titles": [
+    "Maya"
+    ],
+    "category_ids": [
+    "PC-3",
+    "PC-829"
+    ],
+    "category_titles": [
+    "Arts of the Americas",
+    "Latin American"
+    ],
+    "term_titles": [
+    "earthenware",
+    "ceramic",
+    "maya",
+    "inorganic material",
+    "pigment",
+    "colorant",
+    "classic",
+    "mesoamerican",
+    "Pre-Columbian",
+    "americas",
+    "mayan",
+    "ceramics",
+    "vessel",
+    "art of the americas",
+    "Arts of the Americas"
+    ],
+    "style_id": "TM-12854",
+    "style_title": "maya",
+    "alt_style_ids": [
+    "TM-6591",
+    "TM-6522",
+    "TM-6516",
+    "TM-6515",
+    "TM-7699",
+    "TM-13488"
+    ],
+    "style_ids": [
+    "TM-12854",
+    "TM-6591",
+    "TM-6522",
+    "TM-6516",
+    "TM-6515",
+    "TM-7699",
+    "TM-13488"
+    ],
+    "style_titles": [
+    "maya",
+    "classic",
+    "mesoamerican",
+    "Pre-Columbian",
+    "americas",
+    "mayan",
+    "Arts of the Americas"
+    ],
+    "classification_id": "TM-74",
+    "classification_title": "earthenware",
+    "alt_classification_ids": [
+    "TM-46",
+    "TM-27",
+    "TM-13487"
+    ],
+    "classification_ids": [
+    "TM-74",
+    "TM-46",
+    "TM-27",
+    "TM-13487"
+    ],
+    "classification_titles": [
+    "earthenware",
+    "ceramics",
+    "vessel",
+    "art of the americas"
+    ],
+    "subject_id": null,
+    "alt_subject_ids": [],
+    "subject_ids": [],
+    "subject_titles": [],
+    "material_id": "TM-2432",
+    "alt_material_ids": [
+    "TM-2600",
+    "TM-2509",
+    "TM-3239"
+    ],
+    "material_ids": [
+    "TM-2432",
+    "TM-2600",
+    "TM-2509",
+    "TM-3239"
+    ],
+    "material_titles": [
+    "ceramic",
+    "inorganic material",
+    "pigment",
+    "colorant"
+    ],
+    "technique_id": null,
+    "alt_technique_ids": [],
+    "technique_ids": [],
+    "technique_titles": [],
+    "theme_titles": [
+    "Latin American"
+    ],
+    "image_id": "3e5e1700-1cef-8ac8-06a9-6dc5cc723e3a",
+    "alt_image_ids": [],
+    "document_ids": [],
+    "sound_ids": [],
+    "video_ids": [],
+    "text_ids": [],
+    "section_ids": [],
+    "section_titles": [],
+    "site_ids": [],
+    "suggest_autocomplete_all": [
+    {
+    "input": [
+    "1966.161"
+    ],
+    "contexts": {
+    "groupings": [
+    "accession"
+    ]
+    }
+    },
+    {
+    "input": [
+    "Vessel Depicting K'awiil (God K) and Itzamna Exchanging Gifts"
+    ],
+    "weight": 489,
+    "contexts": {
+    "groupings": [
+    "title"
+    ]
+    }
+    }
+    ],
+    "source_updated_at": "2024-08-18T00:30:13-05:00",
+    "updated_at": "2024-08-18T00:30:46-05:00",
+    "timestamp": "2024-08-18T13:58:35-05:00"
+    },
+    {
+    "id": 26693,
+    "api_model": "artworks",
+    "api_link": "https://api.artic.edu/api/v1/artworks/26693",
+    "is_boosted": false,
+    "title": "Under the Lamp",
+    "alt_titles": null,
+    "thumbnail": {
+    "lqip": "data:image/gif;base64,R0lGODlhBwAFAPUAAC0nITQtJUU9M0tEOUtEOlVMQVtSSGBWR2xiVnFnV3ZsXX92aIuBcJuLc5SKeaCRe62hjrKiibaqlLuumMO2ntPErOPRtOXVuPPkzPLlzfbnzvbnz/jp0fjq0fvs0vvs0/vt0/3t1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAHAAUAAAYhQI+DMVlAOKBEgAAwhDoKwaCA+GQijUPjgdFcKBJLZRMEADs=",
+    "width": 3774,
+    "height": 2782,
+    "alt_text": "A work made of soft ground etching and aquatint in black on cream wove paper."
+    },
+    "main_reference_number": "1938.33",
+    "has_not_been_viewed_much": false,
+    "boost_rank": null,
+    "date_start": 1882,
+    "date_end": 1882,
+    "date_display": "c. 1882",
+    "date_qualifier_title": "Made",
+    "date_qualifier_id": 4,
+    "artist_display": "Mary Cassatt\nAmerican, 1844-1926",
+    "place_of_origin": "United States",
+    "description": null,
+    "short_description": null,
+    "dimensions": "Image/plate: 19.2 × 21.8 cm (7 9/16 × 8 5/8 in.); Sheet: 23.7 × 32.1 cm (9 3/8 × 12 11/16 in.)",
+    "dimensions_detail": [
+    {
+    "depth": null,
+    "width": 21,
+    "height": 19,
+    "diameter": null,
+    "clarification": "Image/plate"
+    },
+    {
+    "depth": null,
+    "width": 32,
+    "height": 23,
+    "diameter": null,
+    "clarification": "Sheet"
+    }
+    ],
+    "medium_display": "Soft ground etching and aquatint in black on cream wove paper",
+    "inscriptions": null,
+    "credit_line": "Albert H. Wolf Memorial Collection",
+    "catalogue_display": "<p>Breeskin 71 I/II</p><p>Breeskin (1948) 71 I/II</p>",
+    "publication_history": null,
+    "exhibition_history": null,
+    "provenance_text": null,
+    "edition": null,
+    "publishing_verification_level": "Web Basic",
+    "internal_department_id": 3,
+    "fiscal_year": 1938,
+    "fiscal_year_deaccession": null,
+    "is_public_domain": true,
+    "is_zoomable": true,
+    "max_zoom_window_size": -1,
+    "copyright_notice": null,
+    "has_multimedia_resources": false,
+    "has_educational_resources": false,
+    "has_advanced_imaging": false,
+    "colorfulness": 23.2419,
+    "color": {
+    "h": 35,
+    "l": 91,
+    "s": 91,
+    "percentage": 0.53390333961792,
+    "population": 2795
+    },
+    "latitude": null,
+    "longitude": null,
+    "latlon": null,
+    "is_on_view": false,
+    "on_loan_display": "<p>On loan to Philadelphia Museum of Art in Philadelphia for <i>Mary Cassatt at Work</i></p>",
+    "gallery_title": null,
+    "gallery_id": null,
+    "nomisma_id": null,
+    "artwork_type_title": "Print",
+    "artwork_type_id": 18,
+    "department_title": "Prints and Drawings",
+    "department_id": "PC-13",
+    "artist_id": 33890,
+    "artist_title": "Mary Cassatt",
+    "alt_artist_ids": [],
+    "artist_ids": [
+    33890
+    ],
+    "artist_titles": [
+    "Mary Cassatt"
+    ],
+    "category_ids": [
+    "PC-13",
+    "PC-825"
+    ],
+    "category_titles": [
+    "Prints and Drawings",
+    "Women artists"
+    ],
+    "term_titles": [
+    "aquatint",
+    "Impressionism",
+    "leisure",
+    "paper (fiber product)",
+    "etching ground",
+    "print",
+    "prints and drawing",
+    "domestic scenes",
+    "families",
+    "night scenes",
+    "everyday life (genre)",
+    "women"
+    ],
+    "style_id": "TM-7543",
+    "style_title": "Impressionism",
+    "alt_style_ids": [],
+    "style_ids": [
+    "TM-7543"
+    ],
+    "style_titles": [
+    "Impressionism"
+    ],
+    "classification_id": "TM-147",
+    "classification_title": "aquatint",
+    "alt_classification_ids": [
+    "TM-17",
+    "TM-4"
+    ],
+    "classification_ids": [
+    "TM-147",
+    "TM-17",
+    "TM-4"
+    ],
+    "classification_titles": [
+    "aquatint",
+    "print",
+    "prints and drawing"
+    ],
+    "subject_id": "TM-10094",
+    "alt_subject_ids": [
+    "TM-10120",
+    "TM-10123",
+    "TM-8868",
+    "TM-10096",
+    "TM-8735"
+    ],
+    "subject_ids": [
+    "TM-10094",
+    "TM-10120",
+    "TM-10123",
+    "TM-8868",
+    "TM-10096",
+    "TM-8735"
+    ],
+    "subject_titles": [
+    "leisure",
+    "domestic scenes",
+    "families",
+    "night scenes",
+    "everyday life (genre)",
+    "women"
+    ],
+    "material_id": "TM-2982",
+    "alt_material_ids": [
+    "TM-3461"
+    ],
+    "material_ids": [
+    "TM-2982",
+    "TM-3461"
+    ],
+    "material_titles": [
+    "paper (fiber product)",
+    "etching ground"
+    ],
+    "technique_id": null,
+    "alt_technique_ids": [],
+    "technique_ids": [],
+    "technique_titles": [],
+    "theme_titles": [
+    "Women artists"
+    ],
+    "image_id": "21cfd347-e6aa-6a11-f1e7-bf84a4e87a3d",
+    "alt_image_ids": [
+    "540fa7a2-844a-7355-e876-33f05b28f85a"
+    ],
+    "document_ids": [],
+    "sound_ids": [],
+    "video_ids": [],
+    "text_ids": [],
+    "section_ids": [],
+    "section_titles": [],
+    "site_ids": [],
+    "suggest_autocomplete_all": [
+    {
+    "input": [
+    "1938.33"
+    ],
+    "contexts": {
+    "groupings": [
+    "accession"
+    ]
+    }
+    },
+    {
+    "input": [
+    "Under the Lamp"
+    ],
+    "weight": 850,
+    "contexts": {
+    "groupings": [
+    "title"
+    ]
+    }
+    }
+    ],
+    "source_updated_at": "2024-08-18T00:30:13-05:00",
+    "updated_at": "2024-08-18T00:30:45-05:00",
+    "timestamp": "2024-08-18T13:58:35-05:00"
+    },
+    {
+    "id": 27410,
+    "api_model": "artworks",
+    "api_link": "https://api.artic.edu/api/v1/artworks/27410",
+    "is_boosted": false,
+    "title": "Group",
+    "alt_titles": null,
+    "thumbnail": {
+    "lqip": "data:image/gif;base64,R0lGODlhBwAFAPUAAGlTP3BdTHRgT3thSm9hVWZmZWlpaGpqamxtbWxtbm9vbnJuaXFua3Fzc3R1dHp1cHh5eXl5eYFlTId2Z496ZoCBgYKDg4CDhJWOiJuSiZyVjpeWlpeYmJubnJyen7Kuqrq6ubu8vby9vgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAHAAUAAAYhwANisUAcCg5IAPBoICwWioRwgXg6gsFkwxGBNJjMJxQEADs=",
+    "width": 7717,
+    "height": 5788,
+    "alt_text": "A work made of terracotta."
+    },
+    "main_reference_number": "1938.252",
+    "has_not_been_viewed_much": true,
+    "boost_rank": null,
+    "date_start": 1903,
+    "date_end": 1911,
+    "date_display": "1903–11",
+    "date_qualifier_title": "",
+    "date_qualifier_id": null,
+    "artist_display": "George Grey Barnard (American, 1863–1938)",
+    "place_of_origin": "United States",
+    "description": null,
+    "short_description": null,
+    "dimensions": "14 × 14.5 × 9.8 cm (5 9/16 × 5 3/4 × 3 7/8 in.)",
+    "dimensions_detail": [
+    {
+    "depth": 9,
+    "width": 14,
+    "height": 14,
+    "diameter": null,
+    "clarification": null
+    }
+    ],
+    "medium_display": "Terracotta",
+    "inscriptions": null,
+    "credit_line": "Gift of Caroline D. Wade",
+    "catalogue_display": null,
+    "publication_history": null,
+    "exhibition_history": "IL, Kankakee County Museum, <em>George Barnard</em>, Oct. 1, 1991–Oct. 1, 1992.",
+    "provenance_text": "The artist, Moret-sur-Loing, France, between 1903 and 1911 [this and the following according to label affixed to bottom of the work]; given to Caroline D. Wade (1857–1947; also Caroline Dupee Wade; Carrie D. Wade), Chicago, probably by 1911 [incoming receipt R6623; May 24, 1938; copy in curatorial object file]; given to the Art Institute of Chicago, 1938.",
+    "edition": null,
+    "publishing_verification_level": "Web Cataloged",
+    "internal_department_id": 21,
+    "fiscal_year": 1938,
+    "fiscal_year_deaccession": null,
+    "is_public_domain": false,
+    "is_zoomable": false,
+    "max_zoom_window_size": 843,
+    "copyright_notice": null,
+    "has_multimedia_resources": false,
+    "has_educational_resources": false,
+    "has_advanced_imaging": false,
+    "colorfulness": 0,
+    "color": {
+    "h": 111,
+    "l": 42,
+    "s": 0,
+    "percentage": 0.005391125723469818,
+    "population": 2408
+    },
+    "latitude": null,
+    "longitude": null,
+    "latlon": null,
+    "is_on_view": false,
+    "on_loan_display": null,
+    "gallery_title": null,
+    "gallery_id": null,
+    "nomisma_id": null,
+    "artwork_type_title": "Sculpture",
+    "artwork_type_id": 3,
+    "department_title": "Arts of the Americas",
+    "department_id": "PC-3",
+    "artist_id": 44976,
+    "artist_title": "George Grey Barnard",
+    "alt_artist_ids": [],
+    "artist_ids": [
+    44976
+    ],
+    "artist_titles": [
+    "George Grey Barnard"
+    ],
+    "category_ids": [
+    "PC-3"
+    ],
+    "category_titles": [
+    "Arts of the Americas"
+    ],
+    "term_titles": [
+    "sculpture",
+    "terracotta",
+    "figures",
+    "sculpting",
+    "20th Century",
+    "children",
+    "woman",
+    "modern and contemporary art"
+    ],
+    "style_id": "TM-13130",
+    "style_title": "20th Century",
+    "alt_style_ids": [],
+    "style_ids": [
+    "TM-13130"
+    ],
+    "style_titles": [
+    "20th Century"
+    ],
+    "classification_id": "TM-13",
+    "classification_title": "sculpture",
+    "alt_classification_ids": [
+    "TM-155"
+    ],
+    "classification_ids": [
+    "TM-13",
+    "TM-155"
+    ],
+    "classification_titles": [
+    "sculpture",
+    "modern and contemporary art"
+    ],
+    "subject_id": "TM-15161",
+    "alt_subject_ids": [
+    "TM-10118",
+    "TM-13813"
+    ],
+    "subject_ids": [
+    "TM-15161",
+    "TM-10118",
+    "TM-13813"
+    ],
+    "subject_titles": [
+    "figures",
+    "children",
+    "woman"
+    ],
+    "material_id": "TM-2433",
+    "alt_material_ids": [],
+    "material_ids": [
+    "TM-2433"
+    ],
+    "material_titles": [
+    "terracotta"
+    ],
+    "technique_id": "TM-12999",
+    "alt_technique_ids": [],
+    "technique_ids": [
+    "TM-12999"
+    ],
+    "technique_titles": [
+    "sculpting"
+    ],
+    "theme_titles": [],
+    "image_id": "080b3b8f-4763-b4ec-02fe-7293ac1771e9",
+    "alt_image_ids": [
+    "879edf03-2402-0b44-5b41-8e775238a565",
+    "d37f91ab-b3d3-3b1e-cfc2-acf427795cd1",
+    "c9140472-8213-2d07-799f-95fcf3e0af35"
+    ],
+    "document_ids": [],
+    "sound_ids": [],
+    "video_ids": [],
+    "text_ids": [],
+    "section_ids": [],
+    "section_titles": [],
+    "site_ids": [],
+    "suggest_autocomplete_all": [
+    {
+    "input": [
+    "1938.252"
+    ],
+    "contexts": {
+    "groupings": [
+    "accession"
+    ]
+    }
+    },
+    {
+    "input": [
+    "Group"
+    ],
+    "weight": 111,
+    "contexts": {
+    "groupings": [
+    "title"
+    ]
+    }
+    }
+    ],
+    "source_updated_at": "2024-08-18T00:30:13-05:00",
+    "updated_at": "2024-08-18T00:30:44-05:00",
+    "timestamp": "2024-08-18T13:58:35-05:00"
+    },
+    {
+    "id": 27404,
+    "api_model": "artworks",
+    "api_link": "https://api.artic.edu/api/v1/artworks/27404",
+    "is_boosted": false,
+    "title": "Waiting",
+    "alt_titles": null,
+    "thumbnail": {
+    "lqip": "data:image/gif;base64,R0lGODlhAwAFAPMAAHFiUI+BbJWJeKqej7erm8K3p8e7q8y/rtLFs9LHutzRxOjdz/Hn2vPp3AAAAAAAACH5BAAAAAAALAAAAAADAAUAAAQLcCV1wECBFGFYYxEAOw==",
+    "width": 1960,
+    "height": 3386,
+    "alt_text": "A work made of soft ground etching and aquatint in black on buff wove paper."
+    },
+    "main_reference_number": "1967.256",
+    "has_not_been_viewed_much": false,
+    "boost_rank": null,
+    "date_start": 1879,
+    "date_end": 1880,
+    "date_display": "1879–80",
+    "date_qualifier_title": "Made",
+    "date_qualifier_id": 4,
+    "artist_display": "Mary Cassatt\nAmerican, 1844-1926",
+    "place_of_origin": "United States",
+    "description": null,
+    "short_description": null,
+    "dimensions": "Image/plate: 22 × 14.1 cm (8 11/16 × 5 9/16 in.); Sheet: 36.1 × 20.6 cm (14 1/4 × 8 1/8 in.)",
+    "dimensions_detail": [
+    {
+    "depth": null,
+    "width": 14,
+    "height": 22,
+    "diameter": null,
+    "clarification": "Image/plate"
+    },
+    {
+    "depth": null,
+    "width": 20,
+    "height": 36,
+    "diameter": null,
+    "clarification": "Sheet"
+    }
+    ],
+    "medium_display": "Soft ground etching and aquatint in black on buff wove paper",
+    "inscriptions": null,
+    "credit_line": "Potter Palmer Collection Fund",
+    "catalogue_display": "<p>Breeskin 11 III/IV</p><p>Breeskin (1948) 11 III/IV</p>",
+    "publication_history": null,
+    "exhibition_history": null,
+    "provenance_text": null,
+    "edition": null,
+    "publishing_verification_level": "Web Basic",
+    "internal_department_id": 3,
+    "fiscal_year": 1967,
+    "fiscal_year_deaccession": null,
+    "is_public_domain": true,
+    "is_zoomable": true,
+    "max_zoom_window_size": -1,
+    "copyright_notice": null,
+    "has_multimedia_resources": false,
+    "has_educational_resources": false,
+    "has_advanced_imaging": false,
+    "colorfulness": 14.2952,
+    "color": {
+    "h": 38,
+    "l": 25,
+    "s": 21,
+    "percentage": 0.006405531784816294,
+    "population": 79
+    },
+    "latitude": null,
+    "longitude": null,
+    "latlon": null,
+    "is_on_view": false,
+    "on_loan_display": "<p>On loan to Philadelphia Museum of Art in Philadelphia for <i>Mary Cassatt at Work</i></p>",
+    "gallery_title": null,
+    "gallery_id": null,
+    "nomisma_id": null,
+    "artwork_type_title": "Print",
+    "artwork_type_id": 18,
+    "department_title": "Prints and Drawings",
+    "department_id": "PC-13",
+    "artist_id": 33890,
+    "artist_title": "Mary Cassatt",
+    "alt_artist_ids": [],
+    "artist_ids": [
+    33890
+    ],
+    "artist_titles": [
+    "Mary Cassatt"
+    ],
+    "category_ids": [
+    "PC-13",
+    "PC-825"
+    ],
+    "category_titles": [
+    "Prints and Drawings",
+    "Women artists"
+    ],
+    "term_titles": [
+    "print",
+    "paper (fiber product)",
+    "ground (material)",
+    "prints and drawing"
+    ],
+    "style_id": null,
+    "style_title": null,
+    "alt_style_ids": [],
+    "style_ids": [],
+    "style_titles": [],
+    "classification_id": "TM-17",
+    "classification_title": "print",
+    "alt_classification_ids": [
+    "TM-4"
+    ],
+    "classification_ids": [
+    "TM-17",
+    "TM-4"
+    ],
+    "classification_titles": [
+    "print",
+    "prints and drawing"
+    ],
+    "subject_id": null,
+    "alt_subject_ids": [],
+    "subject_ids": [],
+    "subject_titles": [],
+    "material_id": "TM-2982",
+    "alt_material_ids": [
+    "TM-2424"
+    ],
+    "material_ids": [
+    "TM-2982",
+    "TM-2424"
+    ],
+    "material_titles": [
+    "paper (fiber product)",
+    "ground (material)"
+    ],
+    "technique_id": null,
+    "alt_technique_ids": [],
+    "technique_ids": [],
+    "technique_titles": [],
+    "theme_titles": [
+    "Women artists"
+    ],
+    "image_id": "f30ac705-0704-a9ce-2dd4-d1aaad25f8f6",
+    "alt_image_ids": [
+    "e015ca69-03f6-459d-24a4-3aee86597080"
+    ],
+    "document_ids": [],
+    "sound_ids": [],
+    "video_ids": [],
+    "text_ids": [],
+    "section_ids": [],
+    "section_titles": [],
+    "site_ids": [],
+    "suggest_autocomplete_all": [
+    {
+    "input": [
+    "1967.256"
+    ],
+    "contexts": {
+    "groupings": [
+    "accession"
+    ]
+    }
+    },
+    {
+    "input": [
+    "Waiting"
+    ],
+    "weight": 409,
+    "contexts": {
+    "groupings": [
+    "title"
+    ]
+    }
+    }
+    ],
+    "source_updated_at": "2024-08-18T00:30:13-05:00",
+    "updated_at": "2024-08-18T00:30:44-05:00",
+    "timestamp": "2024-08-18T13:58:35-05:00"
+    },
+    {
+    "id": 29285,
+    "api_model": "artworks",
+    "api_link": "https://api.artic.edu/api/v1/artworks/29285",
+    "is_boosted": false,
+    "title": "Untitled",
+    "alt_titles": null,
+    "thumbnail": {
+    "lqip": "data:image/gif;base64,R0lGODlhBAAFAPQAAEVFQUxMSU5OSk5OS1RUUFVUUltbWWJhX2NjYGNjYWtraHZ3dHh4dXl5dn+AfYaGg4mKh4+QjZubmQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURIBJAEjBEjOAshPIYwVEkTQgAOw==",
+    "width": 2436,
+    "height": 3100,
+    "alt_text": "A work made of gelatin silver print."
+    },
+    "main_reference_number": "1968.267",
+    "has_not_been_viewed_much": true,
+    "boost_rank": null,
+    "date_start": 1935,
+    "date_end": 1968,
+    "date_display": "1935/68",
+    "date_qualifier_title": "Made",
+    "date_qualifier_id": 4,
+    "artist_display": "Béla Kalman\nAmerican, born Hungary, 1921–2011",
+    "place_of_origin": "United States",
+    "description": null,
+    "short_description": null,
+    "dimensions": "Image/paper: 34 × 26.7 cm (13 7/16 × 10 9/16 in.); Mount: 56 × 45.9 cm (22 1/16 × 18 1/8 in.)",
+    "dimensions_detail": [
+    {
+    "depth": null,
+    "width": 26,
+    "height": 34,
+    "diameter": null,
+    "clarification": "Image/paper"
+    },
+    {
+    "depth": null,
+    "width": 45,
+    "height": 56,
+    "diameter": null,
+    "clarification": "Mount"
+    }
+    ],
+    "medium_display": "Gelatin silver print",
+    "inscriptions": null,
+    "credit_line": "Purchased with funds provided by an anonymous donor",
+    "catalogue_display": null,
+    "publication_history": null,
+    "exhibition_history": null,
+    "provenance_text": null,
+    "edition": null,
+    "publishing_verification_level": "Web Basic",
+    "internal_department_id": 20,
+    "fiscal_year": null,
+    "fiscal_year_deaccession": null,
+    "is_public_domain": false,
+    "is_zoomable": false,
+    "max_zoom_window_size": 843,
+    "copyright_notice": null,
+    "has_multimedia_resources": false,
+    "has_educational_resources": false,
+    "has_advanced_imaging": false,
+    "colorfulness": 3.3703,
+    "color": {
+    "h": 64,
+    "l": 53,
+    "s": 1,
+    "percentage": 0.010987852816590312,
+    "population": 98
+    },
+    "latitude": null,
+    "longitude": null,
+    "latlon": null,
+    "is_on_view": false,
+    "on_loan_display": "<p>On loan to Museum of Fine Arts, Budapest in Budapest for <i>American, born Hungary</i></p>",
+    "gallery_title": null,
+    "gallery_id": null,
+    "nomisma_id": null,
+    "artwork_type_title": "Photograph",
+    "artwork_type_id": 2,
+    "department_title": "Photography and Media",
+    "department_id": "PC-12",
+    "artist_id": 13365,
+    "artist_title": "Bela Kalman",
+    "alt_artist_ids": [],
+    "artist_ids": [
+    13365
+    ],
+    "artist_titles": [
+    "Bela Kalman"
+    ],
+    "category_ids": [
+    "PC-12",
+    "PC-800"
+    ],
+    "category_titles": [
+    "Photography and Media",
+    "Collected by Hugh Edwards"
+    ],
+    "term_titles": [
+    "gelatin silver (developing-out-paper) pr",
+    "photographic paper",
+    "Collected by Hugh Edwards",
+    "black-and-white photography",
+    "photographic process",
+    "photography",
+    "photograph",
+    "photographic processes",
+    "photographic techniques",
+    "photography"
+    ],
+    "style_id": null,
+    "style_title": null,
+    "alt_style_ids": [],
+    "style_ids": [],
+    "style_titles": [],
+    "classification_id": "TM-213",
+    "classification_title": "gelatin silver (developing-out-paper) pr",
+    "alt_classification_ids": [
+    "TM-68",
+    "TM-67",
+    "TM-240"
+    ],
+    "classification_ids": [
+    "TM-213",
+    "TM-68",
+    "TM-67",
+    "TM-240"
+    ],
+    "classification_titles": [
+    "gelatin silver (developing-out-paper) pr",
+    "photographic process",
+    "photography",
+    "photograph"
+    ],
+    "subject_id": "TM-13177",
+    "alt_subject_ids": [],
+    "subject_ids": [
+    "TM-13177"
+    ],
+    "subject_titles": [
+    "Collected by Hugh Edwards"
+    ],
+    "material_id": "TM-3046",
+    "alt_material_ids": [],
+    "material_ids": [
+    "TM-3046"
+    ],
+    "material_titles": [
+    "photographic paper"
+    ],
+    "technique_id": "TM-12089",
+    "alt_technique_ids": [
+    "TM-3937",
+    "TM-3977",
+    "TM-3978"
+    ],
+    "technique_ids": [
+    "TM-12089",
+    "TM-3937",
+    "TM-3977",
+    "TM-3978"
+    ],
+    "technique_titles": [
+    "black-and-white photography",
+    "photographic processes",
+    "photographic techniques",
+    "photography"
+    ],
+    "theme_titles": [],
+    "image_id": "d243a3e1-672f-747d-2138-030123fefe50",
+    "alt_image_ids": [],
+    "document_ids": [],
+    "sound_ids": [],
+    "video_ids": [],
+    "text_ids": [],
+    "section_ids": [],
+    "section_titles": [],
+    "site_ids": [],
+    "suggest_autocomplete_all": [
+    {
+    "input": [
+    "1968.267"
+    ],
+    "contexts": {
+    "groupings": [
+    "accession"
+    ]
+    }
+    },
+    {
+    "input": [
+    "Untitled"
+    ],
+    "weight": 18,
+    "contexts": {
+    "groupings": [
+    "title"
+    ]
+    }
+    }
+    ],
+    "source_updated_at": "2024-08-18T00:30:13-05:00",
+    "updated_at": "2024-08-18T00:30:43-05:00",
+    "timestamp": "2024-08-18T13:58:35-05:00"
+    },
+    {
+    "id": 34461,
+    "api_model": "artworks",
+    "api_link": "https://api.artic.edu/api/v1/artworks/34461",
+    "is_boosted": false,
+    "title": "Polynesian Woman with Children",
+    "alt_titles": null,
+    "thumbnail": {
+    "lqip": "data:image/gif;base64,R0lGODlhBAAFAPQAACI6PTg+OkZGPlVMORozQBM1SC1ETDdITDBMTzpJTixUXjlTWFlVSlVRVGRgV0hdZEleao9wToBxZ4Z1ZQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURYMI80GI4k3JEEjIEDUAUQggAOw==",
+    "width": 1707,
+    "height": 2250,
+    "alt_text": "A work made of oil on linen canvas."
+    },
+    "main_reference_number": "1927.460",
+    "has_not_been_viewed_much": false,
+    "boost_rank": null,
+    "date_start": 1901,
+    "date_end": 1901,
+    "date_display": "1901",
+    "date_qualifier_title": "",
+    "date_qualifier_id": null,
+    "artist_display": "Paul Gauguin (French, 1848–1903)",
+    "place_of_origin": "France",
+    "description": "<p>The three figures in this work have never been identified. Their familial pose and other details, such as the woman’s gold ring and the red mark on the girl’s hand, invite speculation as to their relationship to each other and to the artist. Technical analysis has revealed that Paul Gauguin reworked the position of the woman’s hands to align diagonally with those of the young girl standing behind her. Together, they form an upward axis reinforced by the cat, also a later addition.</p>\n",
+    "short_description": null,
+    "dimensions": "97 × 74 cm (38 3/16 × 29 1/8 in.); Framed: 111.2 × 88.3 × 5.8 cm (43 3/4 × 34 3/4 × 2 1/4 in.)",
+    "dimensions_detail": [
+    {
+    "depth": null,
+    "width": 74,
+    "height": 97,
+    "diameter": null,
+    "clarification": null
+    },
+    {
+    "depth": 5,
+    "width": 88,
+    "height": 111,
+    "diameter": null,
+    "clarification": "Framed"
+    }
+    ],
+    "medium_display": "Oil on linen canvas",
+    "inscriptions": "Inscribed upper left: Paul Gauguin 1901",
+    "credit_line": "Helen Birch Bartlett Memorial Collection",
+    "catalogue_display": "<p>Wildenstein Gauguin 1964 595</p>",
+    "publication_history": "Rudolf Meyer-Riefstahl, “Paul Gauguin,” Deutsche Kunst und Dekoration 27 (1910–1911), p. 115 (ill.).\n\nArt Institute of Chicago, The Art Institute of Chicago Forty-Ninth Annual Report (Chicago: Art Institute of Chicago, 1927), p. 20, (ill.).\n\nR. M. Fishkin, “A Late Gauguin,” Bulletin of the Art Institute of Chicago 21, 6 (1927), pp. 74–75 (ill.). \n\nR. M. Fishkin, “Gauguin Given to Art Institute,” Art News 25, 40 (1927), p. 7. \n\nMorton Dauwen Zabel, “An American Gallery of Modern Painting,” Art and Archaeology 26, 6 (1928), p. 233.\n\nArt Institute of Chicago, Modern Paintings in the Helen Birch Bartlett Memorial from the Birch-Bartlett Collection, 2nd ed. (Chicago: Art Institute of Chicago, 1929), pp. 14–15 (ill.), 58; revised edition (Chicago: Art Institute of Chicago, 1946). \n\nR. H. Wilenski, French Painting, 2nd ed. (Boston: Hale, Cushman & Flint, Inc., 1931), p. 289; revised editions (Boston: Hale, Cushman & Inc., 1936); (New York: Dover Publications, Inc., 1973).\n\nArt Institute of Chicago, A Guide to the Paintings in the Permanent Collection (Chicago: Art Institute of Chicago, 1932), p. 154.\n\n“Museum News: Acquisitions and Activities of the Art Centers,” Parnassus 4, 7 (1932), p. 14 (ill.). \n\n“Chicago Show to Present French Modern Classics,” Art News 31, 34 (1933), p. 4.\n\n“The Rearrangement of the Painting Galleries,” Bulletin of the Art Institute of Chicago 27, 7 (1933), p. 116.\n\nWiebe A. White, Paintings by Paul Gauguin Owned in the United States of America and The Hawaiian Islands (unpub. ms., Ryerson Library, 1936), p. 60. \n\nArt Institute of Chicago, Paintings in the Art Institute of Chicago: A Catalogue of the Picture Collection (Chicago: Art Institute of Chicago, 1961), p. 171. \n\nGeorge Wildenstein, Gauguin, vol. 1(Paris: Les Beaux-arts, 1964), p. 253 (ill.), no. 595.\n\nG. M. Sugana, L’opera completa di Gauguin (Milan: Rizzoli, 1972), pp. 111 (ill.), 113, no. 423.\n\nLee van Dowski, Die Wahrheit über Gauguin (Darmstadt: J. G. Bläschke, 1973), p. 275, no. 373a.\n\n‘The Helen Birch Bartlett Memorial Collection,” Art Institute of Chicago Museum Studies 12, 2 (1986), pp. 222, 228 (ill.), no. 7. \n\nRichard R. Brettell, Post–Impressionists (Chicago: Art Institute of Chicago and New York: H. N. Abrams, 1987), pp. 78 (ill.), 79.\n\nMarla Prather and Charles F. Stuckey, eds., Gauguin: A Retrospective (New York: Hugh Lauter Levin, 1987), p. 287 (ill.).\n\nFrançoise Cachin, Gauguin (Paris: Flammarion, 1988), p. 296; translated (Paris: Flammarion, 1990). \n\nInge Fiedler and Michael A. Bayard, “Emerald Green and Scheele’s Green,” in Elisabeth West FitzHugh, ed. Artists’ Pigments: A Handbook of Their History and Characteristics, vol. 3 (Washington D. C.: National Gallery of Art, 1997), p. 264.\n\nBritt Salvesen, Gauguin (Chicago: Art Institute of Chicago, 2001), pp. 68, 111, pl. 31, no. 31.\n\nJoseph R. Rishel, in Susan Alyson Stein and Asher Ethan Miller, eds., Masterpieces of Impressionism and Post-Impressionism: The Annenberg Collection, exh. cat. (New York: The Metropolitan Museum of Art and New Haven: Yale University Press, 2009), p. 189, under no. 36. \n\nGloria Groom and Douglas Druick, with the assistance of Dorota Chudzicka and Jill Shaw, The Age of Impressionism at the Art Institute of Chicago (Chicago: Art Institute of Chicago and New Haven: Yale University Press, 2008), p. 151 (ill.), no. 73; revised edition (Art Institute of Chicago and Yale University Press, 2Timothy O. Benson, Expressionism in Germany and France: From Van Gogh to Kandinsky. (Copyright 2014 Museum Associates/ Los Angeles County Museum of Art and the Montreal Museum of Fine Arts and Prestel Verlag, Munich, London, New York) Published in conjunction with the exhibition Expressionism in Germany and France: From Van Gogh to Kandinsky. Plate 43/ cat. 64.\n\nRaphaël Bouvier and Martin Schwander, eds. Pail Gauguin, exh. cat. (Basel: Foundation Beyeler, 2015), 154–155 (color ill.), 221.\n\n“Gauguin, Cat. 122, Polynesian Woman with Children (1927.460),” in Gauguin Paintings, Sculpture, and Graphic Works at the Art Institute of Chicago, ed. Gloria Groom and Genevieve Westerby (Art Institute of Chicago, 2016), <a href=\"https://publications.artic.edu/gauguin/reader/gauguinart/section/140163\">https://publications.artic.edu/gauguin/reader/gauguinart/section/140163</a>. \n\nHenri Loyrette, Gauguin’s World: Tōna Iho, Tōna Ao, exh. cat. (Canberra: National Gallery of Australia, 2024), 39, 40 (ill.), 273.",
+    "exhibition_history": "Munich, Moderne Galerie Heinrich Thannhauser, Paul Gauguin, 1910, no cat.; travelled to Dresden, Arnold Kunst Salon, 1910. \n\nBerlin, Galerien Thannhauser, Erste Sonderausstellung in Berlin, January 9–mid-February, 1927, no. 103.\n\nNew York, The Museum of Modern Art, First Loan Exhibition: Cézanne, Gauguin, Seurat, van Gogh, November 8–December 7, 1929, no. 49.\n\nBuffalo, New York, Albright Art Gallery, Nineteenth Century French Art, November 1–13, 1932, no. 26.\n\nThe Art Gallery of Toronto, Modern French Painting from Manet to Matisse, January 1933, no. 18.\n\nArt Institute of Chicago, A Century of Progress Exhibition of Paintings and Sculpture, June 1–November 1, 1933, no. 362. \n\nArt Institute of Chicago, A Century of Progress Exhibition of Paintings and Sculpture, June 1–November 1, 1934, no. 306.\n\nArt Institute of Chicago, Gauguin: Paintings, Drawings, Prints, Sculpture, February 12–March 29, 1959, no. 66; traveled to New York, The Metropolitan Museum of Art, April 21–May 31, 1959. \n\nWashington D.C., National Gallery of Art, The Art of Paul Gauguin, May 1–July 31, 1988; traveled to Art Institute of Chicago, September 17–December 11, 1988; Paris, Grand Palais, January 10–April 20, 1989 (Chicago only, supplement no. 9).\n\nFort Worth, Kimbell Museum of Art, The Impressionists: Master Paintings from the Art Institute of Chicago, June 29–November 2, 2008, no. 73. \n\nKunsthaus Zurich, German Expressionism and France: From Van Gogh and Gauguin to the Blue Rider <other title:Expressionism in Germany and France: From Van Gogh to Kandinsky>, February 7-May 11, 2014; Los Angeles County Museum of Art, June 8-September 14, 2014; Montreal Museum of Fine Arts, October 6, 2014-January 25, 2015 [Los Angeles and Montreal only].\n\nBasel, Foundation Beyler, Paul Gauguin, February 8–June 28, 2015, pp. 154–155.\n\nCanberra, National Gallery of Australia, Gauguin’s World: Tōna Iho, Tōna Ao, June 29–Oct. 7, 2024, no cat. no., pp. 40; Houston, Museum of Fine Arts, Nov. 3, 2024–Feb. 16, 2025.",
+    "provenance_text": "Ambroise Vollard [according to Meyer-Riefstahl 1910-1911, it was lent by him to Dresden 1910 and Munich 1910]. Moderne Galerie Heinrich Thannhauser, Munich, by 1927 [included in Berlin 1927]; purchased by Frederic C. Bartlett, Chicago, February 1927 from Berlin 1927 [according to a letter from Frederic C. Bartlett to Heinrich Thannhauser dated May 21, 1927, Art Institute archives, copy in curatorial file]; given to the Art Institute, 1927.",
+    "edition": null,
+    "publishing_verification_level": "Web Cataloged",
+    "internal_department_id": 14,
+    "fiscal_year": 1927,
+    "fiscal_year_deaccession": null,
+    "is_public_domain": true,
+    "is_zoomable": true,
+    "max_zoom_window_size": -1,
+    "copyright_notice": null,
+    "has_multimedia_resources": true,
+    "has_educational_resources": false,
+    "has_advanced_imaging": false,
+    "colorfulness": 35.2446,
+    "color": {
+    "h": 41,
+    "l": 67,
+    "s": 38,
+    "percentage": 0.0064063345836362995,
+    "population": 60
+    },
+    "latitude": null,
+    "longitude": null,
+    "latlon": null,
+    "is_on_view": false,
+    "on_loan_display": "<p>On loan to National Gallery of Australia in Canberra for <i>The World of Gauguin</i></p>",
+    "gallery_title": null,
+    "gallery_id": null,
+    "nomisma_id": null,
+    "artwork_type_title": "Painting",
+    "artwork_type_id": 1,
+    "department_title": "Painting and Sculpture of Europe",
+    "department_id": "PC-10",
+    "artist_id": 34611,
+    "artist_title": "Paul Gauguin",
+    "alt_artist_ids": [],
+    "artist_ids": [
+    34611
+    ],
+    "artist_titles": [
+    "Paul Gauguin"
+    ],
+    "category_ids": [
+    "PC-10"
+    ],
+    "category_titles": [
+    "Painting and Sculpture of Europe"
+    ],
+    "term_titles": [
+    "oil on canvas",
+    "oil painting",
+    "Post-Impressionism",
+    "portraits",
+    "oil paint (paint)",
+    "painting",
+    "portraits: child subject",
+    "pink (color)",
+    "woman with children",
+    "woman",
+    "blue (color)",
+    "portraits: multiple subjects",
+    "portrait",
+    "cats",
+    "european painting",
+    "france",
+    "french",
+    "oil paintings (visual works)",
+    "paint",
+    "portrait",
+    "canvas",
+    "linen",
+    "paint",
+    "painting",
+    "painting",
+    "painting (image making)",
+    "painting techniques",
+    "20th Century",
+    "modern and contemporary art",
+    "women",
+    "children",
+    "Century of Progress",
+    "world's fairs",
+    "Chicago World's Fairs"
+    ],
+    "style_id": "TM-7547",
+    "style_title": "Post-Impressionism",
+    "alt_style_ids": [
+    "TM-13130"
+    ],
+    "style_ids": [
+    "TM-7547",
+    "TM-13130"
+    ],
+    "style_titles": [
+    "Post-Impressionism",
+    "20th Century"
+    ],
+    "classification_id": "TM-66",
+    "classification_title": "oil on canvas",
+    "alt_classification_ids": [
+    "TM-9",
+    "TM-54",
+    "TM-14238",
+    "TM-14976",
+    "TM-78",
+    "TM-10387",
+    "TM-12855",
+    "TM-155"
+    ],
+    "classification_ids": [
+    "TM-66",
+    "TM-9",
+    "TM-54",
+    "TM-14238",
+    "TM-14976",
+    "TM-78",
+    "TM-10387",
+    "TM-12855",
+    "TM-155"
+    ],
+    "classification_titles": [
+    "oil on canvas",
+    "painting",
+    "european painting",
+    "france",
+    "french",
+    "oil paintings (visual works)",
+    "paint",
+    "portrait",
+    "modern and contemporary art"
+    ],
+    "subject_id": "TM-8658",
+    "alt_subject_ids": [
+    "TM-8594",
+    "TM-11848",
+    "TM-15267",
+    "TM-13813",
+    "TM-11843",
+    "TM-8591",
+    "TM-14105",
+    "TM-8806",
+    "TM-8735",
+    "TM-10118",
+    "TM-12169",
+    "TM-11299",
+    "TM-12176"
+    ],
+    "subject_ids": [
+    "TM-8658",
+    "TM-8594",
+    "TM-11848",
+    "TM-15267",
+    "TM-13813",
+    "TM-11843",
+    "TM-8591",
+    "TM-14105",
+    "TM-8806",
+    "TM-8735",
+    "TM-10118",
+    "TM-12169",
+    "TM-11299",
+    "TM-12176"
+    ],
+    "subject_titles": [
+    "portraits",
+    "portraits: child subject",
+    "pink (color)",
+    "woman with children",
+    "woman",
+    "blue (color)",
+    "portraits: multiple subjects",
+    "portrait",
+    "cats",
+    "women",
+    "children",
+    "Century of Progress",
+    "world's fairs",
+    "Chicago World's Fairs"
+    ],
+    "material_id": "TM-2451",
+    "alt_material_ids": [
+    "TM-3124",
+    "TM-14007",
+    "TM-2577",
+    "TM-13502"
+    ],
+    "material_ids": [
+    "TM-2451",
+    "TM-3124",
+    "TM-14007",
+    "TM-2577",
+    "TM-13502"
+    ],
+    "material_titles": [
+    "oil paint (paint)",
+    "canvas",
+    "linen",
+    "paint",
+    "painting"
+    ],
+    "technique_id": "TM-4273",
+    "alt_technique_ids": [
+    "TM-14210",
+    "TM-3891",
+    "TM-3971"
+    ],
+    "technique_ids": [
+    "TM-4273",
+    "TM-14210",
+    "TM-3891",
+    "TM-3971"
+    ],
+    "technique_titles": [
+    "oil painting",
+    "painting",
+    "painting (image making)",
+    "painting techniques"
+    ],
+    "theme_titles": [],
+    "image_id": "cc5cdb81-14cf-27e9-eda8-94c08244ebaa",
+    "alt_image_ids": [],
+    "document_ids": [],
+    "sound_ids": [],
+    "video_ids": [],
+    "text_ids": [],
+    "section_ids": [
+    39643366313
+    ],
+    "section_titles": [
+    "Cat. 122  Polynesian Woman with Children, 1901"
+    ],
+    "site_ids": [],
+    "suggest_autocomplete_all": [
+    {
+    "input": [
+    "1927.460"
+    ],
+    "contexts": {
+    "groupings": [
+    "accession"
+    ]
+    }
+    },
+    {
+    "input": [
+    "Polynesian Woman with Children"
+    ],
+    "weight": 8227,
+    "contexts": {
+    "groupings": [
+    "title"
+    ]
+    }
+    }
+    ],
+    "source_updated_at": "2024-08-18T00:30:13-05:00",
+    "updated_at": "2024-08-18T00:30:42-05:00",
+    "timestamp": "2024-08-18T13:58:35-05:00"
+    },
+    {
+    "id": 32349,
+    "api_model": "artworks",
+    "api_link": "https://api.artic.edu/api/v1/artworks/32349",
+    "is_boosted": false,
+    "title": "City",
+    "alt_titles": null,
+    "thumbnail": {
+    "lqip": "data:image/gif;base64,R0lGODlhBAAFAPQAAD93iTx2ijx5jD16jTGOqzKSrzCRsDeWtjmXsziatzqatj6ZtTyYtjybuD2cuT+cuD6fvEaZp0CcuUCfuwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURIDAIweI0zANNEqIkB2EUUQgAOw==",
+    "width": 4437,
+    "height": 5039,
+    "alt_text": "A blue canvas with the word \"City\" written at the center with the viscous quality of water. The background darkens along a gradient towards the top. The lower right corner is green."
+    },
+    "main_reference_number": "1969.722",
+    "has_not_been_viewed_much": false,
+    "boost_rank": null,
+    "date_start": 1968,
+    "date_end": 1968,
+    "date_display": "1968",
+    "date_qualifier_title": "",
+    "date_qualifier_id": null,
+    "artist_display": "Ed Ruscha\nAmerican, born 1937",
+    "place_of_origin": "United States",
+    "description": "<p>From his earliest experiences as a sign painter, Ed Ruscha retained an interest in the visual and conceptual tensions between text and image. By the late 1960s, the artist began using pointed, single words— chosen as much for their evocative power as for their phonetic qualities—as visual subjects in a variety of media. Between 1966 and 1969, Ruscha made a series of “liquid” or “wet” word paintings, in which the linguistic effect is made more palpable by the trompe l’oeil renderings of the words, which suggest that they have been created from water, oil, syrup, or another fluid.</p>\n",
+    "short_description": null,
+    "dimensions": "139.7 × 121.9 cm (55 × 48 in.)",
+    "dimensions_detail": [
+    {
+    "depth": null,
+    "width": 121,
+    "height": 139,
+    "diameter": null,
+    "clarification": null
+    }
+    ],
+    "medium_display": "Oil on canvas",
+    "inscriptions": null,
+    "credit_line": "Twentieth-Century Purchase Fund",
+    "catalogue_display": null,
+    "publication_history": null,
+    "exhibition_history": null,
+    "provenance_text": null,
+    "edition": null,
+    "publishing_verification_level": "Web Basic",
+    "internal_department_id": 246,
+    "fiscal_year": null,
+    "fiscal_year_deaccession": null,
+    "is_public_domain": false,
+    "is_zoomable": true,
+    "max_zoom_window_size": 1280,
+    "copyright_notice": "© 1968 Ed Ruscha.",
+    "has_multimedia_resources": false,
+    "has_educational_resources": false,
+    "has_advanced_imaging": false,
+    "colorfulness": 51.5774,
+    "color": {
+    "h": 194,
+    "l": 48,
+    "s": 51,
+    "percentage": 0.5143248915490908,
+    "population": 4171
+    },
+    "latitude": null,
+    "longitude": null,
+    "latlon": null,
+    "is_on_view": false,
+    "on_loan_display": "<p>On loan to Los Angeles County Museum of Art in Los Angeles for <i>Ed Ruscha/Now Then</i></p>",
+    "gallery_title": null,
+    "gallery_id": null,
+    "nomisma_id": null,
+    "artwork_type_title": "Painting",
+    "artwork_type_id": 1,
+    "department_title": "Contemporary Art",
+    "department_id": "PC-8",
+    "artist_id": 40791,
+    "artist_title": "Ed Ruscha",
+    "alt_artist_ids": [],
+    "artist_ids": [
+    40791
+    ],
+    "artist_titles": [
+    "Ed Ruscha"
+    ],
+    "category_ids": [
+    "PC-8"
+    ],
+    "category_titles": [
+    "Contemporary Art"
+    ],
+    "term_titles": [
+    "painting",
+    "text",
+    "modern and contemporary art",
+    "green (color)",
+    "blue (color)"
+    ],
+    "style_id": null,
+    "style_title": null,
+    "alt_style_ids": [],
+    "style_ids": [],
+    "style_titles": [],
+    "classification_id": "TM-9",
+    "classification_title": "painting",
+    "alt_classification_ids": [
+    "TM-155"
+    ],
+    "classification_ids": [
+    "TM-9",
+    "TM-155"
+    ],
+    "classification_titles": [
+    "painting",
+    "modern and contemporary art"
+    ],
+    "subject_id": "TM-12260",
+    "alt_subject_ids": [
+    "TM-11849",
+    "TM-11843"
+    ],
+    "subject_ids": [
+    "TM-12260",
+    "TM-11849",
+    "TM-11843"
+    ],
+    "subject_titles": [
+    "text",
+    "green (color)",
+    "blue (color)"
+    ],
+    "material_id": null,
+    "alt_material_ids": [],
+    "material_ids": [],
+    "material_titles": [],
+    "technique_id": null,
+    "alt_technique_ids": [],
+    "technique_ids": [],
+    "technique_titles": [],
+    "theme_titles": [],
+    "image_id": "a8fe598b-a83b-1cd4-e4fb-ffc63599f249",
+    "alt_image_ids": [],
+    "document_ids": [],
+    "sound_ids": [],
+    "video_ids": [],
+    "text_ids": [],
+    "section_ids": [],
+    "section_titles": [],
+    "site_ids": [],
+    "suggest_autocomplete_all": [
+    {
+    "input": [
+    "1969.722"
+    ],
+    "contexts": {
+    "groupings": [
+    "accession"
+    ]
+    }
+    },
+    {
+    "input": [
+    "City"
+    ],
+    "weight": 3071,
+    "contexts": {
+    "groupings": [
+    "title"
+    ]
+    }
+    }
+    ],
+    "source_updated_at": "2024-08-18T00:30:13-05:00",
+    "updated_at": "2024-08-18T00:30:42-05:00",
+    "timestamp": "2024-08-18T13:58:35-05:00"
+    }
+    ],
+    "info": {
+    "license_text": "The `description` field in this response is licensed under a Creative Commons Attribution 4.0 Generic License (CC-By) and the Terms and Conditions of artic.edu. All other data in this response is licensed under a Creative Commons Zero (CC0) 1.0 designation and the Terms and Conditions of artic.edu.",
+    "license_links": [
+    "https://creativecommons.org/publicdomain/zero/1.0/",
+    "https://www.artic.edu/terms"
+    ],
+    "version": "1.10"
+    },
+    "config": {
+    "iiif_url": "https://www.artic.edu/iiif/2",
+    "website_url": "http://www.artic.edu"
+    }
+    }
+    

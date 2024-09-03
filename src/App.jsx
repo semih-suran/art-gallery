@@ -1,27 +1,27 @@
-import { useState } from "react";
-import "./App.css";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import WelcomePage from "./containers/WelcomePage";
+import AccountPage from "./containers/AccountPage";
+import CreateExhibitionPage from "./containers/CreateExhibitionPage";
+import Modal from "./components/Auth/Modal";
+import Navbar from "./components/Navbar";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [showModal, setShowModal] = useState(true);
 
   return (
-    <>
-      <div className="flex justify-center items-center">
-        <a href="https://github.com/semih-suran" target="_blank">
-          <img src="./art.svg" alt="art logo" className="w-16 h-16" />
-        </a>
-      </div>
-      <h1>Art Gallery</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the logo to learn more</p>
-    </>
+    <Router>
+      <Navbar /> 
+      <Routes>
+        <Route path="/" element={<WelcomePage />} />
+        <Route path="/account" element={<AccountPage />} />
+        <Route path="/create-exhibition" element={<CreateExhibitionPage />} />
+        <Route
+          path="/login"
+          element={<Modal showModal={showModal} setShowModal={setShowModal} />}
+        />
+      </Routes>
+    </Router>
   );
 }
 
