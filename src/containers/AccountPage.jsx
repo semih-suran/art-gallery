@@ -9,10 +9,9 @@ function AccountPage() {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none">
+    <div className="flex flex-col items-center justify-center min-h-screen pt-16 px-4">
       <h1 className="text-3xl font-bold mb-4">Welcome to Your Dashboard</h1>
       <div className="space-y-6 w-full max-w-md">
-        {" "}
         <button
           onClick={handleCreateExhibition}
           className="w-full px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-700"
