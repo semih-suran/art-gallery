@@ -5,7 +5,7 @@ import InfoTab from "./InfoTab";
 
 const tabs = ["Theme", "Art", "Info"];
 
-function ExhibitionTabs({ onUpdatePreview }) {
+function ExhibitionTabs({ onUpdatePreview, onAddArtwork }) {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   const renderTabContent = () => {
@@ -13,7 +13,7 @@ function ExhibitionTabs({ onUpdatePreview }) {
       case "Theme":
         return <ThemeTab onUpdatePreview={onUpdatePreview} />;
       case "Art":
-        return <ArtTab onUpdatePreview={onUpdatePreview} />;
+        return <ArtTab onAddArtwork={onAddArtwork} />;
       case "Info":
         return <InfoTab onUpdatePreview={onUpdatePreview} />;
       default:
@@ -22,7 +22,7 @@ function ExhibitionTabs({ onUpdatePreview }) {
   };
 
   return (
-    <div className="w-1/2 p-4">
+    <div className="p-4">
       <div className="flex space-x-4 mb-4">
         {tabs.map((tab) => (
           <button

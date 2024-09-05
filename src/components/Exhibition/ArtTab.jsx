@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { fetchHarvardArt, fetchArtInstitute } from "../../services/api";
 
-function ArtTab({ onUpdatePreview }) {
+function ArtTab({ onAddArtwork }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [artworks, setArtworks] = useState([]);
-  const [selectedArtworks, setSelectedArtworks] = useState([]);
 
   const handleSearch = async () => {
     const harvardArt = await fetchHarvardArt(searchTerm);
@@ -13,8 +12,13 @@ function ArtTab({ onUpdatePreview }) {
   };
 
   const handleSelectArtwork = (art) => {
-    setSelectedArtworks([...selectedArtworks, art]);
-    onUpdatePreview({ artworks: [...selectedArtworks, art] });
+    onAddArtwork(art);
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
   };
 
   return (
@@ -24,6 +28,7 @@ function ArtTab({ onUpdatePreview }) {
         placeholder="Search for artworks"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
+        onKeyDown={handleKeyDown}
         className="w-full p-2 border rounded"
       />
       <button
@@ -39,7 +44,11 @@ function ArtTab({ onUpdatePreview }) {
             className="border p-2 cursor-pointer hover:bg-gray-100"
             onClick={() => handleSelectArtwork(art)}
           >
-            <img src={art.image} alt={art.title} className="w-full h-32 object-cover mb-2" />
+            <img
+              src={art.image}
+              alt={art.title}
+              className="w-full h-32 object-cover mb-2"
+            />
             <p>{art.title}</p>
           </div>
         ))}
