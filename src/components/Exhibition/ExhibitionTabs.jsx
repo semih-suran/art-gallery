@@ -3,19 +3,19 @@ import ThemeTab from "./ThemeTab";
 import ArtTab from "./ArtTab";
 import InfoTab from "./InfoTab";
 
-const tabs = ["Theme", "Art", "Info"];
+const tabs = ["Art", "Info", "Theme"];
 
 function ExhibitionTabs({ onUpdatePreview, onAddArtwork }) {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   const renderTabContent = () => {
     switch (activeTab) {
-      case "Theme":
-        return <ThemeTab onUpdatePreview={onUpdatePreview} />;
       case "Art":
         return <ArtTab onAddArtwork={onAddArtwork} />;
       case "Info":
         return <InfoTab onUpdatePreview={onUpdatePreview} />;
+      case "Theme":
+        return <ThemeTab onUpdatePreview={onUpdatePreview} />;
       default:
         return null;
     }

@@ -1,9 +1,23 @@
 import React from "react";
 import { IoRemoveCircle } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 function ExhibitionPreview({ previewData, onRemoveArtwork }) {
   const { background, fontStyle, artworks, location, date, description } =
     previewData;
+
+  const navigate = useNavigate();
+
+  const handleArtworkClick = (art) => {
+    const imageUrl = art.image
+      ? art.image
+      : "https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg";
+
+    const prefix = imageUrl.startsWith("https://www.artic.edu") ? "c" : "h";
+    navigate(`/artwork/${prefix}${art.id}`, {
+      state: { art: { ...art, image: imageUrl }, source: prefix },
+    });
+  };
 
   return (
     <div
@@ -11,7 +25,7 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
       style={{
         backgroundImage: `url(${background})`,
         fontFamily: fontStyle || "inherit",
-        width: "350px",
+        width: "375px",
         backgroundSize: "cover",
       }}
     >
@@ -21,14 +35,19 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
           {artworks?.map((art, index) => (
             <div
               key={index}
-              className={`flex items-center space-x-4 ${
+              className={`flex items-center space-x-4 cursor-pointer ${
                 index % 2 === 0 ? "" : "flex-row-reverse"
               }`}
+              onClick={() => handleArtworkClick(art)}
             >
+              {console.log("art >>", art)}
               <div className="relative">
                 <IoRemoveCircle
                   className="absolute top-0 right-0 bg-white text-red-500 rounded-full text-lg hover:bg-black"
-                  onClick={() => onRemoveArtwork(index)}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onRemoveArtwork(index);
+                  }}
                 />
                 <img
                   src={art.image}
