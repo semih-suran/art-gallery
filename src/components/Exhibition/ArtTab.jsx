@@ -8,7 +8,11 @@ function ArtTab({ onAddArtwork }) {
   const handleSearch = async () => {
     const harvardArt = await fetchHarvardArt(searchTerm);
     const artInstitute = await fetchArtInstitute(searchTerm);
-    setArtworks([...harvardArt, ...artInstitute]);
+    const filteredArtworks = [...harvardArt, ...artInstitute].filter(
+      (art) => art.image
+    );
+
+    setArtworks(filteredArtworks);
   };
 
   const handleSelectArtwork = (art) => {

@@ -40,6 +40,19 @@ function ThemeTab({ onUpdatePreview }) {
   return (
     <div className="space-y-4">
       <div>
+        <label className="block font-bold mb-2">Select Font Style:</label>
+        <select
+          value={fontStyle}
+          onChange={handleFontChange}
+          className="w-full p-2 border rounded"
+        >
+          <option value="">Default Font</option>
+          <option value="serif">Serif</option>
+          <option value="sans-serif">Sans-Serif</option>
+          <option value="monospace">Monospace</option>
+        </select>
+      </div>
+      <div>
         <label className="block font-bold mb-2">
           Enter Background Image URL:
         </label>
@@ -51,7 +64,6 @@ function ThemeTab({ onUpdatePreview }) {
           className="w-full p-2 border rounded"
         />
       </div>
-
       <div>
         <label className="block font-bold mb-2">
           Or Select a Background Image:
@@ -70,20 +82,6 @@ function ThemeTab({ onUpdatePreview }) {
             />
           ))}
         </div>
-      </div>
-
-      <div>
-        <label className="block font-bold mb-2">Select Font Style:</label>
-        <select
-          value={fontStyle}
-          onChange={handleFontChange}
-          className="w-full p-2 border rounded"
-        >
-          <option value="">Default Font</option>
-          <option value="serif">Serif</option>
-          <option value="sans-serif">Sans-Serif</option>
-          <option value="monospace">Monospace</option>
-        </select>
       </div>
     </div>
   );
