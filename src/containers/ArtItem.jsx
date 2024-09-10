@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { fetchHarvardArtworkById, fetchArtInstituteArtworkById } from "../services/api";
+import {
+  fetchHarvardArtworkById,
+  fetchArtInstituteArtworkById,
+} from "../services/api";
 
 const ArtItem = () => {
   const { id } = useParams();

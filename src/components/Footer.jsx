@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-white shadow-md mt-8 w-full">
+      <footer className="bg-white shadow-md w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <ul className="text-gray-700 text-sm list-none flex space-x-4 justify-center">
             <li>
