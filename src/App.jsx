@@ -5,14 +5,14 @@ import AccountPage from "./containers/AccountPage";
 import CreateExhibitionPage from "./containers/CreateExhibitionPage";
 import Modal from "./components/Auth/Modal";
 import Navbar from "./components/Navbar";
-import ArtItem from "./containers/ArtItem"
+import ArtItem from "./containers/ArtItem";
 
 function App() {
   const [showModal, setShowModal] = useState(true);
 
   return (
     <Router>
-      <Navbar /> 
+      <Navbar />
       <Routes>
         <Route path="/" element={<WelcomePage />} />
         <Route path="/account" element={<AccountPage />} />

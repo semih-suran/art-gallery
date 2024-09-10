@@ -3,6 +3,10 @@ import axios from "axios";
 const HARVARD_API_BASE_URL = import.meta.env.VITE_HARVARD_API_BASE_URL;
 const HARVARD_API_KEY = import.meta.env.VITE_HARVARD_API;
 const CHICAGO_API_BASE_URL = import.meta.env.VITE_CHICAGO_API_BASE_URL;
+const BASE_URL = import.meta.env.VITE_SEMIH_BASE_URL;
+
+// Local Test URL as follows
+// const BASE_URL = "http://localhost:9090/api";
 
 export const fetchHarvardArt = async (query, limit = 10) => {
   try {
@@ -99,5 +103,39 @@ export const fetchArtInstituteArtworkById = async (id) => {
   } catch (error) {
     console.error("Error fetching specific Chicago artwork:", error);
     return null;
+  }
+};
+
+export const registerUser = async (userData) => {
+  try {
+    const response = await axios.post(`${BASE_URL}/curator-users`, {
+      first_name: userData.first_name,
+      last_name: userData.last_name,
+      nickname: userData.nickname,
+      email: userData.email,
+      verified: userData.verified,
+      password: userData.password,
+      picture: userData.picture,
+      mobile_phone: userData.mobile_phone,
+      street: userData.street,
+      city: userData.city,
+      state: userData.state,
+      zipCode: userData.zipCode,
+      country: userData.country,
+    });
+    return response.data;
+  } catch (error) {
+    console.error("Error registering user:", error);
+    throw error;
+  }
+};
+
+export const loginUser = async (credentials) => {
+  try {
+    const response = await axios.post(`${BASE_URL}/curator-login`, credentials);
+    return response;
+  } catch (error) {
+    console.error("Error in loginUser:", error);
+    throw error;
   }
 };

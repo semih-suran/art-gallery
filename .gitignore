@@ -26,3 +26,5 @@ dist-ssr
 SELF-NOTES.md
 .env
 *.env
+# Local Netlify folder
+.netlify
