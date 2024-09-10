@@ -28,7 +28,7 @@ function CreateExhibitionPage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen pt-20 px-4">
+    <div className="flex flex-col min-h-screen pt-40 px-4">
       <div className="w-full mb-8">
         <ExhibitionTabs
           onUpdatePreview={handleUpdatePreview}
