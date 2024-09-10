@@ -1,6 +1,7 @@
 import React from "react";
 import { IoRemoveCircle } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
+import { FaRegSave } from "react-icons/fa";
 
 function ExhibitionPreview({ previewData, onRemoveArtwork }) {
   const { background, fontStyle, artworks, location, date, description } =
@@ -19,6 +20,10 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
     });
   };
 
+  const handleSaveExhibition = async () => {
+    alert("This logic will be added soon...");
+  };
+
   return (
     <div
       className="p-4 border mx-auto"
@@ -31,6 +36,15 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
     >
       <div className="p-4 bg-white bg-opacity-70 rounded-lg">
         <h2 className="text-2xl font-bold mb-4">Exhibition Preview</h2>
+        <p>
+          <strong>Location:</strong> {location}
+        </p>
+        <p>
+          <strong>Date:</strong> {date}
+        </p>
+        <p>
+          <strong>Description:</strong> {description}
+        </p>
         <div className="space-y-4 mb-4">
           {artworks?.map((art, index) => (
             <div
@@ -40,7 +54,6 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
               }`}
               onClick={() => handleArtworkClick(art)}
             >
-              {console.log("art >>", art)}
               <div className="relative">
                 <IoRemoveCircle
                   className="absolute top-0 right-0 bg-white text-red-500 rounded-full text-lg hover:bg-black"
@@ -64,15 +77,15 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
             </div>
           ))}
         </div>
-        <p>
-          <strong>Location:</strong> {location}
-        </p>
-        <p>
-          <strong>Date:</strong> {date}
-        </p>
-        <p>
-          <strong>Description:</strong> {description}
-        </p>
+        <div className="flex justify-center mt-4">
+          <button
+            onClick={handleSaveExhibition}
+            className="flex items-center gap-2 px-4 py-2 border border-black rounded-md bg-white hover:bg-gray-100"
+          >
+            <FaRegSave />
+            Save
+          </button>
+        </div>
       </div>
     </div>
   );

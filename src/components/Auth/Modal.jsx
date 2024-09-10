@@ -93,12 +93,8 @@ const Modal = ({ showModal, setShowModal }) => {
           zipCode: "",
           country: "",
         };
-        console.log("User data >>>", userData);
         try {
-          console.log("User data >>>", userData);
           await registerUser(userData);
-          console.log("User data sent to backend:", userData);
-
           alert(
             "Registration successful! Please log in after verifying your email."
           );

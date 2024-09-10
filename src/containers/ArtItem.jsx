@@ -54,10 +54,9 @@ const ArtItem = () => {
   const imageUrl = artwork.image
     ? artwork.image
     : "https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg";
-console.log("Artwork >>", artwork);
 
   return (
-    <div className="art-item pt-28">
+    <div className="art-item pt-40">
       <h2>{title}</h2>
       <img src={imageUrl} alt={title} />
       <p>

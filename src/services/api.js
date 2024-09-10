@@ -139,3 +139,23 @@ export const loginUser = async (credentials) => {
     throw error;
   }
 };
+
+export const fetchCuratorusersById = async (id) => {
+  try {
+    const response = await axios.get(`${BASE_URL}/curator-users/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error(`Error fetching user by ID ${id}:`, error);
+    throw error;
+  }
+};
+
+export const fetchAllCuratorusers = async () => {
+  try {
+    const response = await axios.get(`${BASE_URL}/curator-users`);
+    return response.data;
+  } catch (error) {
+    console.error(`Error fetching user by ID ${id}:`, error);
+    throw error;
+  }
+};
