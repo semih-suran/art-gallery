@@ -55,18 +55,27 @@ const Navbar = () => {
             <div className="flex items-center space-x-4">
               {user ? (
                 <div className="relative" ref={dropdownRef}>
+                {console.log("user? >>", user)}
                   <button
                     className="flex items-center space-x-2"
                     onClick={toggleDropdown}
                   >
-                    <FaUser className="w-6 h-6" />
-                    <span className="font-semibold">{user.email}</span>
+                    {user ? (
+                      <img
+                        src={"https://picsum.photos/150"}
+                        alt="User"
+                        className="w-8 h-8 rounded-full"
+                      />
+                    ) : (
+                      <FaUser className="w-6 h-6" />
+                    )}
                   </button>
                   {dropdownOpen && (
                     <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg py-1">
                       <Link
                         to="/account"
                         className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        onClick={toggleDropdown}
                       >
                         My Account
                       </Link>
