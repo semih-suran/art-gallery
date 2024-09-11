@@ -159,3 +159,16 @@ export const fetchAllCuratorusers = async () => {
     throw error;
   }
 };
+
+export const saveExhibition = async (exhibitionData) => {
+  try {
+    const response = await axios.post(
+      `${BASE_URL}/curator-exhibitions`,
+      exhibitionData
+    );
+    return response.data;
+  } catch (error) {
+    console.error("Error saving exhibition:", error);
+    throw error;
+  }
+};

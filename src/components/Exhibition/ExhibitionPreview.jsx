@@ -1,13 +1,46 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { IoRemoveCircle } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import { FaRegSave } from "react-icons/fa";
+import { saveExhibition } from "../../services/api";
+import {
+  fetchAllCuratorusers,
+  fetchCuratorusersById,
+} from "../../services/api";
+import { auth } from "../../config/firebase.config";
 
 function ExhibitionPreview({ previewData, onRemoveArtwork }) {
-  const { background, fontStyle, artworks, location, date, description } =
-    previewData;
-
+  const {
+    background,
+    fontStyle,
+    artworks,
+    title,
+    location,
+    date,
+    description,
+  } = previewData;
   const navigate = useNavigate();
+  const [curatorUser, setCuratorUser] = useState(null);
+  const currentUser = auth.currentUser;
+  const userEmail = currentUser ? currentUser.email : null;
+
+  useEffect(() => {
+    const getCuratorUser = async (email) => {
+      try {
+        const allUsers = await fetchAllCuratorusers();
+        const matchingUser = allUsers.find((u) => u.email === email);
+        if (matchingUser) {
+          const fullUser = await fetchCuratorusersById(matchingUser.id);
+          setCuratorUser(fullUser);
+        }
+      } catch (error) {
+        console.error("Error fetching curator user:", error);
+      }
+    };
+    if (userEmail) {
+      getCuratorUser(userEmail);
+    }
+  }, [userEmail]);
 
   const handleArtworkClick = (art) => {
     const imageUrl = art.image
@@ -21,7 +54,33 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
   };
 
   const handleSaveExhibition = async () => {
-    alert("This logic will be added soon...");
+    if (!curatorUser.id) {
+      alert("User is not logged in. Please log in to save exhibitions.");
+      return;
+    }
+
+    const exhibitionArtworks = artworks.map((art) => {
+      const prefix = art.image.startsWith("https://www.artic.edu") ? "c" : "h";
+      return `${prefix}${art.id}`;
+    });
+    const exhibitionData = {
+      user_id: curatorUser.id,
+      title,
+      date,
+      location,
+      description,
+      font: fontStyle,
+      background,
+      exhibitions: exhibitionArtworks,
+    };
+
+    try {
+      const savedExhibition = await saveExhibition(exhibitionData);
+      alert("Exhibition saved successfully!");
+    } catch (error) {
+      alert("Failed to save exhibition.");
+      console.error(error);
+    }
   };
 
   return (
@@ -36,6 +95,9 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
     >
       <div className="p-4 bg-white bg-opacity-70 rounded-lg">
         <h2 className="text-2xl font-bold mb-4">Exhibition Preview</h2>
+        <p>
+          <strong>Title:</strong> {title}
+        </p>
         <p>
           <strong>Location:</strong> {location}
         </p>
