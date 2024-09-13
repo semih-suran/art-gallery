@@ -53,7 +53,7 @@ function WelcomePage() {
             <video
               ref={videoRef}
               className="absolute top-4 left-0 w-full h-full object-cover"
-              src="/media/Art_Background_Video.mp4"
+              src="/media/Art_Background_Video_1.mp4"
               autoPlay
               loop
               muted

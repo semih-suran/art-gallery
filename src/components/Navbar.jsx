@@ -91,32 +91,29 @@ const Navbar = () => {
   const renderMenuItems = (className) => (
     <div className={className}>
       <Link
-        to="#"
-        onClick={underDevelopment}
+        to="/"
         className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
       >
-        Section 1
+        Home
+      </Link>
+
+      <Link
+        to="/all-exhibitions"
+        className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+      >
+        All Exhibitions
       </Link>
       <Link
-        to="#"
-        onClick={underDevelopment}
+        to="/my-exhibitions"
         className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
       >
-        Section 2
+        My Exhibitions
       </Link>
       <Link
-        to="#"
-        onClick={underDevelopment}
+        to="/create-exhibition"
         className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
       >
-        Section 3
-      </Link>
-      <Link
-        to="#"
-        onClick={underDevelopment}
-        className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
-      >
-        Section 4
+        New
       </Link>
     </div>
   );

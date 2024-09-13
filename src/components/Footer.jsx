@@ -50,8 +50,7 @@ const Footer = () => {
             </li>
           </ul>
           <div className="text-center text-gray-700 text-sm mt-4">
-            &copy; {new Date().getFullYear()} Jewellery Store. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} Art Gallery. All rights reserved.
           </div>
         </div>
       </footer>
