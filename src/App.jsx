@@ -6,6 +6,8 @@ import CreateExhibitionPage from "./containers/CreateExhibitionPage";
 import Modal from "./components/Auth/Modal";
 import Navbar from "./components/Navbar";
 import ArtItem from "./containers/ArtItem";
+import MyExhibitions from "./components/MyExhibitions";
+import AllExhibitions from "./components/AllExhibitions";
 
 function App() {
   const [showModal, setShowModal] = useState(true);
@@ -22,6 +24,8 @@ function App() {
           path="/login"
           element={<Modal showModal={showModal} setShowModal={setShowModal} />}
         />
+        <Route path="/my-exhibitions" element={<MyExhibitions />} />
+        <Route path="/all-exhibitions" element={<AllExhibitions />} />
       </Routes>
     </Router>
   );

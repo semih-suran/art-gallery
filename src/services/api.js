@@ -172,3 +172,67 @@ export const saveExhibition = async (exhibitionData) => {
     throw error;
   }
 };
+
+// Fetch all exhibitions created by the logged-in user
+export const fetchExhibitionsByUser = async (userId) => {
+  try {
+    const response = await axios.get(
+      `${BASE_URL}/curator-exhibitions/user/${userId}`
+    );
+    return response.data;
+  } catch (error) {
+    console.error(`Error fetching exhibitions for user ${userId}:`, error);
+    throw error;
+  }
+};
+
+// Delete an exhibition by its ID
+export const deleteExhibition = async (exhibitionId) => {
+  try {
+    const response = await axios.delete(
+      `${BASE_URL}/curator-exhibitions/${exhibitionId}`
+    );
+    return response.data;
+  } catch (error) {
+    console.error(`Error deleting exhibition ${exhibitionId}:`, error);
+    throw error;
+  }
+};
+
+// Edit/update an exhibition by its ID
+export const updateExhibition = async (exhibitionId, exhibitionData) => {
+  try {
+    const response = await axios.patch(
+      `${BASE_URL}/curator-exhibitions/${exhibitionId}`,
+      exhibitionData
+    );
+    return response.data;
+  } catch (error) {
+    console.error(`Error updating exhibition ${exhibitionId}:`, error);
+    throw error;
+  }
+};
+
+// Fetch a single exhibition by its ID (optional utility)
+export const fetchExhibitionById = async (exhibitionId) => {
+  try {
+    const response = await axios.get(
+      `${BASE_URL}/curator-exhibitions/${exhibitionId}`
+    );
+    return response.data;
+  } catch (error) {
+    console.error(`Error fetching exhibition ${exhibitionId}:`, error);
+    throw error;
+  }
+};
+
+// Fetch all exhibitions
+export const fetchAllExhibitions = async () => {
+  try {
+    const response = await axios.get(`${BASE_URL}/curator-exhibitions/`);
+    return response.data;
+  } catch (error) {
+    console.error(`Error fetching exhibitions:`, error);
+    throw error;
+  }
+};
