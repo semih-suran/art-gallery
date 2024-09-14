@@ -72,11 +72,22 @@ const MyExhibitions = () => {
           {exhibitions.map((exhibition) => (
             <div
               key={exhibition.id}
-              className="exhibition-card border p-4 rounded-md shadow-sm bg-white"
+              className="exhibition-card border p-4 rounded-md shadow-sm relative h-[200px] w-[300px] mx-auto"
+              style={{
+                backgroundImage: `url(${exhibition.background})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                fontFamily: exhibition.font || "sans-serif",
+              }}
             >
-              <h3 className="font-semibold">{exhibition.title}</h3>
-              <p>{exhibition.description}</p>
-              <div className="mt-2 flex justify-between">
+              <div className="absolute top-0 left-0 right-0 text-center p-4 bg-opacity-75 bg-black text-white rounded-t-md">
+                <h3 className="font-semibold">{exhibition.title}</h3>
+                <p>
+                  at {exhibition.location}, on{" "}
+                  {new Date(exhibition.date).toLocaleDateString()}
+                </p>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 flex justify-between p-2 bg-opacity-75 bg-black text-white">
                 <button
                   onClick={() => handleEdit(exhibition.id)}
                   className="text-blue-500 underline"
