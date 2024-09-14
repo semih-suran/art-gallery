@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 
 const backgroundOptions = [
-  "https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg",
-  "https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg",
-  "https://images.pexels.com/photos/207353/pexels-photo-207353.jpeg",
-  "https://images.pexels.com/photos/1227511/pexels-photo-1227511.jpeg",
-  "https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg",
-  "https://images.pexels.com/photos/413195/pexels-photo-413195.jpeg",
-  "https://images.pexels.com/photos/220067/pexels-photo-220067.jpeg",
-  "https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg",
-  "https://images.pexels.com/photos/960137/pexels-photo-960137.jpeg",
-  "https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg",
-  "https://images.pexels.com/photos/1590549/pexels-photo-1590549.jpeg",
-  "https://images.pexels.com/photos/1269968/pexels-photo-1269968.jpeg",
-  "https://images.pexels.com/photos/459277/pexels-photo-459277.jpeg",
-  "https://images.pexels.com/photos/352096/pexels-photo-352096.jpeg",
-  "https://images.pexels.com/photos/247671/pexels-photo-247671.jpeg",
+  "https://t3.ftcdn.net/jpg/04/83/50/72/240_F_483507282_d2BapyPOVcLx6maMXhSl8pnVAXlMTMCu.jpg",
+  "https://t3.ftcdn.net/jpg/01/91/78/32/240_F_191783282_0TVrx5VrvrkpDHSKdjjI87HkbXJy5TMw.jpg",
+  "https://t4.ftcdn.net/jpg/00/93/85/77/240_F_93857796_qLrpr07hATvqdRphenFoVx2JKSNKY3NE.jpg",
+  "https://t3.ftcdn.net/jpg/00/68/81/24/240_F_68812489_5wFdCbLq9WjO7wd5IWcPgGsr7E29wrtr.jpg",
+  "https://t3.ftcdn.net/jpg/01/34/11/58/240_F_134115811_zDBMdIni0jDuAMVpFsovAK9H3xUcrTMg.jpg",
+  "https://t3.ftcdn.net/jpg/03/30/59/60/240_F_330596087_U626GuHm42zeoV7WjpMaPrdn9K10D3fY.jpg",
+  "https://t3.ftcdn.net/jpg/00/64/09/92/240_F_64099251_mzI1Phve8eONFsk1WKMoY4fZV4J50otc.jpg",
+  "https://t3.ftcdn.net/jpg/02/16/49/46/240_F_216494639_uZ0e27KMsl5qyKFXiZDTGUPO7bcMxCeh.jpg",
+  "https://t4.ftcdn.net/jpg/04/73/74/53/240_F_473745366_1U2qGsM9OM9La7ZTjOd7leEJ6tZVd2jm.jpg",
+  "https://t4.ftcdn.net/jpg/01/75/84/87/240_F_175848794_Z776U0628zvqI7qW7Nebz7L2lziTvlbL.jpg",
+  "https://t4.ftcdn.net/jpg/08/39/42/13/240_F_839421398_syktsm99vWJtIVJTUHN0NQDGsHkU8iov.jpg",
+  "https://t3.ftcdn.net/jpg/06/10/71/62/240_F_610716230_vt5dgEE267bkhWTQJXXakq6V9Jn2wQ0C.jpg",
+  "https://t4.ftcdn.net/jpg/05/71/83/47/240_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg",
+  "https://t4.ftcdn.net/jpg/02/97/25/15/240_F_297251563_LN4Ok2k0rXtsCKbBgr2rlINBXYn9duao.jpg",
+  "https://t4.ftcdn.net/jpg/03/79/10/59/240_F_379105991_mSYkJP13bmbwAqoLkK9YRgqzvXCnICWv.jpg",
 ];
 
 function ThemeTab({ onUpdatePreview }) {
