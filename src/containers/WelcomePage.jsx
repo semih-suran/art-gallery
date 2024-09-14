@@ -45,7 +45,7 @@ function WelcomePage() {
   };
 
   return (
-    <>
+    <div>
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
         <div className="relative w-full h-[60vh] flex items-center justify-center overflow-hidden">
           {" "}
@@ -53,7 +53,7 @@ function WelcomePage() {
             <video
               ref={videoRef}
               className="absolute top-4 left-0 w-full h-full object-cover"
-              src="/media/Art_Background_Video_1.mp4"
+              src="/media/Art_Background_Video_1_low.mp4"
               autoPlay
               loop
               muted
@@ -86,7 +86,7 @@ function WelcomePage() {
         <Modal showModal={showModal} setShowModal={setShowModal} />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
