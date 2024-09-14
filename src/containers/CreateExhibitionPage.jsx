@@ -54,7 +54,7 @@ function CreateExhibitionPage() {
           <video
             ref={videoRef}
             className="absolute top-4 left-0 w-full h-full object-cover"
-            src="/media/Art_Background_Video_2.mp4"
+            src="/media/Art_Background_Video_2_low.mp4"
             autoPlay
             loop
             muted
@@ -64,7 +64,7 @@ function CreateExhibitionPage() {
         </div>
         <div className="absolute z-10 flex items-center justify-center h-full">
           <h1 className="text-4xl font-bold text-white text-center">
-            Searching...
+            {/* Text on the video */}
           </h1>
         </div>
       </div>

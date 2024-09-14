@@ -54,7 +54,7 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
   };
 
   const handleSaveExhibition = async () => {
-    if (!curatorUser.id) {
+    if (!currentUser) {
       alert("User is not logged in. Please log in to save exhibitions.");
       return;
     }
@@ -77,6 +77,7 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
     try {
       const savedExhibition = await saveExhibition(exhibitionData);
       alert("Exhibition saved successfully!");
+      navigate("/my-exhibitions");
     } catch (error) {
       alert("Failed to save exhibition.");
       console.error(error);
