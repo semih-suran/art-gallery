@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import ArtItem from "./containers/ArtItem";
 import MyExhibitions from "./components/MyExhibitions";
 import AllExhibitions from "./components/AllExhibitions";
+import EditExhibition from "./components/EditExhibition"
 
 function App() {
   const [showModal, setShowModal] = useState(true);
@@ -26,6 +27,7 @@ function App() {
         />
         <Route path="/my-exhibitions" element={<MyExhibitions />} />
         <Route path="/all-exhibitions" element={<AllExhibitions />} />
+        <Route path="/exhibition/:id" element={<EditExhibition />} />
       </Routes>
     </Router>
   );

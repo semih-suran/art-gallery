@@ -4,14 +4,13 @@ import { fetchHarvardArt, fetchArtInstitute } from "../../services/api";
 function ArtTab({ onAddArtwork }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [artworks, setArtworks] = useState([]);
-
+  const [sortBy, setSortBy] = useState("title");
+  const [filterByMuseum, setFilterByMuseum] = useState("all");
   const handleSearch = async () => {
     const harvardArt = await fetchHarvardArt(searchTerm);
     const artInstitute = await fetchArtInstitute(searchTerm);
-    const filteredArtworks = [...harvardArt, ...artInstitute].filter(
-      (art) => art.image
-    );
-
+    const allArtworks = [...harvardArt, ...artInstitute];
+    const filteredArtworks = allArtworks.filter((art) => art.image);
     setArtworks(filteredArtworks);
   };
 
@@ -24,6 +23,31 @@ function ArtTab({ onAddArtwork }) {
       handleSearch();
     }
   };
+
+  const sortArtworks = (artworks, sortBy) => {
+    return artworks.sort((a, b) => {
+      if (sortBy === "artist") {
+        return a.artist.localeCompare(b.artist);
+      } else if (sortBy === "title") {
+        return a.title.localeCompare(b.title);
+      }
+      return 0;
+    });
+  };
+
+  const filterArtworks = (artworks, filterByMuseum) => {
+    if (filterByMuseum === "harvard") {
+      return artworks.filter((art) => art.source === "h");
+    } else if (filterByMuseum === "chicago") {
+      return artworks.filter((art) => art.source === "c");
+    }
+    return artworks;
+  };
+
+  const sortedAndFilteredArtworks = sortArtworks(
+    filterArtworks(artworks, filterByMuseum),
+    sortBy
+  );
 
   return (
     <div className="space-y-4">
@@ -41,8 +65,35 @@ function ArtTab({ onAddArtwork }) {
       >
         Search Artworks
       </button>
+      <div className="flex space-x-4">
+        <div>
+          <label htmlFor="sort">Sort By:</label>
+          <select
+            id="sort"
+            value={sortBy}
+            onChange={(e) => setSortBy(e.target.value)}
+            className="p-2 border rounded"
+          >
+            <option value="title">Title</option>
+            <option value="artist">Artist</option>
+          </select>
+        </div>
+        <div>
+          <label htmlFor="filter">Filter By Museum:</label>
+          <select
+            id="filter"
+            value={filterByMuseum}
+            onChange={(e) => setFilterByMuseum(e.target.value)}
+            className="p-2 border rounded"
+          >
+            <option value="all">All</option>
+            <option value="harvard">Harvard Art Museum</option>
+            <option value="chicago">Art Institute of Chicago</option>
+          </select>
+        </div>
+      </div>
       <div className="grid grid-cols-2 gap-4">
-        {artworks.map((art) => (
+        {sortedAndFilteredArtworks.map((art) => (
           <div
             key={art.id}
             className="border p-2 cursor-pointer hover:bg-gray-100"
@@ -54,6 +105,8 @@ function ArtTab({ onAddArtwork }) {
               className="w-full h-32 object-cover mb-2"
             />
             <p>{art.title}</p>
+            <p>{art.artist}</p>
+            <p>{art.date}</p>
           </div>
         ))}
       </div>

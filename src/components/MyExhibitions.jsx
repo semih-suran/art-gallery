@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 const MyExhibitions = () => {
   const [exhibitions, setExhibitions] = useState([]);
   const [curatorUser, setCuratorUser] = useState(null);
+  const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
   const currentUser = auth.currentUser;
   const userEmail = currentUser ? currentUser.email : null;
@@ -36,11 +37,14 @@ const MyExhibitions = () => {
 
   useEffect(() => {
     const getUserExhibitions = async (userId) => {
+      setLoading(true);
       try {
         const fetchedExhibitions = await fetchExhibitionsByUser(userId);
         setExhibitions(fetchedExhibitions);
       } catch (error) {
         console.error("Error fetching exhibitions:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -61,13 +65,22 @@ const MyExhibitions = () => {
   };
 
   const handleEdit = (id) => {
-    navigate(`/edit-exhibition/${id}`);
+    navigate(`/exhibition/${id}`);
   };
 
   return (
     <div className="pt-40">
       <h2 className="text-center text-lg font-bold mt-4">My Exhibitions</h2>
-      {exhibitions.length > 0 ? (
+      {loading ? (
+        <div className="flex flex-col items-center justify-center mt-20">
+          <img
+            src="/media/loading.gif"
+            alt="Loading..."
+            className="w-80 h-60"
+          />
+          <p className="text-lg mt-4">Loading exhibitions, please wait...</p>
+        </div>
+      ) : exhibitions.length > 0 ? (
         <div className="exhibitions-list grid gap-4 p-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {exhibitions.map((exhibition) => (
             <div

@@ -1,24 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import {
   fetchAllExhibitions,
-  deleteExhibition,
   fetchCuratorusersById,
-  fetchAllCuratorusers,
   fetchHarvardArtworkById,
   fetchArtInstituteArtworkById,
 } from "../services/api";
-import { auth } from "../config/firebase.config";
 import { useNavigate } from "react-router-dom";
 
 const AllExhibitions = () => {
   const [exhibitions, setExhibitions] = useState([]);
-  const [curatorUser, setCuratorUser] = useState(null);
   const [curators, setCurators] = useState({});
   const [loading, setLoading] = useState(true);
   const [artworks, setArtworks] = useState({});
   const navigate = useNavigate();
-  const currentUser = auth.currentUser;
-  const userEmail = currentUser ? currentUser.email : null;
 
   const fetchCuratorForExhibition = async (user_id) => {
     try {
@@ -32,7 +26,6 @@ const AllExhibitions = () => {
 
   const fetchArtwork = async (id) => {
     if (!id) return null;
-
     const type = id.charAt(0);
     try {
       if (type === "h") {
@@ -47,55 +40,41 @@ const AllExhibitions = () => {
   };
 
   const fetchAllArtworks = async (exhibitions) => {
+    const artworkPromises = exhibitions.map((exhibition) =>
+      Promise.all(exhibition.exhibitions.map(fetchArtwork))
+    );
+
+    const allFetchedArtworks = await Promise.all(artworkPromises);
     const artworksMap = {};
-    for (const exhibition of exhibitions) {
-      const artworkPromises = exhibition.exhibitions.map((artworkId) =>
-        fetchArtwork(artworkId)
-      );
-      const fetchedArtworks = await Promise.all(artworkPromises);
-      artworksMap[exhibition.id] = fetchedArtworks;
-    }
+
+    exhibitions.forEach((exhibition, index) => {
+      artworksMap[exhibition.id] = allFetchedArtworks[index];
+    });
+
     setArtworks(artworksMap);
   };
-
-  useEffect(() => {
-    const getCuratorUser = async (email) => {
-      try {
-        const allUsers = await fetchAllCuratorusers();
-        const matchingUser = allUsers.find((u) => u.email === email);
-        if (matchingUser) {
-          const fullUser = await fetchCuratorusersById(matchingUser.id);
-          setCuratorUser(fullUser);
-        }
-      } catch (error) {
-        console.error("Error fetching curator user:", error);
-      }
-    };
-
-    if (userEmail) {
-      getCuratorUser(userEmail);
-    }
-  }, [userEmail]);
 
   useEffect(() => {
     const getAllExhibitions = async () => {
       setLoading(true);
       try {
         const fetchedExhibitions = await fetchAllExhibitions();
-        const exhibitionCurators = {};
+        const curatorPromises = fetchedExhibitions.map((exhibition) =>
+          fetchCuratorForExhibition(exhibition.user_id)
+        );
 
-        for (const exhibition of fetchedExhibitions) {
-          if (exhibition.user_id) {
-            const curator = await fetchCuratorForExhibition(exhibition.user_id);
-            if (curator) {
-              exhibitionCurators[exhibition.id] = curator.nickname;
-            }
-          }
-        }
+        const fetchedCurators = await Promise.all(curatorPromises);
 
+        const exhibitionCurators = fetchedExhibitions.reduce(
+          (acc, exhibition, index) => {
+            acc[exhibition.id] =
+              fetchedCurators[index]?.nickname || "Unknown Curator";
+            return acc;
+          },
+          {}
+        );
         setExhibitions(fetchedExhibitions);
         setCurators(exhibitionCurators);
-
         await fetchAllArtworks(fetchedExhibitions);
       } catch (error) {
         console.error("Error fetching exhibitions:", error);
@@ -107,24 +86,11 @@ const AllExhibitions = () => {
     getAllExhibitions();
   }, []);
 
-  const handleDelete = async (id) => {
-    try {
-      await deleteExhibition(id);
-      setExhibitions((prev) =>
-        prev.filter((exhibition) => exhibition.id !== id)
-      );
-    } catch (error) {
-      console.error(`Error deleting exhibition ${id}:`, error);
-    }
-  };
-
-  const handleEdit = (id) => {
-    navigate(`/edit-exhibition/${id}`);
-  };
-
   const limitTitleLength = (title, limit = 20) => {
     return title.length > limit ? `${title.substring(0, limit)}...` : title;
   };
+
+  const artworkMemo = useMemo(() => artworks, [artworks]);
 
   return (
     <div className="pt-40">
@@ -132,9 +98,9 @@ const AllExhibitions = () => {
       {loading ? (
         <div className="flex flex-col items-center justify-center mt-20">
           <img
-            src="https://cdn.pixabay.com/animation/2022/10/11/03/16/03-16-39-160_512.gif"
+            src="/media/loading.gif"
             alt="Loading..."
-            className="w-20 h-20"
+            className="w-80 h-60"
           />
           <p className="text-lg mt-4">Loading exhibitions, please wait...</p>
         </div>
@@ -150,6 +116,7 @@ const AllExhibitions = () => {
                 backgroundPosition: "center",
                 fontFamily: exhibition.font || "sans-serif",
               }}
+              onClick={() => navigate(`/exhibition/${exhibition.id}`)}
             >
               <div className="absolute top-0 left-0 right-0 text-center p-4 bg-opacity-75 bg-black text-white rounded-t-md">
                 <h3 className="font-bold">{exhibition.title}</h3>
@@ -163,47 +130,31 @@ const AllExhibitions = () => {
                 </p>
               </div>
               <div className="flex flex-col justify-center items-center h-full text-white mt-20">
-                {artworks[exhibition.id]?.[0] && (
+                {artworkMemo[exhibition.id]?.[0] && (
                   <div className="flex items-center w-full px-2">
                     <img
-                      src={artworks[exhibition.id][0].image}
-                      alt={artworks[exhibition.id][0].title}
+                      src={artworkMemo[exhibition.id][0].image}
+                      alt={artworkMemo[exhibition.id][0].title}
                       className="w-1/2 h-auto max-h-40 object-contain"
                     />
                     <p className="w-1/2 text-center font-semibold ml-2">
-                      {limitTitleLength(artworks[exhibition.id][0].title)}
+                      {limitTitleLength(artworkMemo[exhibition.id][0].title)}
                     </p>
                   </div>
                 )}
-                {artworks[exhibition.id]?.[1] && (
+                {artworkMemo[exhibition.id]?.[1] && (
                   <div className="flex items-center w-full px-2 mt-4">
                     <p className="w-1/2 text-center font-semibold mr-2">
-                      {limitTitleLength(artworks[exhibition.id][1].title)}
+                      {limitTitleLength(artworkMemo[exhibition.id][1].title)}
                     </p>
                     <img
-                      src={artworks[exhibition.id][1].image}
-                      alt={artworks[exhibition.id][1].title}
+                      src={artworkMemo[exhibition.id][1].image}
+                      alt={artworkMemo[exhibition.id][1].title}
                       className="w-1/2 h-auto max-h-40 object-contain"
                     />
                   </div>
                 )}
               </div>
-              {curatorUser && exhibition.user_id === curatorUser.id && (
-                <div className="absolute bottom-0 left-0 right-0 flex justify-between p-2 bg-opacity-75 bg-black text-white">
-                  <button
-                    onClick={() => handleEdit(exhibition.id)}
-                    className="text-blue-500 underline"
-                  >
-                    View / Edit
-                  </button>
-                  <button
-                    onClick={() => handleDelete(exhibition.id)}
-                    className="text-red-500 underline"
-                  >
-                    Delete
-                  </button>
-                </div>
-              )}
             </div>
           ))}
         </div>

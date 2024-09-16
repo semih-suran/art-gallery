@@ -43,26 +43,18 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
   }, [userEmail]);
 
   const handleArtworkClick = (art) => {
-    const imageUrl = art.image
-      ? art.image
-      : "https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg";
-
-    const prefix = imageUrl.startsWith("https://www.artic.edu") ? "c" : "h";
-    navigate(`/artwork/${prefix}${art.id}`, {
-      state: { art: { ...art, image: imageUrl }, source: prefix },
+    navigate(`/artwork/${art.source}${art.id}`, {
+      state: { art },
     });
   };
 
   const handleSaveExhibition = async () => {
-    if (!currentUser) {
+    if (!curatorUser) {
       alert("User is not logged in. Please log in to save exhibitions.");
       return;
     }
 
-    const exhibitionArtworks = artworks.map((art) => {
-      const prefix = art.image.startsWith("https://www.artic.edu") ? "c" : "h";
-      return `${prefix}${art.id}`;
-    });
+    const exhibitionArtworks = artworks.map((art) => art.id);
     const exhibitionData = {
       user_id: curatorUser.id,
       title,
@@ -73,14 +65,13 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
       background,
       exhibitions: exhibitionArtworks,
     };
-
     try {
-      const savedExhibition = await saveExhibition(exhibitionData);
+      await saveExhibition(exhibitionData);
       alert("Exhibition saved successfully!");
       navigate("/my-exhibitions");
     } catch (error) {
+      console.error("Failed to save exhibition:", error);
       alert("Failed to save exhibition.");
-      console.error(error);
     }
   };
 
