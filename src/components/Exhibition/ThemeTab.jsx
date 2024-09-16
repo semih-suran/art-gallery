@@ -46,10 +46,12 @@ function ThemeTab({ onUpdatePreview }) {
           onChange={handleFontChange}
           className="w-full p-2 border rounded"
         >
-          <option value="">Default Font</option>
-          <option value="serif">Serif</option>
-          <option value="sans-serif">Sans-Serif</option>
-          <option value="monospace">Monospace</option>
+          <option value="">Select a Font</option>
+          <option value="'Roboto', sans-serif">Roboto</option>
+          <option value="'Open Sans', sans-serif">Open Sans</option>
+          <option value="'Lora', serif">Lora</option>
+          <option value="'Merriweather', serif">Merriweather</option>
+          <option value="'Montserrat', sans-serif">Montserrat</option>
         </select>
       </div>
       <div>

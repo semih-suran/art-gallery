@@ -30,3 +30,11 @@ Detailed README coming up soon...
   verify it then login to the page and interact with it safely.
 
 ### OR, you can actually use an email of yours and verify (check Junk folder)
+
+#### https://harvardartmuseums.org/
+
+- https://github.com/harvardartmuseums/api-docs
+
+#### https://www.artic.edu/
+
+- https://api.artic.edu/docs/

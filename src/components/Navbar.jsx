@@ -88,11 +88,16 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleMenuItemClick = () => {
+    setIsMenuOpen(false);
+  };
+
   const renderMenuItems = (className) => (
     <div className={className}>
       <Link
         to="/"
         className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+        onClick={handleMenuItemClick}
       >
         Home
       </Link>
@@ -100,18 +105,21 @@ const Navbar = () => {
       <Link
         to="/all-exhibitions"
         className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+        onClick={handleMenuItemClick}
       >
         All Exhibitions
       </Link>
       <Link
         to="/my-exhibitions"
         className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+        onClick={handleMenuItemClick}
       >
         My Exhibitions
       </Link>
       <Link
         to="/create-exhibition"
         className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+        onClick={handleMenuItemClick}
       >
         New
       </Link>

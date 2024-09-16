@@ -27,6 +27,7 @@ export const fetchHarvardArt = async (query, limit = 10) => {
       artist: item.people?.[0]?.name || "Unknown Artist",
       date: item.dated,
       objectNumber: item.objectnumber,
+      source: "h",
     }));
 
     return artworks;
@@ -55,6 +56,7 @@ export const fetchArtInstitute = async (query, limit = 10) => {
       image: `https://www.artic.edu/iiif/2/${item.image_id}/full/843,/0/default.jpg`,
       artist: item.artist_display,
       date: item.date_display,
+      source: "c",
     }));
 
     return artworks;
@@ -173,7 +175,6 @@ export const saveExhibition = async (exhibitionData) => {
   }
 };
 
-// Fetch all exhibitions created by the logged-in user
 export const fetchExhibitionsByUser = async (userId) => {
   try {
     const response = await axios.get(
@@ -186,7 +187,6 @@ export const fetchExhibitionsByUser = async (userId) => {
   }
 };
 
-// Delete an exhibition by its ID
 export const deleteExhibition = async (exhibitionId) => {
   try {
     const response = await axios.delete(
@@ -199,7 +199,6 @@ export const deleteExhibition = async (exhibitionId) => {
   }
 };
 
-// Edit/update an exhibition by its ID
 export const updateExhibition = async (exhibitionId, exhibitionData) => {
   try {
     const response = await axios.patch(
@@ -213,7 +212,6 @@ export const updateExhibition = async (exhibitionId, exhibitionData) => {
   }
 };
 
-// Fetch a single exhibition by its ID (optional utility)
 export const fetchExhibitionById = async (exhibitionId) => {
   try {
     const response = await axios.get(
@@ -226,7 +224,6 @@ export const fetchExhibitionById = async (exhibitionId) => {
   }
 };
 
-// Fetch all exhibitions
 export const fetchAllExhibitions = async () => {
   try {
     const response = await axios.get(`${BASE_URL}/curator-exhibitions/`);
