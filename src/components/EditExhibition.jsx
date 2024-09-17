@@ -13,7 +13,7 @@ const EditExhibition = () => {
     description: "",
     font: "",
     background: "",
-    exhibitions: "",
+    exhibitions: [],
   });
 
   const [loading, setLoading] = useState(true);
@@ -23,8 +23,6 @@ const EditExhibition = () => {
     const fetchData = async () => {
       try {
         const fetchedData = await fetchExhibitionById(exhibitionId);
-
-        // Format the date to "yyyy-MM-dd" if it exists
         const formattedDate = fetchedData.date
           ? new Date(fetchedData.date).toISOString().split("T")[0]
           : "";
@@ -60,7 +58,6 @@ const EditExhibition = () => {
       setError("Failed to update the exhibition.");
     }
   };
-
   if (loading) return <p>Loading...</p>;
   if (error) return <p>{error}</p>;
 
