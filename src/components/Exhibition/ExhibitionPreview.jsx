@@ -54,7 +54,8 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
       return;
     }
 
-    const exhibitionArtworks = artworks.map((art) => art.id);
+    const exhibitionArtworks = artworks.map((art) => art.source + art.id);
+
     const exhibitionData = {
       user_id: curatorUser.id,
       title,
@@ -125,7 +126,7 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
               <div>
                 <p className="text-lg font-semibold">{art.title}</p>
                 <p className="text-sm italic">
-                  This section will be updated for {art.title}
+                  Description for {art.title}
                 </p>
               </div>
             </div>

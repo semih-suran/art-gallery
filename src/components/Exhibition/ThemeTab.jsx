@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 
 const backgroundOptions = [
-  "https://t3.ftcdn.net/jpg/04/83/50/72/240_F_483507282_d2BapyPOVcLx6maMXhSl8pnVAXlMTMCu.jpg",
-  "https://t3.ftcdn.net/jpg/01/91/78/32/240_F_191783282_0TVrx5VrvrkpDHSKdjjI87HkbXJy5TMw.jpg",
-  "https://t4.ftcdn.net/jpg/00/93/85/77/240_F_93857796_qLrpr07hATvqdRphenFoVx2JKSNKY3NE.jpg",
-  "https://t3.ftcdn.net/jpg/00/68/81/24/240_F_68812489_5wFdCbLq9WjO7wd5IWcPgGsr7E29wrtr.jpg",
-  "https://t3.ftcdn.net/jpg/01/34/11/58/240_F_134115811_zDBMdIni0jDuAMVpFsovAK9H3xUcrTMg.jpg",
-  "https://t3.ftcdn.net/jpg/03/30/59/60/240_F_330596087_U626GuHm42zeoV7WjpMaPrdn9K10D3fY.jpg",
-  "https://t3.ftcdn.net/jpg/00/64/09/92/240_F_64099251_mzI1Phve8eONFsk1WKMoY4fZV4J50otc.jpg",
-  "https://t3.ftcdn.net/jpg/02/16/49/46/240_F_216494639_uZ0e27KMsl5qyKFXiZDTGUPO7bcMxCeh.jpg",
-  "https://t4.ftcdn.net/jpg/04/73/74/53/240_F_473745366_1U2qGsM9OM9La7ZTjOd7leEJ6tZVd2jm.jpg",
-  "https://t4.ftcdn.net/jpg/01/75/84/87/240_F_175848794_Z776U0628zvqI7qW7Nebz7L2lziTvlbL.jpg",
-  "https://t4.ftcdn.net/jpg/08/39/42/13/240_F_839421398_syktsm99vWJtIVJTUHN0NQDGsHkU8iov.jpg",
-  "https://t3.ftcdn.net/jpg/06/10/71/62/240_F_610716230_vt5dgEE267bkhWTQJXXakq6V9Jn2wQ0C.jpg",
-  "https://t4.ftcdn.net/jpg/05/71/83/47/240_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg",
-  "https://t4.ftcdn.net/jpg/02/97/25/15/240_F_297251563_LN4Ok2k0rXtsCKbBgr2rlINBXYn9duao.jpg",
-  "https://t4.ftcdn.net/jpg/03/79/10/59/240_F_379105991_mSYkJP13bmbwAqoLkK9YRgqzvXCnICWv.jpg",
+  "/media/background_1.jpg",
+  "/media/background_2.jpg",
+  "/media/background_3.jpg",
+  "/media/background_4.jpg",
+  "/media/background_5.jpg",
+  "/media/background_6.jpg",
+  "/media/background_7.jpg",
+  "/media/background_8.jpg",
+  "/media/background_9.jpg",
+  "/media/background_10.jpg",
+  "/media/background_11.jpg",
+  "/media/background_12.jpg",
+  "/media/background_13.jpg",
+  "/media/background_14.jpg",
+  "/media/background_15.jpg",
 ];
 
 function ThemeTab({ onUpdatePreview }) {
@@ -23,8 +23,9 @@ function ThemeTab({ onUpdatePreview }) {
   const [fontStyle, setFontStyle] = useState("");
 
   const handleBackgroundChange = (e) => {
-    setBackground(e.target.value);
-    onUpdatePreview({ background: e.target.value });
+    const url = e.target.value;
+    setBackground(url);
+    onUpdatePreview({ background: url });
   };
 
   const handleFontChange = (e) => {
@@ -74,7 +75,7 @@ function ThemeTab({ onUpdatePreview }) {
           {backgroundOptions.map((url, index) => (
             <img
               key={index}
-              src={`${url}?auto=compress&cs=tinysrgb&h=128&w=128`}
+              src={url}
               alt={`Background ${index + 1}`}
               className={`cursor-pointer border ${
                 background === url ? "border-blue-500" : "border-transparent"

@@ -134,6 +134,7 @@ const Navbar = () => {
             <div className="flex flex-col">
               <Link to="/" className="text-lg font-bold text-gray-800">
                 My Exhibition Platform
+                {/* <img src="./media/logo.png" alt="logo" className="w-40 h-20" /> */}
               </Link>
             </div>
             <div className="flex items-center space-x-4">
