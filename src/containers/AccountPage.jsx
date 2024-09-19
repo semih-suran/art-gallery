@@ -64,7 +64,7 @@ function AccountPage() {
   };
 
   const handleEdit = (id) => {
-    navigate(`/edit-exhibition/${id}`);
+    navigate(`/exhibition/${id}`);
   };
 
   return (

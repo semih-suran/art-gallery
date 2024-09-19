@@ -52,7 +52,7 @@ const EditExhibition = () => {
 
     try {
       await updateExhibition(exhibitionId, exhibitionData);
-      navigate(`/exhibitions/${exhibitionId}`);
+      navigate(`/my-exhibitions`);
     } catch (err) {
       console.error("Error updating exhibition:", err);
       setError("Failed to update the exhibition.");
