@@ -78,7 +78,7 @@ function WelcomePage() {
           </p>
           <button
             onClick={handleGetStartedClick}
-            className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700"
+            className="px-6 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-900"
           >
             Get Started
           </button>

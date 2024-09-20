@@ -36,10 +36,10 @@ const MyExhibitions = () => {
   }, [userEmail]);
 
   useEffect(() => {
-    const getUserExhibitions = async (userId) => {
+    const getUserExhibitions = async (id) => {
       setLoading(true);
       try {
-        const fetchedExhibitions = await fetchExhibitionsByUser(userId);
+        const fetchedExhibitions = await fetchExhibitionsByUser(id);
         setExhibitions(fetchedExhibitions);
       } catch (error) {
         console.error("Error fetching exhibitions:", error);

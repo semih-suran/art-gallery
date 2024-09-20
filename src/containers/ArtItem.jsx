@@ -56,9 +56,7 @@ const ArtItem = () => {
   const artist = artwork.artist || "Unknown Artist";
   const date = artwork.date || "Unknown Date";
   const description = artwork.description || "No description available";
-  const imageUrl = artwork.image
-    ? artwork.image
-    : "https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg";
+  const imageUrl = artwork.image ? artwork.image : "/media/art_no_image.jpg";
 
   const openFullScreen = () => setIsFullScreen(true);
 
@@ -67,13 +65,7 @@ const ArtItem = () => {
   return (
     <div className="art-item pt-40 text-center mx-auto max-w-full sm:max-w-md">
       <h2 className="text-2xl font-serif text-[#4a3f35]">{title}</h2>
-      <div
-        className="relative inline-block w-full h-auto p-4 sm:p-8 lg:p-10 bg-white border border-gray-300 shadow-2xl bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            "url('https://dictionary.cambridge.org/images/full/brown_noun_001_01948.jpg?version=6.0.31')",
-        }}
-      >
+      <div className="relative inline-block w-full h-auto p-4 sm:p-8 lg:p-10 bg-black border border-gray-300 shadow-2xl">
         <button
           className="absolute top-2 right-2 p-2 bg-white rounded-full shadow-lg"
           onClick={openFullScreen}
