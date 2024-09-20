@@ -162,6 +162,24 @@ export const fetchAllCuratorusers = async () => {
   }
 };
 
+export const updateUserNickname = async (id, nicknameData) => {
+  try {
+    await axios.patch(`${BASE_URL}/curator-users/${id}/nickname`, nicknameData);
+  } catch (error) {
+    console.error("Error updating nickname:", error);
+    throw error;
+  }
+};
+
+export const updateUserAddress = async (id, addressData) => {
+  try {
+    await axios.patch(`${BASE_URL}/curator-users/${id}/address`, addressData);
+  } catch (error) {
+    console.error("Error updating address:", error);
+    throw error;
+  }
+};
+
 export const saveExhibition = async (exhibitionData) => {
   try {
     const response = await axios.post(

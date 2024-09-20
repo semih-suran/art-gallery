@@ -5,7 +5,6 @@ import { auth } from "../config/firebase.config";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { fetchAllCuratorusers, fetchCuratorusersById } from "../services/api";
 import Modal from "./Auth/Modal";
-import UnderDevelopment from "./UnderDevelopment";
 
 const Navbar = () => {
   const [user, setUser] = useState(null);
@@ -17,11 +16,6 @@ const Navbar = () => {
   const dropdownRef = useRef(null);
   const menuRef = useRef(null);
   const navigate = useNavigate();
-  const [showUDModal, setShowUDModal] = useState(false);
-
-  const underDevelopment = () => {
-    setShowUDModal(true);
-  };
 
   useEffect(() => {
     const getCuratorUser = async (email) => {
@@ -109,20 +103,34 @@ const Navbar = () => {
       >
         All Exhibitions
       </Link>
-      <Link
-        to="/my-exhibitions"
-        className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
-        onClick={handleMenuItemClick}
-      >
-        My Exhibitions
-      </Link>
-      <Link
-        to="/create-exhibition"
-        className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
-        onClick={handleMenuItemClick}
-      >
-        New
-      </Link>
+
+      {curatorUser ? (
+        <Link
+          to={`/my-exhibitions/${curatorUser.id}`}
+          className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+          onClick={handleMenuItemClick}
+        >
+          My Exhibitions
+        </Link>
+      ) : (
+        <span className="text-gray-400 px-3 py-2 rounded-md text-sm font-medium">
+          My Exhibitions
+        </span>
+      )}
+
+      {curatorUser ? (
+        <Link
+          to="/create-exhibition"
+          className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+          onClick={handleMenuItemClick}
+        >
+          New
+        </Link>
+      ) : (
+        <span className="text-gray-400 px-3 py-2 rounded-md text-sm font-medium">
+          New
+        </span>
+      )}
     </div>
   );
 
@@ -159,10 +167,11 @@ const Navbar = () => {
                   >
                     {curatorUser.nickname || "Nickname"}
                   </button>
+
                   {dropdownOpen && (
                     <div className="absolute right-0 mt-12 w-48 bg-white border border-gray-300 rounded-md shadow-lg py-2">
                       <Link
-                        to="/account"
+                        to={`/account/${curatorUser.id}`}
                         className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                         onClick={toggleDropdown}
                       >
@@ -207,11 +216,6 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-      <UnderDevelopment
-        show={showUDModal}
-        onClose={() => setShowUDModal(false)}
-        message="This section is currently under development. Please check back later."
-      />
       <Modal showModal={showModal} setShowModal={setShowModal} />
     </>
   );

@@ -8,7 +8,7 @@ import Navbar from "./components/Navbar";
 import ArtItem from "./containers/ArtItem";
 import MyExhibitions from "./components/MyExhibitions";
 import AllExhibitions from "./components/AllExhibitions";
-import EditExhibition from "./components/EditExhibition"
+import EditExhibition from "./components/EditExhibition";
 
 function App() {
   const [showModal, setShowModal] = useState(true);
@@ -18,14 +18,14 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<WelcomePage />} />
-        <Route path="/account" element={<AccountPage />} />
+        <Route path="/account/:id" element={<AccountPage />} />
         <Route path="/create-exhibition" element={<CreateExhibitionPage />} />
         <Route path="/artwork/:id" element={<ArtItem />} />
         <Route
           path="/login"
           element={<Modal showModal={showModal} setShowModal={setShowModal} />}
         />
-        <Route path="/my-exhibitions" element={<MyExhibitions />} />
+        <Route path="/my-exhibitions/:id" element={<MyExhibitions />} />
         <Route path="/all-exhibitions" element={<AllExhibitions />} />
         <Route path="/exhibition/:id" element={<EditExhibition />} />
       </Routes>
