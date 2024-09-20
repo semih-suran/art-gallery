@@ -7,6 +7,7 @@ const EditExhibition = () => {
   const navigate = useNavigate();
 
   const [exhibitionData, setExhibitionData] = useState({
+    user_id: "",
     title: "",
     date: "",
     location: "",
@@ -52,7 +53,7 @@ const EditExhibition = () => {
 
     try {
       await updateExhibition(exhibitionId, exhibitionData);
-      navigate(`/my-exhibitions`);
+      navigate(`/my-exhibitions/${exhibitionData.user_id}`);
     } catch (err) {
       console.error("Error updating exhibition:", err);
       setError("Failed to update the exhibition.");

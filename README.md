@@ -17,6 +17,7 @@ This project is a React-based web application using Vite as the build tool. The 
   - [Test User Accounts](#test-user-accounts)
 - [API Integration](#api-integration)
 - [Scripts](#scripts)
+- [Known Issues](#known-issues)
 - [Future Improvements](#future-improvements)
 
 ## Project Overview
@@ -131,8 +132,12 @@ The project integrates with the following APIs for artwork data:
 
 1. **Harvard Art Museums API**: Fetches artwork information using `fetchHarvardArt` and `fetchHarvardArtworkById` functions.
    - https://github.com/harvardartmuseums/api-docs
+   (Also example endpoints are in Endpoints-Harvard.JSON)
 2. **Art Institute of Chicago API**: Fetches artwork data using `fetchArtInstitute` and `fetchArtInstituteArtworkById` functions.
    - https://api.artic.edu/docs/
+   (Also example endpoints are in Endpoints-Chicago.JSON)
+3. **Your Back End**: Registers users, save/edit/delete exhibitions. Fetches details about registered users and saved exhibitions.
+   (Also example endpoints are in Endpoints-BackEnd.JSON)
 
 API requests are managed in the `api.js` file using Axios. Make sure to update the environment variables with your API keys.
 
@@ -142,6 +147,11 @@ API requests are managed in the `api.js` file using Axios. Make sure to update t
 - **`npm run build`**: Builds the project for production.
 - **`npm run preview`**: Serves the production build locally for preview.
 - **`npm run lint`**: Lints the project files using ESLint.
+
+## Known Issues
+
+- fetching user_id from params should be replaced the current complicated fetch logic in some components:
+      - MyExhibitions, AccountPage, etc...
 
 ## Future Improvements
 
