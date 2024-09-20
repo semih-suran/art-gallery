@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {
   fetchExhibitionsByUser,
-  deleteExhibition,
   fetchAllCuratorusers,
   fetchCuratorusersById,
 } from "../services/api";
@@ -53,24 +52,11 @@ function AccountPage() {
     }
   }, [curatorUser]);
 
-  const handleDelete = async (id) => {
-    try {
-      await deleteExhibition(id);
-      setExhibitions((prev) =>
-        prev.filter((exhibition) => exhibition.id !== id)
-      );
-    } catch (error) {
-      console.error(`Error deleting exhibition ${id}:`, error);
-    }
-  };
-
-  const handleEdit = (id) => {
-    navigate(`/exhibition/${id}`);
-  };
-
   return (
     <>
-        <Account></Account>
+      <div className="mb-4">
+        <Account />
+      </div>
       <div className="flex flex-col items-center justify-center min-h-screen px-4 bg-gray-100">
         <h1 className="text-3xl font-bold mb-4">Your Dashboard</h1>
         <div className="space-y-6 w-full max-w-md">
@@ -88,23 +74,17 @@ function AccountPage() {
                   <div
                     key={exhibition.id}
                     className="exhibition-card border p-4 rounded-md shadow-sm bg-white"
-                  >
+                    onClick={() => navigate(`/exhibition/${exhibition.id}`)}
+                    style={{
+                      backgroundImage: `url(${exhibition.background})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      minHeight: "100px",
+                      color: "white",
+                    }}
+                  >                    
                     <h3 className="font-semibold">{exhibition.title}</h3>
-                    <p>{exhibition.description}</p>
-                    <div className="mt-2 flex justify-between">
-                      <button
-                        onClick={() => handleEdit(exhibition.id)}
-                        className="p-1 bg-gray-700 text-white rounded-lg hover:bg-gray-900"
-                      >
-                        View / Edit
-                      </button>
-                      <button
-                        onClick={() => handleDelete(exhibition.id)}
-                        className="py-1 px-2 bg-red-500 text-white rounded-lg hover:bg-red-700"
-                      >
-                        Delete
-                      </button>
-                    </div>
+                    <p>at {exhibition.location}</p>
                   </div>
                 ))}
               </div>

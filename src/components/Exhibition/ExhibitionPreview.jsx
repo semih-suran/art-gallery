@@ -69,7 +69,7 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
     try {
       await saveExhibition(exhibitionData);
       alert("Exhibition saved successfully!");
-      navigate("/my-exhibitions");
+      navigate(`/my-exhibitions/${curatorUser.id}`);
     } catch (error) {
       console.error("Failed to save exhibition:", error);
       alert("Failed to save exhibition.");

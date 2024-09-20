@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom"; // Import useParams to get the user ID from the URL
+import { useParams } from "react-router-dom";
 import {
   updateUserNickname,
   updateUserAddress,
@@ -10,7 +10,7 @@ import { FaRegSave } from "react-icons/fa";
 function Account() {
   const [user, setUser] = useState(null);
   const [activeTab, setActiveTab] = useState("Profile");
-  const { id } = useParams(); // Get the user ID from the URL
+  const { id } = useParams();
 
   useEffect(() => {
     const getCuratorUser = async (userId) => {
@@ -23,7 +23,7 @@ function Account() {
     };
 
     if (id) {
-      getCuratorUser(id); // Fetch the user by the ID from the URL
+      getCuratorUser(id);
     }
   }, [id]);
 
@@ -141,7 +141,7 @@ function Account() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100 p-8 pt-40">
+    <div className="flex flex-col bg-gray-100 p-8 pt-40">
       <div className="flex flex-col sm:flex-row w-full h-full max-w-5xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
         <div className="sm:w-1/4 w-full bg-gray-700 p-6 flex flex-col items-center text-white sm:min-w-[250px] sm:max-w-[250px]">
           <h1 className="text-xl font-semibold">
