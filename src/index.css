@@ -24,3 +24,9 @@ body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+
+  canvas {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+  }

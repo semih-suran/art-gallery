@@ -74,7 +74,7 @@ function AccountPage() {
                   <div
                     key={exhibition.id}
                     className="exhibition-card border p-4 rounded-md shadow-sm bg-white"
-                    onClick={() => navigate(`/exhibition/${exhibition.id}`)}
+                    onClick={() => navigate(`/exhibition-edit/${exhibition.id}`)}
                     style={{
                       backgroundImage: `url(${exhibition.background})`,
                       backgroundSize: "cover",

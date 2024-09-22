@@ -65,7 +65,7 @@ const MyExhibitions = () => {
   };
 
   const handleEdit = (id) => {
-    navigate(`/exhibition/${id}`);
+    navigate(`/exhibition-edit/${id}`);
   };
 
   return (

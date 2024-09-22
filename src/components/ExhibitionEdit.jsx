@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { fetchExhibitionById, updateExhibition } from "../services/api";
 
-const EditExhibition = () => {
+const ExhibitionEdit = () => {
   const { id: exhibitionId } = useParams();
   const navigate = useNavigate();
 
@@ -167,4 +167,4 @@ const EditExhibition = () => {
   );
 };
 
-export default EditExhibition;
+export default ExhibitionEdit;
