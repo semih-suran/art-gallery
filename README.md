@@ -132,10 +132,10 @@ The project integrates with the following APIs for artwork data:
 
 1. **Harvard Art Museums API**: Fetches artwork information using `fetchHarvardArt` and `fetchHarvardArtworkById` functions.
    - https://github.com/harvardartmuseums/api-docs
-   (Also example endpoints are in Endpoints-Harvard.JSON)
+     (Also example endpoints are in Endpoints-Harvard.JSON)
 2. **Art Institute of Chicago API**: Fetches artwork data using `fetchArtInstitute` and `fetchArtInstituteArtworkById` functions.
    - https://api.artic.edu/docs/
-   (Also example endpoints are in Endpoints-Chicago.JSON)
+     (Also example endpoints are in Endpoints-Chicago.JSON)
 3. **Your Back End**: Registers users, save/edit/delete exhibitions. Fetches details about registered users and saved exhibitions.
    (Also example endpoints are in Endpoints-BackEnd.JSON)
 
@@ -151,7 +151,9 @@ API requests are managed in the `api.js` file using Axios. Make sure to update t
 ## Known Issues
 
 - fetching user_id from params should be replaced the current complicated fetch logic in some components:
-      - MyExhibitions, AccountPage, etc...
+  MyExhibitions, AccountPage, etc...
+
+- currently instead of VIEW exhibitions going for EDIT page, not checking the current user
 
 ## Future Improvements
 
