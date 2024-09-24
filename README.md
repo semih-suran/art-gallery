@@ -150,20 +150,14 @@ API requests are managed in the `api.js` file using Axios. Make sure to update t
 
 ## Known Issues
 
-- fetching user_id from params should be replaced the current complicated fetch logic in some components:
-  MyExhibitions, AccountPage, etc...
-
-- currently instead of VIEW exhibitions going for EDIT page, not checking the current user
+- Logic missing: Checking the current user, when navigating to EDIT Exhibition page
 
 ## Future Improvements
 
 - Add more user roles (e.g., Admin) with additional privileges.
 - Implement image uploads for user exhibitions.
-- sort URLs for edit-exhibition/:id and view-exhibition/:id instead of exhibition/:id
 - loading animations (while searching)
 - "view" and "add" buttons on each search result item
 - edit exhibition page (add/remove exhibitions needs working on)
 - view exhibition page (SHARE button and [conditional rendering >>] EDIT button)
-- random ordered, sliding/streaming animation for all exhibitions on home page (small)
 - all buttons should change, new colors / text styles
-- My Account page (editable details)

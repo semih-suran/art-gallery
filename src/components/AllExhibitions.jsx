@@ -116,7 +116,7 @@ const AllExhibitions = () => {
                 backgroundPosition: "center",
                 fontFamily: exhibition.font || "sans-serif",
               }}
-              onClick={() => navigate(`/exhibition-edit/${exhibition.id}`)}
+              onClick={() => navigate(`/exhibition-view/${exhibition.id}`)}
             >
               <div className="absolute top-0 left-0 right-0 text-center p-4 bg-opacity-75 bg-black text-white rounded-t-md">
                 <h3 className="font-bold">{exhibition.title}</h3>

@@ -1,56 +1,33 @@
 import React, { useEffect, useState } from "react";
 import {
   fetchExhibitionsByUser,
-  fetchAllCuratorusers,
-  fetchCuratorusersById,
 } from "../services/api";
-import { auth } from "../config/firebase.config";
-import { useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Account from "../components/Account";
 
 function AccountPage() {
+  const { id } = useParams();
+  const user_id = id;
   const navigate = useNavigate();
   const handleCreateExhibition = () => {
     navigate("/create-exhibition");
   };
   const [exhibitions, setExhibitions] = useState([]);
-  const [curatorUser, setCuratorUser] = useState(null);
-  const currentUser = auth.currentUser;
-  const userEmail = currentUser ? currentUser.email : null;
 
   useEffect(() => {
-    const getCuratorUser = async (email) => {
+    const getUserExhibitions = async (user_id) => {
       try {
-        const allUsers = await fetchAllCuratorusers();
-        const matchingUser = allUsers.find((u) => u.email === email);
-        if (matchingUser) {
-          const fullUser = await fetchCuratorusersById(matchingUser.id);
-          setCuratorUser(fullUser);
-        }
-      } catch (error) {
-        console.error("Error fetching curator user:", error);
-      }
-    };
-
-    if (userEmail) {
-      getCuratorUser(userEmail);
-    }
-  }, [userEmail]);
-
-  useEffect(() => {
-    const getUserExhibitions = async (userId) => {
-      try {
-        const fetchedExhibitions = await fetchExhibitionsByUser(userId);
+        const fetchedExhibitions = await fetchExhibitionsByUser(user_id);
         setExhibitions(fetchedExhibitions);
       } catch (error) {
         console.error("Error fetching exhibitions:", error);
       }
     };
 
-    if (curatorUser && curatorUser.id) {
-      getUserExhibitions(curatorUser.id);
+    if (user_id) {
+      getUserExhibitions(user_id);
     }
-  }, [curatorUser]);
+  }, [user_id]);
 
   return (
     <>
