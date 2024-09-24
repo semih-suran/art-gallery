@@ -1,227 +1,190 @@
-import * as THREE from "three";
-import { useEffect, useRef, useState } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import {
-  useCursor,
-  MeshReflectorMaterial,
-  Image,
-  Text,
-  Environment,
-} from "@react-three/drei";
+import React, { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import {
   fetchExhibitionById,
-  fetchArtInstituteArtworkById,
+  fetchCuratorusersById,
   fetchHarvardArtworkById,
+  fetchArtInstituteArtworkById,
 } from "../services/api";
-import { useRoute, useLocation } from "wouter";
-import { easing } from "maath";
-import getUuid from "uuid-by-string";
-import { useParams } from "react-router-dom";
 
-const GOLDENRATIO = 1.61803398875;
-
-export const ExhibitionView = () => {
-  const { id: exhibitionId } = useParams();
-  const [fetchedData, setFetchedData] = useState(null);
-  const [images, setImages] = useState([]);
+const ExhibitionView = () => {
+  const { id } = useParams();
+  const [exhibition, setExhibition] = useState(null);
+  const [user, setUser] = useState(null);
+  const [artworks, setArtworks] = useState([]);
+  const [textHighlighted, setTextHighlighted] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const loadExhibitionData = async () => {
+    const fetchData = async () => {
       try {
-        const data = await fetchExhibitionById(exhibitionId);
-        setFetchedData(data);
-        const artworks = await Promise.all(
-          data.exhibitions.map(async (artwork) => {
-            return await fetchArtwork(artwork);
-          })
+        const fetchedExhibition = await fetchExhibitionById(id);
+        setExhibition(fetchedExhibition);
+
+        const artworkPromises = fetchedExhibition.exhibitions.map(
+          async (artId) => {
+            if (artId.startsWith("h")) {
+              return await fetchHarvardArtworkById(artId.slice(1));
+            } else {
+              return await fetchArtInstituteArtworkById(artId.slice(1));
+            }
+          }
         );
-        setImages(artworks.filter(Boolean));
+
+        const currentUser = await fetchCuratorusersById(
+          fetchedExhibition.user_id
+        );
+        setUser(currentUser);
+
+        const fetchedArtworks = await Promise.all(artworkPromises);
+        setArtworks(fetchedArtworks);
       } catch (error) {
-        console.error("Error loading exhibition:", error);
+        console.error("Error fetching exhibition data:", error);
       }
     };
+    fetchData();
+  }, [id]);
 
-    loadExhibitionData();
-  }, [exhibitionId]);
+  if (!exhibition || artworks.length === 0) return <div>Loading...</div>;
 
-  const fetchArtwork = async (artwork) => {
-    if (!artwork) return null;
-    const type = artwork.charAt(0);
-    const id = artwork.slice(1);
-    try {
-      if (type === "h") {
-        return await fetchHarvardArtworkById(id);
-      } else if (type === "c") {
-        return await fetchArtInstituteArtworkById(id);
-      }
-    } catch (error) {
-      console.error(`Error fetching artwork with ID ${artwork}:`, error);
-    }
-    return null;
+  const { title, date, location, font, background, description } = exhibition;
+  const formattedDate = exhibition.date
+    ? new Date(exhibition.date).toISOString().split("T")[0]
+    : "";
+
+  const handleTextClick = () => {
+    setTextHighlighted((prevState) => !prevState);
+  };
+
+  const handleBetaClick = () => {
+    navigate(`/exhibition-viewV2/${id}`);
+  };
+
+  const handleImageClick = (artworkId, originalId) => {
+    const prefix = originalId.startsWith("h") ? "h" : "c";
+    navigate(`/artwork/${prefix}${artworkId}`);
   };
 
   return (
-    fetchedData && (
-      <Canvas
-        dpr={[1, 1.5]}
-        camera={{ fov: 90, position: [0, 0, 10] }}
-      >
-        <color attach="background" args={["#191920"]} />
-        <fog attach="fog" args={["#191920", 0, 15]} />
-        <ambientLight intensity={0.5} />
-        <directionalLight position={[10, 10, 5]} intensity={1.5} />
-        <group position={[0, -0.5, 0]}>
-          <Frames images={images} />
-          <mesh rotation={[-Math.PI / 2, 0, 0]}>
-            <planeGeometry args={[50, 50]} />
-            <MeshReflectorMaterial
-              blur={[200, 60]} // Adjust blur
-              resolution={1024} // Reduce resolution
-              mixBlur={0.75} // Adjust mixBlur
-              mixStrength={60} // Adjust mixStrength
-              roughness={1}
-              depthScale={0.9} // Adjust depthScale
-              minDepthThreshold={0.4}
-              maxDepthThreshold={1.2}
-              color="#101010" // Darker floor color
-              metalness={0.6}
-            />
-          </mesh>
-        </group>
-        <Environment preset="city" />
-      </Canvas>
-    )
+    <div
+      className="min-h-screen flex flex-col items-center pt-32"
+      style={{
+        fontFamily: font,
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      <header className="text-center p-4">
+        <h1
+          className={`text-3xl font-bold cursor-pointer text-white ${
+            textHighlighted ? "bg-gray-900 bg-opacity-50 rounded" : ""
+          }`}
+          onClick={handleTextClick}
+        >
+          {title}
+        </h1>
+        <p
+          className={`cursor-pointer text-white ${
+            textHighlighted ? "bg-gray-900 bg-opacity-50 rounded" : ""
+          }`}
+          onClick={handleTextClick}
+        >
+          Curated by: {user?.nickname}
+        </p>
+        <p
+          className={`cursor-pointer text-white ${
+            textHighlighted ? "bg-gray-900 bg-opacity-50 rounded" : ""
+          }`}
+          onClick={handleTextClick}
+        >
+          at {location}
+        </p>
+        <p
+          className={`cursor-pointer text-white ${
+            textHighlighted ? "bg-gray-900 bg-opacity-50 rounded" : ""
+          }`}
+          onClick={handleTextClick}
+        >
+          on {formattedDate}
+        </p>
+        <p
+          className={`cursor-pointer text-white ${
+            textHighlighted ? "bg-gray-900 bg-opacity-50 rounded" : ""
+          }`}
+          onClick={handleTextClick}
+        >
+          Description: {description}
+        </p>
+        <p
+          className={`cursor-pointer text-white bg-black rounded mt-2 ${
+            textHighlighted ? "bg-gray-900 bg-opacity-50 rounded" : ""
+          }`}
+          onClick={handleBetaClick}
+        >
+          3D View (( BETA ))
+        </p>
+      </header>
+      <div className="w-full">
+        {artworks.map((artwork, index) => (
+          <div
+            key={artwork.id}
+            className={`flex w-full items-center justify-center my-8 ${
+              index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+            }`}
+          >
+            <div
+              className="w-1/2 h-full flex items-center justify-center cursor-pointer"
+              onClick={() =>
+                handleImageClick(artwork.id, exhibition.exhibitions[index])
+              }
+            >
+              <img
+                src={artwork.image}
+                alt={artwork.title}
+                className="h-3/4 object-contain"
+              />
+            </div>
+            <div className="w-1/2 p-6">
+              <h2
+                className={`text-2xl font-bold cursor-pointer text-white ${
+                  textHighlighted ? "bg-gray-900 bg-opacity-50 rounded" : ""
+                }`}
+                onClick={handleTextClick}
+              >
+                {artwork.title}
+              </h2>
+              <p
+                className={`text-sm italic cursor-pointer text-white ${
+                  textHighlighted ? "bg-gray-900 bg-opacity-50 rounded" : ""
+                }`}
+                onClick={handleTextClick}
+              >
+                by {artwork.artist}
+              </p>
+              <p
+                className={`text-sm italic cursor-pointer text-white ${
+                  textHighlighted ? "bg-gray-900 bg-opacity-50 rounded" : ""
+                }`}
+                onClick={handleTextClick}
+              >
+                created in {artwork.date}
+              </p>
+              <p
+                className={`mt-4 text-lg cursor-pointer text-white ${
+                  textHighlighted ? "bg-gray-900 bg-opacity-50 rounded" : ""
+                }`}
+                onClick={handleTextClick}
+              >
+                {artwork.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
-
-function Frames({
-  images,
-  q = new THREE.Quaternion(),
-  p = new THREE.Vector3(),
-}) {
-  const ref = useRef();
-  const clicked = useRef();
-  const [, params] = useRoute("/item/:id");
-  const [, setLocation] = useLocation();
-
-  useEffect(() => {
-    clicked.current = ref.current.getObjectByName(params?.id);
-    if (clicked.current) {
-      clicked.current.parent.updateWorldMatrix(true, true);
-      clicked.current.parent.localToWorld(p.set(0, GOLDENRATIO / 2, 1.25));
-      clicked.current.parent.getWorldQuaternion(q);
-    } else {
-      p.set(0, 0, 5.5);
-      q.identity();
-    }
-  });
-
-  useFrame((state, dt) => {
-    easing.damp3(state.camera.position, p, 0.4, dt);
-    easing.dampQ(state.camera.quaternion, q, 0.4, dt);
-  });
-
-  return (
-    <group
-      ref={ref}
-      onClick={(e) => (
-        e.stopPropagation(),
-        setLocation(
-          clicked.current === e.object ? "/" : "/item/" + e.object.name
-        )
-      )}
-      onPointerMissed={() => setLocation("/")}
-    >
-      {images.map(({ image, ...rest }, index) => (
-        <Frame
-          key={image}
-          url={image}
-          position={[index * 2.5, 0, 0]}
-          {...rest}
-        />
-      ))}
-    </group>
-  );
-}
-
-function Frame({ id, url, c = new THREE.Color(), position, ...props }) {
-  const image = useRef();
-  const frame = useRef();
-  const [, params] = useRoute("/item/:id");
-  const [hovered, hover] = useState(false);
-  const [rnd] = useState(() => Math.random());
-  const name = getUuid(String(id));
-  const isActive = params?.id === name;
-  useCursor(hovered);
-
-  useFrame((state, dt) => {
-    image.current.material.zoom =
-      2 + Math.sin(rnd * 10000 + state.clock.elapsedTime / 3) / 2;
-    easing.damp3(
-      image.current.scale,
-      [
-        0.85 * (!isActive && hovered ? 0.85 : 1),
-        0.9 * (!isActive && hovered ? 0.905 : 1),
-        1,
-      ],
-      0.1,
-      dt
-    );
-    easing.dampC(
-      frame.current.material.color,
-      hovered ? "orange" : "white",
-      0.1,
-      dt
-    );
-  });
-
-  return (
-    <group {...props} position={position}>
-      <mesh
-        name={name}
-        onPointerOver={(e) => (e.stopPropagation(), hover(true))}
-        onPointerOut={() => hover(false)}
-        scale={[1.2, GOLDENRATIO * 1.2, 0.05]}
-        position={[0, GOLDENRATIO / 2, 0]}
-      >
-        <boxGeometry />
-        <meshStandardMaterial
-          color="#151515"
-          metalness={0.5}
-          roughness={0.5}
-          envMapIntensity={2}
-        />
-        <mesh
-          ref={frame}
-          raycast={() => null}
-          scale={[0.9, 0.93, 0.9]}
-          position={[0, 0, 0.2]}
-        >
-          <boxGeometry />
-          <meshBasicMaterial toneMapped={false} fog={false} />
-        </mesh>
-        {url ? (
-          <Image
-            raycast={() => null}
-            ref={image}
-            position={[0, 0, 0.7]}
-            url={url}
-          />
-        ) : (
-          <meshStandardMaterial color="gray" />
-        )}
-      </mesh>
-      <Text
-        maxWidth={0.1}
-        anchorX="left"
-        anchorY="top"
-        position={[0.55, GOLDENRATIO, 0]}
-        fontSize={0.025}
-      >
-        {name.split("-").join(" ")}
-      </Text>
-    </group>
-  );
-}
 
 export default ExhibitionView;

@@ -2,38 +2,32 @@ import React, { useEffect, useState } from "react";
 import {
   fetchExhibitionsByUser,
   deleteExhibition,
-  fetchAllCuratorusers,
   fetchCuratorusersById,
 } from "../services/api";
-import { auth } from "../config/firebase.config";
-import { useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const MyExhibitions = () => {
+  const { id } = useParams();
+  const user_id = id;
   const [exhibitions, setExhibitions] = useState([]);
   const [curatorUser, setCuratorUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
-  const currentUser = auth.currentUser;
-  const userEmail = currentUser ? currentUser.email : null;
 
   useEffect(() => {
-    const getCuratorUser = async (email) => {
+    const fetchCuratorUser = async (id) => {
       try {
-        const allUsers = await fetchAllCuratorusers();
-        const matchingUser = allUsers.find((u) => u.email === email);
-        if (matchingUser) {
-          const fullUser = await fetchCuratorusersById(matchingUser.id);
-          setCuratorUser(fullUser);
-        }
+        const fullUser = await fetchCuratorusersById(id);
+        setCuratorUser(fullUser);
       } catch (error) {
         console.error("Error fetching curator user:", error);
       }
     };
 
-    if (userEmail) {
-      getCuratorUser(userEmail);
+    if (user_id) {
+      fetchCuratorUser(user_id);
     }
-  }, [userEmail]);
+  }, [user_id]);
 
   useEffect(() => {
     const getUserExhibitions = async (id) => {
@@ -68,6 +62,10 @@ const MyExhibitions = () => {
     navigate(`/exhibition-edit/${id}`);
   };
 
+  const handleViewExhibition = (id) => {
+    navigate(`/exhibition-view/${id}`); // Navigate to the relevant exhibition view page
+  };
+
   return (
     <div className="pt-40">
       <h2 className="text-center text-lg font-bold mt-4">My Exhibitions</h2>
@@ -85,7 +83,8 @@ const MyExhibitions = () => {
           {exhibitions.map((exhibition) => (
             <div
               key={exhibition.id}
-              className="exhibition-card border p-4 rounded-md shadow-sm relative h-[200px] w-[300px] mx-auto"
+              onClick={() => handleViewExhibition(exhibition.id)} // Navigate onClick
+              className="exhibition-card border p-4 rounded-md shadow-sm relative h-[200px] w-[300px] mx-auto cursor-pointer" // Added cursor-pointer for better UX
               style={{
                 backgroundImage: `url(${exhibition.background})`,
                 backgroundSize: "cover",
@@ -102,13 +101,19 @@ const MyExhibitions = () => {
               </div>
               <div className="absolute bottom-0 left-0 right-0 flex justify-between p-2 bg-opacity-75 bg-black text-white">
                 <button
-                  onClick={() => handleEdit(exhibition.id)}
+                  onClick={(e) => {
+                    e.stopPropagation(); // Prevent the click event from propagating to the div
+                    handleEdit(exhibition.id);
+                  }}
                   className="text-blue-500 underline"
                 >
-                  View / Edit
+                  Edit
                 </button>
                 <button
-                  onClick={() => handleDelete(exhibition.id)}
+                  onClick={(e) => {
+                    e.stopPropagation(); // Prevent the click event from propagating to the div
+                    handleDelete(exhibition.id);
+                  }}
                   className="text-red-500 underline"
                 >
                   Delete
