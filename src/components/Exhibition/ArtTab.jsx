@@ -6,6 +6,9 @@ function ArtTab({ onAddArtwork }) {
   const [artworks, setArtworks] = useState([]);
   const [sortBy, setSortBy] = useState("title");
   const [filterByMuseum, setFilterByMuseum] = useState("all");
+  const [hoveredArt, setHoveredArt] = useState(null);
+  const [selectedArt, setSelectedArt] = useState(null);
+
   const handleSearch = async () => {
     const harvardArt = await fetchHarvardArt(searchTerm);
     const artInstitute = await fetchArtInstitute(searchTerm);
@@ -16,12 +19,21 @@ function ArtTab({ onAddArtwork }) {
 
   const handleSelectArtwork = (art) => {
     onAddArtwork(art);
+    alert(`${art.title} successfully added!`);
   };
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
       handleSearch();
     }
+  };
+
+  const handleViewArtwork = (art) => {
+    setSelectedArt(art);
+  };
+
+  const closeModal = () => {
+    setSelectedArt(null);
   };
 
   const sortArtworks = (artworks, sortBy) => {
@@ -61,7 +73,7 @@ function ArtTab({ onAddArtwork }) {
       />
       <button
         onClick={handleSearch}
-        className="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700"
+        className="w-full px-4 py-2 bg-gray-700 text-white shadow-[0_0_15px_5px_gray] rounded-lg"
       >
         Search Artworks
       </button>
@@ -96,20 +108,58 @@ function ArtTab({ onAddArtwork }) {
         {sortedAndFilteredArtworks.map((art) => (
           <div
             key={art.id}
-            className="border p-2 cursor-pointer hover:bg-gray-100"
-            onClick={() => handleSelectArtwork(art)}
+            className={`relative border p-2 cursor-pointer ${
+              hoveredArt === art.id ? "bg-gray-300" : "hover:bg-gray-100"
+            }`}
+            onMouseEnter={() => setHoveredArt(art.id)}
+            onMouseLeave={() => setHoveredArt(null)}
           >
             <img
               src={art.image}
               alt={art.title}
-              className="w-full h-32 object-cover mb-2"
+              className={`w-full h-32 object-cover mb-2 ${
+                hoveredArt === art.id ? "opacity-50" : ""
+              }`}
             />
+            {hoveredArt === art.id && (
+              <div className="absolute inset-0 flex justify-center items-center space-x-2">
+                <button
+                  className="px-4 py-2 bg-gray-800 text-white p-2 rounded-full hover:bg-green-500"
+                  onClick={() => handleSelectArtwork(art)}
+                >
+                  Add
+                </button>
+                <button
+                  className="px-4 py-2 bg-gray-800 text-white p-2 rounded-full hover:bg-green-500"
+                  onClick={() => handleViewArtwork(art)}
+                >
+                  View
+                </button>
+              </div>
+            )}
             <p>{art.title}</p>
             <p>{art.artist}</p>
             <p>{art.date}</p>
           </div>
         ))}
       </div>
+      {selectedArt && (
+        <div className="fixed inset-0 flex justify-center items-center pt-24 bg-black bg-opacity-75">
+          <div className="relative p-4 bg-white rounded-lg max-w-[80vw] max-h-[80vh]">
+            <img
+              src={selectedArt.image}
+              alt={selectedArt.title}
+              className="w-full h-auto max-h-[80vh] object-contain"
+            />
+            <button
+              className="absolute top-2 right-2 bg-gray-800 text-white p-2 rounded-full hover:bg-red-500"
+              onClick={closeModal}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

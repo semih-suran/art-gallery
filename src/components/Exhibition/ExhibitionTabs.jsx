@@ -29,7 +29,9 @@ function ExhibitionTabs({ onUpdatePreview, onAddArtwork }) {
             key={tab}
             onClick={() => setActiveTab(tab)}
             className={`px-4 py-2 font-bold rounded ${
-              activeTab === tab ? "bg-blue-500 text-white" : "bg-gray-200"
+              activeTab === tab
+                ? "bg-black text-white shadow-[0_0_15px_5px_black]"
+                : "bg-gray-200"
             }`}
           >
             {tab}

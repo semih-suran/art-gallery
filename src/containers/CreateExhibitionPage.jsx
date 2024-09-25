@@ -14,8 +14,14 @@ function CreateExhibitionPage() {
   });
 
   const handleUpdatePreview = (newData) => {
-    setPreviewData((prev) => ({ ...prev, ...newData }));
+    setPreviewData((prev) => {
+      const isDifferent = Object.keys(newData).some(
+        (key) => prev[key] !== newData[key]
+      );
+      return isDifferent ? { ...prev, ...newData } : prev;
+    });
   };
+  
 
   const handleAddArtwork = (art) => {
     const updatedArtworks = [...previewData.artworks, art];
@@ -70,6 +76,8 @@ function CreateExhibitionPage() {
             </h1>
           </div>
         </div>
+          <p>Create your exhibition in 3 simple steps...</p>
+          <p>Then "Save" it from your preview</p>
         <div className="w-full mb-8">
           <ExhibitionTabs
             onUpdatePreview={handleUpdatePreview}
