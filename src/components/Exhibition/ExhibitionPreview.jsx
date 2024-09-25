@@ -53,6 +53,36 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
       alert("User is not logged in. Please log in to save exhibitions.");
       return;
     }
+    if (!title) {
+      alert('Please fill the "Title" section before saving!');
+      return;
+    }
+    if (!date) {
+      alert('Please fill the "Date" section before saving!');
+      return;
+    }
+    if (!location) {
+      alert('Please fill the "Location" section before saving!');
+      return;
+    }
+    if (!description) {
+      alert('Please fill the "Description" section before saving!');
+      return;
+    }
+    if (!fontStyle) {
+      alert('Please fill the "Font Style" section before saving!');
+      return;
+    }
+    if (!background) {
+      alert('Please fill the "Background" section before saving!');
+      return;
+    }
+    if (artworks.length === 0) {
+      alert(
+        "Please select at least one artwork for your exhibition before saving."
+      );
+      return;
+    }
 
     const exhibitionArtworks = artworks.map((art) => art.source + art.id);
 
@@ -66,6 +96,7 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
       background,
       exhibitions: exhibitionArtworks,
     };
+
     try {
       await saveExhibition(exhibitionData);
       alert("Exhibition saved successfully!");
@@ -125,9 +156,7 @@ function ExhibitionPreview({ previewData, onRemoveArtwork }) {
               </div>
               <div>
                 <p className="text-lg font-semibold">{art.title}</p>
-                <p className="text-sm italic">
-                  Description for {art.title}
-                </p>
+                <p className="text-sm italic">Description for {art.title}</p>
               </div>
             </div>
           ))}

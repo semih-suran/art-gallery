@@ -61,7 +61,7 @@ Follow these steps to set up the project locally on your machine.
 
    ```bash
    git clone https://github.com/semih-suran/art-gallerry.git
-   cd art-exhibition-platform
+   cd art-gallerry
    ```
 
 2. **Install dependencies**:
@@ -155,9 +155,6 @@ API requests are managed in the `api.js` file using Axios. Make sure to update t
 ## Future Improvements
 
 - Add more user roles (e.g., Admin) with additional privileges.
-- Implement image uploads for user exhibitions.
 - loading animations (while searching)
-- "view" and "add" buttons on each search result item
-- edit exhibition page (add/remove exhibitions needs working on)
-- view exhibition page (SHARE button and [conditional rendering >>] EDIT button)
-- all buttons should change, new colors / text styles
+- edit exhibition page (add/remove exhibitions and background selection, needs working on)
+- view exhibition page ([conditional >>] EDIT button)

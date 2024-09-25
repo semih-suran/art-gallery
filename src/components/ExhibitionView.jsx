@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { FaShareAlt } from "react-icons/fa";
 import {
   fetchExhibitionById,
   fetchCuratorusersById,
@@ -14,6 +15,7 @@ const ExhibitionView = () => {
   const [artworks, setArtworks] = useState([]);
   const [textHighlighted, setTextHighlighted] = useState(false);
   const navigate = useNavigate();
+  const [isLinkCopied, setIsLinkCopied] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -65,6 +67,27 @@ const ExhibitionView = () => {
     navigate(`/artwork/${prefix}${artworkId}`);
   };
 
+  const handleShare = async () => {
+    const shareData = {
+      title: exhibition.title,
+      text: `Check out this exhibition: ${exhibition.title}`,
+      url: window.location.href,
+    };
+
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+      } catch (error) {
+        console.error("Error sharing:", error);
+      }
+    } else {
+      navigator.clipboard.writeText(shareData.url).then(() => {
+        setIsLinkCopied(true);
+        setTimeout(() => setIsLinkCopied(false), 2000);
+      });
+    }
+  };
+
   return (
     <div
       className="min-h-screen flex flex-col items-center pt-32"
@@ -77,14 +100,26 @@ const ExhibitionView = () => {
       }}
     >
       <header className="text-center p-4">
-        <h1
-          className={`text-3xl font-bold cursor-pointer text-white ${
-            textHighlighted ? "bg-gray-900 bg-opacity-50 rounded" : ""
-          }`}
-          onClick={handleTextClick}
-        >
-          {title}
-        </h1>
+        <div className="flex items-center justify-center space-x-4">
+          <h1
+            className={`text-3xl font-bold cursor-pointer text-white ${
+              textHighlighted ? "bg-gray-900 bg-opacity-50 rounded" : ""
+            }`}
+            onClick={handleTextClick}
+          >
+            {title}
+          </h1>
+          <button
+            className="text-white py-2 px-4 rounded"
+            onClick={handleShare}
+          >
+            <FaShareAlt className="w-6 h-6 text-white" />
+          </button>
+        </div>
+        {isLinkCopied && (
+          <p className="ml-2 text-sm text-green-500">Link copied!</p>
+        )}
+
         <p
           className={`cursor-pointer text-white ${
             textHighlighted ? "bg-gray-900 bg-opacity-50 rounded" : ""
@@ -99,7 +134,7 @@ const ExhibitionView = () => {
           }`}
           onClick={handleTextClick}
         >
-          at {location}
+          This exhibition is going take place at:
         </p>
         <p
           className={`cursor-pointer text-white ${
@@ -107,7 +142,7 @@ const ExhibitionView = () => {
           }`}
           onClick={handleTextClick}
         >
-          on {formattedDate}
+          {location} on {formattedDate}
         </p>
         <p
           className={`cursor-pointer text-white ${
@@ -115,7 +150,15 @@ const ExhibitionView = () => {
           }`}
           onClick={handleTextClick}
         >
-          Description: {description}
+          About this exhibition:
+        </p>
+        <p
+          className={`cursor-pointer text-white ${
+            textHighlighted ? "bg-gray-900 bg-opacity-50 rounded" : ""
+          }`}
+          onClick={handleTextClick}
+        >
+          {description}
         </p>
         <p
           className={`cursor-pointer text-white bg-black rounded mt-2 ${
