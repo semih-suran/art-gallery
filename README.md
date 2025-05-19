@@ -151,6 +151,8 @@ API requests are managed in the `api.js` file using Axios. Make sure to update t
 ## Known Issues
 
 - Logic missing: Checking the current user, when navigating to EDIT Exhibition page
+- When "View" is active for a search result,
+  if there is any artwork on "Preview" section, they overlap with the "View" image
 
 ## Future Improvements
 
