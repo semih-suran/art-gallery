@@ -113,19 +113,6 @@ The project can be accessed live through the link:
 
 The project uses Firebase for user authentication, including email verification. New users must verify their email address before accessing certain features of the application.
 
-### Test User Accounts
-
-Here are some test user accounts that can be used to review the application:
-
-1. **Test User 1**:
-   - Email: `wilomezi@polkaroad.net`
-   - Password: `123456`
-2. **Test User 2**:
-   - Email: `zisogetu@cyclelove.cc`
-   - Password: `123456`
-
-**Note**: Please ensure that these email addresses are whitelisted in your Firebase project for testing purposes.
-
 ## API Integration
 
 The project integrates with the following APIs for artwork data:
