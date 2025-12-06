@@ -10,7 +10,6 @@ import MyExhibitions from "./components/MyExhibitions";
 import AllExhibitions from "./components/AllExhibitions";
 import ExhibitionEdit from "./components/ExhibitionEdit";
 import ExhibitionView from "./components/ExhibitionView";
-import ExhibitionViewV2 from "./components/ExhibitionViewV2";
 
 function App() {
   const [showModal, setShowModal] = useState(true);
@@ -31,7 +30,6 @@ function App() {
         <Route path="/all-exhibitions" element={<AllExhibitions />} />
         <Route path="/exhibition-edit/:id" element={<ExhibitionEdit />} />
         <Route path="/exhibition-view/:id" element={<ExhibitionView />} />
-        <Route path="/exhibition-viewV2/:id" element={<ExhibitionViewV2 />} />
       </Routes>
     </Router>
   );
