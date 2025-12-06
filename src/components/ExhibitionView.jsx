@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { FaShareAlt } from "react-icons/fa";
 import {
@@ -16,6 +16,8 @@ const ExhibitionView = () => {
   const [textHighlighted, setTextHighlighted] = useState(false);
   const navigate = useNavigate();
   const [isLinkCopied, setIsLinkCopied] = useState(false);
+
+  const PLACEHOLDER_IMAGE = "https://placehold.co/384x384?text=Copyrighted";
 
   useEffect(() => {
     const fetchData = async () => {
@@ -58,10 +60,6 @@ const ExhibitionView = () => {
     setTextHighlighted((prevState) => !prevState);
   };
 
-  const handleBetaClick = () => {
-    navigate(`/exhibition-viewV2/${id}`);
-  };
-
   const handleImageClick = (artworkId, originalId) => {
     const prefix = originalId.startsWith("h") ? "h" : "c";
     navigate(`/artwork/${prefix}${artworkId}`);
@@ -86,6 +84,11 @@ const ExhibitionView = () => {
         setTimeout(() => setIsLinkCopied(false), 2000);
       });
     }
+  };
+
+  const handleImageError = (e) => {
+    e.target.onerror = null;
+    e.target.src = PLACEHOLDER_IMAGE;
   };
 
   return (
@@ -160,14 +163,6 @@ const ExhibitionView = () => {
         >
           {description}
         </p>
-        <p
-          className={`cursor-pointer text-white bg-black rounded mt-2 ${
-            textHighlighted ? "bg-gray-900 bg-opacity-50 rounded" : ""
-          }`}
-          onClick={handleBetaClick}
-        >
-          3D View (( BETA ))
-        </p>
       </header>
       <div className="w-full">
         {artworks.map((artwork, index) => (
@@ -184,9 +179,10 @@ const ExhibitionView = () => {
               }
             >
               <img
-                src={artwork.image}
+                src={artwork.image || PLACEHOLDER_IMAGE}
                 alt={artwork.title}
-                className="h-3/4 object-contain"
+                onError={handleImageError}
+                className="h-3/4 object-contain shadow-lg"
               />
             </div>
             <div className="w-1/2 p-6">
