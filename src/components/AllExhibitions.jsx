@@ -59,6 +59,12 @@ const AllExhibitions = () => {
       setLoading(true);
       try {
         const fetchedExhibitions = await fetchAllExhibitions();
+        if (!Array.isArray(fetchedExhibitions)) {
+          console.error("Fetched exhibitions is not an array:", fetchedExhibitions);
+          setExhibitions([]);
+          return;
+        }
+
         const curatorPromises = fetchedExhibitions.map((exhibition) =>
           fetchCuratorForExhibition(exhibition.user_id)
         );
@@ -87,6 +93,8 @@ const AllExhibitions = () => {
   }, []);
 
   const limitTitleLength = (title, limit = 20) => {
+    if (!title) return "Untitled";
+    
     return title.length > limit ? `${title.substring(0, limit)}...` : title;
   };
 
@@ -104,7 +112,7 @@ const AllExhibitions = () => {
           />
           <p className="text-lg mt-4">Loading exhibitions, please wait...</p>
         </div>
-      ) : exhibitions.length > 0 ? (
+      ) : exhibitions && exhibitions.length > 0 ? (
         <div className="exhibitions-list grid gap-4 p-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {exhibitions.map((exhibition) => (
             <div
